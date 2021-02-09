@@ -38,14 +38,14 @@ defmodule Cloudflare.MixProject do
       canonical: "http://hexdocs.pm/cloudflare",
       source_url: @source_url,
       groups_for_modules: [
-        Resources: [
-          Cloudflare.User,
-          Cloudflare.Account,
-          Cloudflare.Organization,
-          Cloudflare.Zone,
-          Cloudflare.DnsRecord
-        ]
+        Resources: resource_modules()
       ]
     ]
+  end
+
+  defp resource_modules do
+    Path.wildcard("lib/cloudflare/resources/*")
+    |> Enum.map(&(&1 |> Path.rootname() |> Path.basename() |> Macro.camelize()))
+    |> Enum.map(&Module.concat(Cloudflare, &1))
   end
 end
