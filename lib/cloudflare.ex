@@ -1,5 +1,3 @@
 defmodule Cloudflare do
-  @moduledoc """
-  `Cloudflare` API Client. NOT OFFICIAL.
-  """
+  @moduledoc File.read!("#{__DIR__}/../README.md") |> String.replace(~r/^# .+?\n/, "")
 end

@@ -11,20 +11,19 @@ defmodule Cloudflare.MixProject do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger]
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
       {:restlax, path: "../restlax"},
       {:mint, "~> 1.0", optional: true},
       {:castore, ">= 0.0.0", optional: true},
-      {:jason, "~> 1.0", optional: true}
+      {:jason, "~> 1.0", optional: true},
+      {:ex_doc, ">= 0.0.0", only: :docs}
     ]
   end
 end
