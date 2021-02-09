@@ -9,5 +9,5 @@ defmodule Cloudflare.Organization do
 
   use Restlax.Resource,
     endpoint: "organizations",
-    only: [:show, :udpate]
+    only: [:show, :update]
 end
