@@ -1,21 +1,25 @@
-## Organization Members
+# Organization Members
 
 A member is the association of a Cloudflare user with an Organization.
 
-### List Members
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-* enterprise
+## List Members
 
 `GET` List all members of a organization
 
 > GET organizations/:organization_identifier/members
 
+**Permission needed:** `#organization:read`
 
-### Member Details
+Available in:
+
+* enterprise
+
+
+## Member Details
+
+`GET` Get information about a specific member of an organization
+
+> GET organizations/:organization_identifier/members/:identifier
 
 **Permission needed:** `#organization:read`
 
@@ -23,33 +27,29 @@ Available in:
 
 * enterprise
 
-`GET` Get information about a specific member of an organization
 
-> GET organizations/:organization_identifier/members/:identifier
-
-
-### Edit Member Roles
-
-**Permission needed:** `#organization:edit`
-
-Available in:
-
-* enterprise
+## Edit Member Roles
 
 `PATCH` Change the Roles of an Organization's Member
 
 > PATCH organizations/:organization_identifier/members/:identifier
 
-
-### Remove Member
-
 **Permission needed:** `#organization:edit`
 
 Available in:
 
 * enterprise
 
+
+## Remove Member
+
 `DELETE` Remove a member from an organization
 
 > DELETE organizations/:organization_identifier/members/:identifier
+
+**Permission needed:** `#organization:edit`
+
+Available in:
+
+* enterprise
 

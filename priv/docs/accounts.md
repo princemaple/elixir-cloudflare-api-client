@@ -1,24 +1,28 @@
-## Accounts
+# Accounts
 
 An Account is the root object which owns other resources such as zones, load balancers and billing details.
 
-### List Accounts
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-* free
-* pro
-* business
-* enterprise
+## List Accounts
 
 `GET` List all accounts you have ownership or verified access to
 
 > GET accounts
 
+**Permission needed:** `#organization:read`
 
-### Account Details
+Available in:
+
+* free
+* pro
+* business
+* enterprise
+
+
+## Account Details
+
+`GET` Get information about a specific account that you are a member of
+
+> GET accounts/:identifier
 
 **Permission needed:** `#organization:read`
 
@@ -29,12 +33,12 @@ Available in:
 * business
 * enterprise
 
-`GET` Get information about a specific account that you are a member of
 
-> GET accounts/:identifier
+## Update Account
 
+`PUT` Update an existing Account
 
-### Update Account
+> PUT accounts/:identifier
 
 **Permission needed:** `#organization:edit`
 
@@ -44,8 +48,4 @@ Available in:
 * pro
 * business
 * enterprise
-
-`PUT` Update an existing Account
-
-> PUT accounts/:identifier
 

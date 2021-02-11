@@ -94,17 +94,17 @@ for group <- groups |> Enum.drop(1) do
           |> Floki.text(sep: " ")
 
         """
-        ### #{title}
+        ## #{title}
+
+        `#{method}` #{description}
+
+        > #{http}
 
         **Permission needed:** `#{permission}`
 
         Available in:
 
         #{plans}
-
-        `#{method}` #{description}
-
-        > #{http}
         """
       end
     end)
@@ -115,7 +115,7 @@ for group <- groups |> Enum.drop(1) do
   File.write!(
     "#{__DIR__}/docs/#{filename}.md",
     """
-    ## #{group_name}
+    # #{group_name}
 
     #{group_description}
 

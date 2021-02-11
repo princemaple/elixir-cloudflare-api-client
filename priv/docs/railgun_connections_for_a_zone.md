@@ -1,22 +1,26 @@
-## Railgun Connections for a Zone
+# Railgun Connections for a Zone
 
 Railguns associated with a zone
 
-### List Available Railguns
-
-**Permission needed:** `#zone_settings:read`
-
-Available in:
-
-* business
-* enterprise
+## List Available Railguns
 
 `GET` A list of available Railguns the zone can use
 
 > GET zones/:zone_identifier/railguns
 
+**Permission needed:** `#zone_settings:read`
 
-### Railgun Details
+Available in:
+
+* business
+* enterprise
+
+
+## Railgun Details
+
+`GET` Details about a specific Railgun
+
+> GET zones/:zone_identifier/railguns/:identifier
 
 **Permission needed:** `#zone_settings:read`
 
@@ -25,12 +29,12 @@ Available in:
 * business
 * enterprise
 
-`GET` Details about a specific Railgun
 
-> GET zones/:zone_identifier/railguns/:identifier
+## Connect or Disconnect a Railgun
 
+`PATCH` Connect or disconnect a Railgun
 
-### Connect or Disconnect a Railgun
+> PATCH zones/:zone_identifier/railguns/:identifier
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -39,12 +43,12 @@ Available in:
 * business
 * enterprise
 
-`PATCH` Connect or disconnect a Railgun
 
-> PATCH zones/:zone_identifier/railguns/:identifier
+## Test Railgun Connection
 
+`GET` Test Railgun connection to the Zone
 
-### Test Railgun Connection
+> GET zones/:zone_identifier/railguns/:identifier/diagnose
 
 **Permission needed:** `#zone_settings:read`
 
@@ -52,8 +56,4 @@ Available in:
 
 * business
 * enterprise
-
-`GET` Test Railgun connection to the Zone
-
-> GET zones/:zone_identifier/railguns/:identifier/diagnose
 

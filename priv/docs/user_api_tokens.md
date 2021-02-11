@@ -1,8 +1,12 @@
-## User API Tokens
+# User API Tokens
 
 Tokens that can be used to access Cloudflare v4 APIs
 
-### List Tokens
+## List Tokens
+
+`GET` List all access tokens you created
+
+> GET user/tokens
 
 **Permission needed:** `com.cloudflare.api.token.list`
 
@@ -13,12 +17,12 @@ Available in:
 * business
 * enterprise
 
-`GET` List all access tokens you created
 
-> GET user/tokens
+## Create Token
 
+`POST` Create a new access token
 
-### Create Token
+> POST user/tokens
 
 **Permission needed:** `com.cloudflare.api.token.create`
 
@@ -29,12 +33,12 @@ Available in:
 * business
 * enterprise
 
-`POST` Create a new access token
 
-> POST user/tokens
+## Token Details
 
+`GET` Get information about a specific token
 
-### Token Details
+> GET user/tokens/:identifier
 
 **Permission needed:** `com.cloudflare.api.token.read`
 
@@ -45,12 +49,12 @@ Available in:
 * business
 * enterprise
 
-`GET` Get information about a specific token
 
-> GET user/tokens/:identifier
+## Update Token
 
+`PUT` Update an existing token
 
-### Update Token
+> PUT user/tokens/:identifier
 
 **Permission needed:** `com.cloudflare.api.token.update`
 
@@ -61,12 +65,12 @@ Available in:
 * business
 * enterprise
 
-`PUT` Update an existing token
 
-> PUT user/tokens/:identifier
+## Delete Token
 
+`DELETE` Destroy a token
 
-### Delete Token
+> DELETE user/tokens/:identifier
 
 **Permission needed:** `com.cloudflare.api.token.delete`
 
@@ -77,12 +81,12 @@ Available in:
 * business
 * enterprise
 
-`DELETE` Destroy a token
 
-> DELETE user/tokens/:identifier
+## Roll Token
 
+`PUT` Roll the token secret
 
-### Roll Token
+> PUT user/tokens/:identifier/value
 
 **Permission needed:** `com.cloudflare.api.token.update`
 
@@ -93,12 +97,12 @@ Available in:
 * business
 * enterprise
 
-`PUT` Roll the token secret
 
-> PUT user/tokens/:identifier/value
+## Verify Token
 
+`GET` Test a token
 
-### Verify Token
+> GET user/tokens/verify
 
 **Permission needed:** `None`
 
@@ -108,8 +112,4 @@ Available in:
 * pro
 * business
 * enterprise
-
-`GET` Test a token
-
-> GET user/tokens/verify
 

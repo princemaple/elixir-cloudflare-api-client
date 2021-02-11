@@ -1,8 +1,12 @@
-## Organizations
+# Organizations
 
 An Organization is an entity which holds a set of zones for multiple users to interact with.
 
-### Organization Details
+## Organization Details
+
+`GET` Get information about a specific organization that you are a member of
+
+> GET organizations/:identifier
 
 **Permission needed:** `#organization:read`
 
@@ -10,20 +14,16 @@ Available in:
 
 * enterprise
 
-`GET` Get information about a specific organization that you are a member of
 
-> GET organizations/:identifier
+## Edit Organization
 
+`PATCH` Update an existing Organization
 
-### Edit Organization
+> PATCH organizations/:identifier
 
 **Permission needed:** `#organization:edit`
 
 Available in:
 
 * enterprise
-
-`PATCH` Update an existing Organization
-
-> PATCH organizations/:identifier
 

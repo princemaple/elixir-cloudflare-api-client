@@ -1,42 +1,42 @@
-## IP Address Management Prefixes
+# IP Address Management Prefixes
 
 Describe and modify the account's IP prefixes.
 
-### List Prefixes
-
-**Permission needed:** `None`
-
-Available in:
-
-
+## List Prefixes
 
 `GET` List all prefixes owned by the account.
 
 > GET accounts/:account_identifier/addressing/prefixes
 
-
-### Prefix Details
-
 **Permission needed:** `None`
 
 Available in:
 
 
+
+
+## Prefix Details
 
 `GET` List a particular prefix owned by the account.
 
 > GET accounts/:account_identifier/addressing/prefixes/:prefix_identifier
 
-
-### Update Prefix Description
-
 **Permission needed:** `None`
 
 Available in:
 
 
 
+
+## Update Prefix Description
+
 `PATCH` Modify the description for a prefix owned by the account.
 
 > PATCH accounts/:account_identifier/addressing/prefixes/:prefix_identifier
+
+**Permission needed:** `None`
+
+Available in:
+
+
 

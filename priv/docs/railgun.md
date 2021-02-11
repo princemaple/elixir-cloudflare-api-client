@@ -1,79 +1,69 @@
-## Railgun
+# Railgun
 
 Cloudflare Railgun
 
-### List Railguns
-
-**Permission needed:** `None`
-
-Available in:
-
-* business
-* enterprise
+## List Railguns
 
 `GET` List, search, sort and filter your Railguns
 
 > GET railguns
 
-
-### Create Railgun
-
 **Permission needed:** `None`
 
 Available in:
 
 * business
 * enterprise
+
+
+## Create Railgun
 
 `POST` 
 
 > POST railguns
 
-
-### Railgun Details
-
 **Permission needed:** `None`
 
 Available in:
 
 * business
 * enterprise
+
+
+## Railgun Details
 
 `GET` 
 
 > GET railguns/:identifier
 
-
-### Enable or Disable a Railgun
-
 **Permission needed:** `None`
 
 Available in:
 
 * business
 * enterprise
+
+
+## Enable or Disable a Railgun
 
 `PATCH` Enable or disable a Railgun for all zones connected to it
 
 > PATCH railguns/:identifier
 
-
-### Delete Railgun
-
 **Permission needed:** `None`
 
 Available in:
 
 * business
 * enterprise
+
+
+## Delete Railgun
 
 `DELETE` Disable and delete a Railgun. This will immediately disable the Railgun for any connected zones
 
 > DELETE railguns/:identifier
 
-
-### List Railgun Zones
-
 **Permission needed:** `None`
 
 Available in:
@@ -81,7 +71,17 @@ Available in:
 * business
 * enterprise
 
+
+## List Railgun Zones
+
 `GET` The zones that are currently using this Railgun
 
 > GET railguns/:identifier/zones
+
+**Permission needed:** `None`
+
+Available in:
+
+* business
+* enterprise
 

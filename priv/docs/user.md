@@ -1,8 +1,12 @@
-## User
+# User
 
 The currently logged in/authenticated User
 
-### User Details
+## User Details
+
+`GET` 
+
+> GET user
 
 **Permission needed:** `com.cloudflare.api.user.read`
 
@@ -13,12 +17,12 @@ Available in:
 * business
 * enterprise
 
-`GET` 
 
-> GET user
+## Edit User
 
+`PATCH` Edit part of your user details
 
-### Edit User
+> PATCH user
 
 **Permission needed:** `com.cloudflare.api.user.update`
 
@@ -28,8 +32,4 @@ Available in:
 * pro
 * business
 * enterprise
-
-`PATCH` Edit part of your user details
-
-> PATCH user
 

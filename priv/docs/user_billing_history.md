@@ -1,8 +1,12 @@
-## User Billing History
+# User Billing History
 
 A user billing history
 
-### Billing History Details
+## Billing History Details
+
+`GET` Access your billing history object
+
+> GET user/billing/history
 
 **Permission needed:** `#billing:read`
 
@@ -12,8 +16,4 @@ Available in:
 * pro
 * business
 * enterprise
-
-`GET` Access your billing history object
-
-> GET user/billing/history
 

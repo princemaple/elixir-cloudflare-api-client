@@ -1,8 +1,12 @@
-## Account Railguns
+# Account Railguns
 
 Cloudflare Railguns available to Accounts
 
-### List Railguns
+## List Railguns
+
+`GET` List, search, sort and filter your Railguns
+
+> GET accounts/:account_identifier/railguns
 
 **Permission needed:** `#organization:read`
 
@@ -11,12 +15,12 @@ Available in:
 * business
 * enterprise
 
-`GET` List, search, sort and filter your Railguns
 
-> GET accounts/:account_identifier/railguns
+## Create Railgun
 
+`POST` 
 
-### Create Railgun
+> POST accounts/:account_identifier/railguns
 
 **Permission needed:** `None`
 
@@ -25,12 +29,12 @@ Available in:
 * business
 * enterprise
 
-`POST` 
 
-> POST accounts/:account_identifier/railguns
+## Railgun Details
 
+`GET` 
 
-### Railgun Details
+> GET accounts/:account_identifier/railguns/:identifier
 
 **Permission needed:** `#organization:read`
 
@@ -39,27 +43,13 @@ Available in:
 * business
 * enterprise
 
-`GET` 
 
-> GET accounts/:account_identifier/railguns/:identifier
-
-
-### Update Railgun
-
-**Permission needed:** `#organization:edit`
-
-Available in:
-
-* business
-* enterprise
+## Update Railgun
 
 `PUT` Update a Railgun
 
 > PUT accounts/:account_identifier/railguns/:identifier
 
-
-### Delete Railgun
-
 **Permission needed:** `#organization:edit`
 
 Available in:
@@ -67,7 +57,17 @@ Available in:
 * business
 * enterprise
 
+
+## Delete Railgun
+
 `DELETE` Disable and delete a Railgun. This will immediately disable the Railgun for any connected zones
 
 > DELETE accounts/:account_identifier/railguns/:identifier
+
+**Permission needed:** `#organization:edit`
+
+Available in:
+
+* business
+* enterprise
 
