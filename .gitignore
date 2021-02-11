@@ -25,3 +25,5 @@ cloudflare-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+
+/priv/*.txt
