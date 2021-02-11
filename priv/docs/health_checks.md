@@ -12,9 +12,9 @@ Zone-level stand-alone health checks
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Health Check
@@ -27,9 +27,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Health Check Details
@@ -42,9 +42,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update Health Check
@@ -57,9 +57,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Patch Health Check
@@ -72,9 +72,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Health Check
@@ -87,9 +87,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Preview Health Check
@@ -102,9 +102,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Health Check Preview Details
@@ -117,9 +117,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Preview Health Check
@@ -132,7 +132,7 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 

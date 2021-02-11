@@ -12,10 +12,10 @@ A firewall access rule applied to all zones owned by the account
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Access Rule
@@ -28,10 +28,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Access Rule Details
@@ -44,10 +44,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update Access Rule
@@ -60,10 +60,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Access Rule
@@ -76,8 +76,8 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

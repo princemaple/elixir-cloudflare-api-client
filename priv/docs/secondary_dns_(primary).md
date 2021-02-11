@@ -12,7 +12,7 @@ Primary nameservers for secondary DNS
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Primary Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update Primary
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Primary
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Primary
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

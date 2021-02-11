@@ -12,10 +12,10 @@ API to create Cloudflare-issued SSL certificates that can be installed on your o
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Certificate
@@ -28,10 +28,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Certificate
@@ -44,10 +44,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Revoke Certificate
@@ -60,8 +60,8 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

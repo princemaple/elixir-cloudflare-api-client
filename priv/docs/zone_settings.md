@@ -12,10 +12,10 @@ A Zone setting changes how the Zone works in relation to caching, security, or o
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Advanced DDOS setting
@@ -28,8 +28,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Always Online setting
@@ -42,10 +42,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Always Use HTTPS setting
@@ -58,10 +58,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Opportunistic Onion setting
@@ -74,10 +74,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Orange to Orange (O2O)
@@ -90,7 +90,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Automatic HTTPS Rewrites setting
@@ -103,10 +103,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Browser Cache TTL setting
@@ -119,10 +119,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Browser Check setting
@@ -135,10 +135,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Cache Level setting
@@ -151,10 +151,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Challenge TTL setting
@@ -167,10 +167,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Development Mode setting
@@ -183,10 +183,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Email Obfuscation setting
@@ -199,10 +199,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Hotlink Protection setting
@@ -215,10 +215,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get IP Geolocation setting
@@ -231,10 +231,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get IPv6 setting
@@ -247,10 +247,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Minify setting
@@ -263,10 +263,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Mobile Redirect setting
@@ -279,10 +279,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Mirage setting
@@ -295,10 +295,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Enable Error Pages On setting
@@ -311,7 +311,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Opportunistic Encryption setting
@@ -324,10 +324,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Polish setting
@@ -340,10 +340,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get WebP setting
@@ -356,10 +356,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Brotli setting
@@ -372,10 +372,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Prefetch Preload setting
@@ -388,7 +388,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Privacy Pass setting
@@ -401,10 +401,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Response Buffering setting
@@ -417,7 +417,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Rocket Loader setting
@@ -430,10 +430,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Security Header (HSTS) setting
@@ -446,10 +446,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Security Level setting
@@ -462,10 +462,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Server Side Exclude setting
@@ -478,10 +478,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Enable Query String Sort setting
@@ -494,7 +494,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get SSL setting
@@ -507,10 +507,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Minimum TLS Version setting
@@ -523,10 +523,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Ciphers setting
@@ -539,10 +539,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get TLS Client Auth setting
@@ -555,7 +555,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get True Client IP setting
@@ -568,7 +568,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Web Application Firewall (WAF) setting
@@ -581,9 +581,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get HTTP2 setting
@@ -596,10 +596,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get HTTP3 setting
@@ -612,10 +612,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get 0-RTT session resumption setting
@@ -628,10 +628,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Pseudo IPv4 setting
@@ -644,10 +644,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get WebSockets setting
@@ -660,10 +660,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Image Resizing setting
@@ -676,8 +676,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get HTTP/2 Edge Prioritization setting
@@ -690,9 +690,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Automatic Platform Optimization for WordPress setting
@@ -705,10 +705,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Edit zone settings info
@@ -721,10 +721,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Always Online setting
@@ -737,10 +737,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Always Use HTTPS setting
@@ -753,10 +753,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Opportunistic Onion setting
@@ -769,10 +769,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Orange to Orange (O2O)
@@ -785,7 +785,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Automatic HTTPS Rewrites setting
@@ -798,10 +798,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Browser Cache TTL setting
@@ -814,10 +814,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Browser Check setting
@@ -830,10 +830,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Cache Level setting
@@ -846,10 +846,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Challenge TTL setting
@@ -862,10 +862,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Development Mode setting
@@ -878,10 +878,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Email Obfuscation setting
@@ -894,10 +894,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Enable Error Pages On setting
@@ -910,7 +910,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Enable Query String Sort setting
@@ -923,7 +923,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Hotlink Protection setting
@@ -936,10 +936,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change IP Geolocation setting
@@ -952,10 +952,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change IPv6 setting
@@ -968,9 +968,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Minify setting
@@ -983,10 +983,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Mobile Redirect setting
@@ -999,10 +999,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Mirage setting
@@ -1015,9 +1015,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Opportunistic Encryption setting
@@ -1030,10 +1030,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Polish setting
@@ -1046,9 +1046,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change WebP setting
@@ -1061,9 +1061,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Brotli setting
@@ -1076,10 +1076,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Prefetch Preload setting
@@ -1092,7 +1092,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Privacy Pass setting
@@ -1105,10 +1105,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Response Buffering setting
@@ -1121,7 +1121,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Rocket Loader setting
@@ -1134,10 +1134,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Security Header (HSTS) setting
@@ -1150,10 +1150,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Security Level setting
@@ -1166,10 +1166,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Server Side Exclude setting
@@ -1182,10 +1182,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change SSL setting
@@ -1198,10 +1198,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change TLS Client Auth setting
@@ -1214,7 +1214,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change True Client IP setting
@@ -1227,7 +1227,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Change Minimum TLS Version setting
@@ -1240,10 +1240,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Ciphers setting
@@ -1256,10 +1256,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Web Application Firewall (WAF) setting
@@ -1272,9 +1272,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change HTTP2 setting
@@ -1287,9 +1287,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change HTTP3 setting
@@ -1302,9 +1302,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change 0-RTT session resumption setting
@@ -1317,9 +1317,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Pseudo IPv4 setting
@@ -1332,9 +1332,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change WebSockets setting
@@ -1347,10 +1347,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Image Resizing setting
@@ -1363,8 +1363,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change HTTP/2 Edge Prioritization setting
@@ -1377,9 +1377,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Change Automatic Platform Optimization for WordPress setting
@@ -1392,8 +1392,8 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

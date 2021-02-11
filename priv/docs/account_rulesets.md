@@ -12,10 +12,10 @@ Account-level rulesets
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create account ruleset
@@ -28,10 +28,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get an account ruleset
@@ -44,10 +44,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## List versions of an account ruleset
@@ -60,10 +60,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get an account ruleset version
@@ -76,10 +76,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete account ruleset
@@ -92,10 +92,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete a version of an account ruleset
@@ -108,10 +108,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update account ruleset
@@ -124,10 +124,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Import a schema
@@ -140,8 +140,8 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

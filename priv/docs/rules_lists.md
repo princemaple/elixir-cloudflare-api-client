@@ -12,10 +12,10 @@ Lists of IPs and CIDRs
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create List
@@ -28,10 +28,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get List
@@ -44,10 +44,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update List
@@ -60,10 +60,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete List
@@ -76,10 +76,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## List List Items
@@ -92,10 +92,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create List Items
@@ -108,10 +108,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Replace List Items
@@ -124,10 +124,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete List Items
@@ -140,10 +140,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get List Item
@@ -156,10 +156,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Bulk Operation
@@ -172,8 +172,8 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

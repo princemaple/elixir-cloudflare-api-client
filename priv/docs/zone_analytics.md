@@ -12,10 +12,10 @@ Analytics data for a zone
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Analytics by Co-locations
@@ -28,5 +28,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

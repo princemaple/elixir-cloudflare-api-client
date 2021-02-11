@@ -12,7 +12,7 @@ Secondary DNS Zone
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update Secondary Zone Configuration
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Secondary Zone Configuration
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Secondary Zone Configuration
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Force Secondary Zone AXFR
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

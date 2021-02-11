@@ -12,8 +12,8 @@ Custom SSL certificate for a zone
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create SSL Configuration
@@ -26,8 +26,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## SSL Configuration Details
@@ -40,8 +40,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Edit SSL Configuration
@@ -54,8 +54,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete SSL Configuration
@@ -68,8 +68,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Re-prioritize SSL Certificates
@@ -82,6 +82,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

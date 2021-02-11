@@ -12,7 +12,7 @@ Edge http logs received
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update log retention flag
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Logs Received
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Logs RayIDs
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Fields
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

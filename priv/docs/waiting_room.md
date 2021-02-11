@@ -12,7 +12,7 @@ Zone-level waiting rooms
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Waiting Room
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Waiting Room Details
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update Waiting Room
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Patch Waiting Room
@@ -64,7 +64,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Waiting Room
@@ -77,7 +77,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Waiting Room status
@@ -90,7 +90,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create a custom Waiting Room page preview
@@ -103,5 +103,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

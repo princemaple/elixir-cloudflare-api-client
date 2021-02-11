@@ -12,7 +12,7 @@ Your pending invitations to organizations
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Invitation Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Respond to Invitation
@@ -38,5 +38,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

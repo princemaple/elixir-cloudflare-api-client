@@ -12,7 +12,7 @@ Setup Fallback Origin for all Custom Hostnames for your zone.
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update Fallback Origin for Custom Hostnames
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Fallback Origin for Custom Hostnames
@@ -38,5 +38,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

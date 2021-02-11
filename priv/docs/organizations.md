@@ -12,7 +12,7 @@ An Organization is an entity which holds a set of zones for multiple users to in
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Edit Organization
@@ -25,5 +25,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

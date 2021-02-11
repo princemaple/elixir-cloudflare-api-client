@@ -12,7 +12,7 @@ Overrides for turning WAF packages on or off
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create a URI-controlled WAF configuration
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## URI-controlled WAF configuration details
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update URI-controlled WAF configuration
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete URI-controlled WAF configuration
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

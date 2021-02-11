@@ -12,9 +12,9 @@ A firewall rule for a zone
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Rule Details
@@ -27,9 +27,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Edit Rule
@@ -42,7 +42,7 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 

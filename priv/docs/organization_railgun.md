@@ -12,8 +12,8 @@ Cloudflare Railgun for Organizations
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Railgun
@@ -26,8 +26,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Railgun Details
@@ -40,8 +40,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Enable or Disable a Railgun
@@ -54,8 +54,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Railgun
@@ -68,8 +68,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Railgun Zones
@@ -82,6 +82,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

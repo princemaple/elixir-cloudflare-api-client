@@ -12,8 +12,8 @@ Railguns associated with a zone
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Railgun Details
@@ -26,8 +26,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Connect or Disconnect a Railgun
@@ -40,8 +40,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Test Railgun Connection
@@ -54,6 +54,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

@@ -1,6 +1,6 @@
 # Railgun Connections
 
-Railguns associated with a zone
+A Railgun connection associates a zone with the Railgun
 
 ## List Connections
 
@@ -12,8 +12,8 @@ Railguns associated with a zone
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Connection Details
@@ -26,8 +26,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update Connection
@@ -40,8 +40,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Connection
@@ -54,8 +54,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Create Connection
@@ -68,6 +68,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

@@ -12,9 +12,9 @@ Custom pages associated with a zone
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Custom Page Details
@@ -27,9 +27,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update Custom Page URL
@@ -42,7 +42,7 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 

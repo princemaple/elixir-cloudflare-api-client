@@ -12,8 +12,8 @@ Named groups of permissions used for creating API Tokens access policies
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

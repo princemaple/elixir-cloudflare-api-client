@@ -12,7 +12,7 @@ Logpush jobs
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## List Logpush Jobs for a dataset
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Fields
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Ownership Challenge
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Validate Ownership Challenge
@@ -64,7 +64,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Validate Origin
@@ -77,7 +77,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Logpush Job
@@ -90,7 +90,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Logpush Job Details
@@ -103,7 +103,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update Logpush Job
@@ -116,7 +116,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Logpush Job
@@ -129,7 +129,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Check Destination Exists
@@ -142,5 +142,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

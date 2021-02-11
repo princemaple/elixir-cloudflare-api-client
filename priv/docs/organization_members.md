@@ -12,7 +12,7 @@ A member is the association of a Cloudflare user with an Organization.
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Member Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Edit Member Roles
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Remove Member
@@ -51,5 +51,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

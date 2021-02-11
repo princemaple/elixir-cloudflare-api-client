@@ -12,10 +12,10 @@ A log of changes made to your Cloudflare account
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## List Account Audit Logs
@@ -28,10 +28,10 @@ Available in:
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## List Organization Audit Logs
@@ -44,5 +44,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

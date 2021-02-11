@@ -12,7 +12,7 @@ A role defines what permissions a Member of an Organization has.
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Role Details
@@ -25,5 +25,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

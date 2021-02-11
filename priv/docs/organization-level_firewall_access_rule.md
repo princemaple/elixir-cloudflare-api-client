@@ -12,7 +12,7 @@ A firewall access rule applied to all zones owned by the organization
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Access Rule
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Edit Access Rule
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Access Rule
@@ -51,5 +51,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

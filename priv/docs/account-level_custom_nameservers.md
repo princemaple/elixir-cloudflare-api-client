@@ -12,8 +12,8 @@ Configure custom nameservers that can be used by multiple zones in the account
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Add Account Custom Nameserver
@@ -26,8 +26,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Verify Account Custom Nameserver Glue Records
@@ -40,8 +40,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Delete Account Custom Nameserver
@@ -54,8 +54,8 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Get Eligible Zones for Account Custom Nameservers
@@ -68,6 +68,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

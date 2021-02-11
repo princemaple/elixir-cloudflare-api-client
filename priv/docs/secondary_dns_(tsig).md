@@ -12,7 +12,7 @@ TSIG key management for secondary DNS
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## TSIG Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update TSIG
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete TSIG
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create TSIG
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

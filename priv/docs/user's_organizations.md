@@ -12,7 +12,7 @@ A list of organizations this user is a member of
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Organization Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Leave Organization
@@ -38,5 +38,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

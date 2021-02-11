@@ -12,9 +12,9 @@ Custom pages at the account level
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Custom Page Details
@@ -27,9 +27,9 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 
 
 ## Update Custom Page
@@ -42,7 +42,7 @@ Available in:
 
 Available in:
 
-* pro
-* business
-* enterprise
+* PRO
+* BUSINESS
+* ENTERPRISE
 

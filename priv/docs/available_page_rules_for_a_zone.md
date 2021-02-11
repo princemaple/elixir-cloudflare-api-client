@@ -12,8 +12,8 @@ A rule describing target patterns for requests and actions to perform on matchin
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 

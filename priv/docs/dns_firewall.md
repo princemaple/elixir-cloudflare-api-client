@@ -12,7 +12,7 @@ Account-level DNS Firewall Management
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## DNS Firewall Cluster Details
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Update DNS Firewall Cluster
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete DNS Firewall Cluster
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create DNS Firewall Cluster
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

@@ -12,5 +12,5 @@ Run diagnostics tools from Cloudflare's colos.
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

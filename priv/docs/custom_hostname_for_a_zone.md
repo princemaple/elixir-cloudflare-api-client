@@ -12,7 +12,7 @@ Manage hostnames for your zone that are routed via CNAME.
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Custom Hostname
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Custom Hostname Details
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Edit Custom Hostname
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Custom Hostname (and any issued SSL certificates)
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

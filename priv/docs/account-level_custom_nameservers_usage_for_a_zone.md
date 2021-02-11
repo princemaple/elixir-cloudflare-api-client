@@ -12,8 +12,8 @@ Per-zone usage of Cloudflare account-level custom nameservers
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 
 
 ## Set Account Custom Nameserver Related Zone Metadata
@@ -26,6 +26,6 @@ Available in:
 
 Available in:
 
-* business
-* enterprise
+* BUSINESS
+* ENTERPRISE
 

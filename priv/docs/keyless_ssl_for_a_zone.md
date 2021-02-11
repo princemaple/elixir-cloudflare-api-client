@@ -12,7 +12,7 @@ A Keyless certificate is an SSL certificate where the SSL private key is not sto
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Create Keyless SSL Configuration
@@ -25,7 +25,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Get Keyless SSL Configuration
@@ -38,7 +38,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Edit Keyless SSL Configuration
@@ -51,7 +51,7 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 
 
 ## Delete Keyless SSL Configuration
@@ -64,5 +64,5 @@ Available in:
 
 Available in:
 
-* enterprise
+* ENTERPRISE
 

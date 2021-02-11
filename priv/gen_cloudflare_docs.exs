@@ -36,8 +36,23 @@ for group <- groups |> Enum.drop(1) do
 
   group_description =
     doc
-    |> Floki.find("h2:fl-contains(\"#{group_name}\") + h4")
-    |> Enum.take(1)
+    |> Floki.find("h2:fl-contains(\"#{group_name}\"), h2:fl-contains(\"#{group_name}\") + h4")
+    |> Enum.chunk_while(
+      [],
+      fn
+        {"h2", _, _} = e, [] ->
+          {:cont, [e]}
+
+        {"h2", _, _} = e, acc ->
+          {:cont, acc, [e]}
+
+        {"h4", _, _} = e, acc ->
+          {:cont, [e | acc], []}
+      end,
+      &{:cont, &1}
+    )
+    |> Enum.max_by(&(&1 |> Floki.find("h2") |> Floki.text() |> String.bag_distance(group_name)))
+    |> Floki.find("h4")
     |> Floki.text()
     |> String.trim()
 
@@ -80,7 +95,7 @@ for group <- groups |> Enum.drop(1) do
           |> Floki.find(".available-plans .false")
           |> Floki.text(sep: " ")
           |> String.split(" ", trim: true)
-          |> Enum.map(&"* #{&1}")
+          |> Enum.map(&String.upcase("* #{&1}"))
           |> Enum.join("\n")
 
         description =

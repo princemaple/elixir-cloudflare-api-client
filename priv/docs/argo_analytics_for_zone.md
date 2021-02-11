@@ -12,8 +12,8 @@ Argo Smart Routing Analytics for a zone
 
 Available in:
 
-* free
-* pro
-* business
-* enterprise
+* FREE
+* PRO
+* BUSINESS
+* ENTERPRISE
 
