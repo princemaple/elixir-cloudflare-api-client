@@ -9,7 +9,19 @@ doc =
 menu = Floki.find(doc, ".menu-sidebar")
 groups = Floki.find(menu, ".menu-sidebar > li")
 
-doc = Floki.find(doc, ".api-section")
+doc =
+  doc
+  |> Floki.find(".api-section")
+  |> Floki.traverse_and_update(fn
+    {node, attrs, children} ->
+      {node,
+       Enum.map(attrs, fn {k, v} ->
+         {k, String.replace(v, "/", "_")}
+       end), children}
+
+    other ->
+      other
+  end)
 
 maybe_none = fn
   "" -> "None"
@@ -22,7 +34,7 @@ for group <- groups |> Enum.drop(1) do
     |> Floki.text()
     |> String.trim()
     |> String.downcase()
-    |> String.replace(~r/\s+/, "_")
+    |> String.replace(~r/\s+|\//, "_")
     |> Macro.underscore()
 
   content =
@@ -30,6 +42,7 @@ for group <- groups |> Enum.drop(1) do
     |> Floki.find(~s|a[href^="#"]|)
     |> Floki.attribute("href")
     |> Task.async_stream(fn id ->
+      id = String.replace(id, "/", "_")
       section = Floki.find(doc, "#{id} + div")
 
       if section == [] do
