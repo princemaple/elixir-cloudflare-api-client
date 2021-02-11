@@ -1,4 +1,8 @@
-## Upload a video from a URL
+## Stream Videos
+
+You can upload videos to Cloudflare Stream for fast video processing and delivery.
+
+### Upload a video from a URL
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > POST accounts/:account_identifier/stream/copy
 
 
-## Upload a video using a single HTTP request
+### Upload a video using a single HTTP request
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/stream
 
 
-## Create a video and get authenticated direct upload URL
+### Create a video and get authenticated direct upload URL
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:account_identifier/stream/direct_upload
 
 
-## List videos
+### List videos
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > GET accounts/:account_identifier/stream
 
 
-## Initiate a Video Upload using TUS
+### Initiate a Video Upload using TUS
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > POST accounts/:account_identifier/stream
 
 
-## Video details
+### Video details
 
 **Permission needed:** `None`
 
@@ -76,7 +80,7 @@ Available in:
 > GET accounts/:account_identifier/stream/:identifier
 
 
-## Embed Code HTML
+### Embed Code HTML
 
 **Permission needed:** `None`
 
@@ -89,7 +93,7 @@ Available in:
 > GET accounts/:account_identifier/stream/:identifier/embed
 
 
-## Delete video
+### Delete video
 
 **Permission needed:** `None`
 
@@ -100,3 +104,4 @@ Available in:
 `DELETE` Delete a video on Cloudflare Stream. On success, all copies of the video are deleted.
 
 > DELETE accounts/:account_identifier/stream/:identifier
+

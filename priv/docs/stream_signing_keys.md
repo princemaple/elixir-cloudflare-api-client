@@ -1,4 +1,8 @@
-## Create a Signing Key
+## Stream Signing Keys
+
+Stream signing keys are required to use signed URLs with Stream videos.
+
+### Create a Signing Key
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > POST accounts/:account_identifier/stream/keys
 
 
-## List Signing Keys
+### List Signing Keys
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/stream/keys
 
 
-## Delete key
+### Delete key
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` Deleting a key revokes all signed URLs generated with the key.
 
 > DELETE accounts/:account_identifier/stream/keys/:identifier
+

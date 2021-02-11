@@ -1,4 +1,8 @@
-## List Tokens
+## User API Tokens
+
+Tokens that can be used to access Cloudflare v4 APIs
+
+### List Tokens
 
 **Permission needed:** `com.cloudflare.api.token.list`
 
@@ -14,7 +18,7 @@ Available in:
 > GET user/tokens
 
 
-## Create Token
+### Create Token
 
 **Permission needed:** `com.cloudflare.api.token.create`
 
@@ -30,7 +34,7 @@ Available in:
 > POST user/tokens
 
 
-## Token Details
+### Token Details
 
 **Permission needed:** `com.cloudflare.api.token.read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET user/tokens/:identifier
 
 
-## Update Token
+### Update Token
 
 **Permission needed:** `com.cloudflare.api.token.update`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT user/tokens/:identifier
 
 
-## Delete Token
+### Delete Token
 
 **Permission needed:** `com.cloudflare.api.token.delete`
 
@@ -78,7 +82,7 @@ Available in:
 > DELETE user/tokens/:identifier
 
 
-## Roll Token
+### Roll Token
 
 **Permission needed:** `com.cloudflare.api.token.update`
 
@@ -94,7 +98,7 @@ Available in:
 > PUT user/tokens/:identifier/value
 
 
-## Verify Token
+### Verify Token
 
 **Permission needed:** `None`
 
@@ -108,3 +112,4 @@ Available in:
 `GET` Test a token
 
 > GET user/tokens/verify
+

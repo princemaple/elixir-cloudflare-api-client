@@ -1,4 +1,8 @@
-## List Certificates
+## Origin CA
+
+API to create Cloudflare-issued SSL certificates that can be installed on your origin server. Use your Origin CA Key as your User Service Key when calling these endpoints (see the section on request headers for details).
+
+### List Certificates
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET certificates
 
 
-## Create Certificate
+### Create Certificate
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST certificates
 
 
-## Get Certificate
+### Get Certificate
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET certificates/:identifier
 
 
-## Revoke Certificate
+### Revoke Certificate
 
 **Permission needed:** `None`
 
@@ -60,3 +64,4 @@ Available in:
 `DELETE` Revoke an existing Origin CA certificate by its serial number. Use your Origin CA Key as your User Service Key when calling this endpoint (see above).
 
 > DELETE certificates/:identifier
+

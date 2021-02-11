@@ -1,4 +1,8 @@
-## List Custom Pages
+## Custom Pages (Account)
+
+Custom pages at the account level
+
+### List Custom Pages
 
 **Permission needed:** `#organization:read`
 
@@ -13,7 +17,7 @@ Available in:
 > GET accounts/:account_identifier/custom_pages
 
 
-## Custom Page Details
+### Custom Page Details
 
 **Permission needed:** `#organization:read`
 
@@ -28,7 +32,7 @@ Available in:
 > GET accounts/:account_identifier/custom_pages/:identifier
 
 
-## Update Custom Page
+### Update Custom Page
 
 **Permission needed:** `#organization:edit`
 
@@ -41,3 +45,4 @@ Available in:
 `PUT` Update custom page
 
 > PUT accounts/:account_identifier/custom_pages/:identifier
+

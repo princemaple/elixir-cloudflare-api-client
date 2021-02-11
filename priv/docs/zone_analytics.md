@@ -1,4 +1,8 @@
-## Dashboard
+## Zone Analytics
+
+Analytics data for a zone
+
+### Dashboard
 
 **Permission needed:** `#analytics:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/analytics/dashboard
 
 
-## Analytics by Co-locations
+### Analytics by Co-locations
 
 **Permission needed:** `#analytics:read`
 
@@ -25,3 +29,4 @@ Available in:
 `GET` This view provides a breakdown of analytics data by datacenter. Note: This is available to Enterprise customers only.
 
 > GET zones/:zone_identifier/analytics/colos
+

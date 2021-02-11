@@ -1,4 +1,8 @@
-## List Members
+## Account Members
+
+A list of memberships of accounts this user can access
+
+### List Members
 
 **Permission needed:** `#organization:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET accounts/:account_identifier/members
 
 
-## Add Member
+### Add Member
 
 **Permission needed:** `#organization:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST accounts/:account_identifier/members
 
 
-## Member Details
+### Member Details
 
 **Permission needed:** `#organization:read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET accounts/:account_identifier/members/:identifier
 
 
-## Update Member
+### Update Member
 
 **Permission needed:** `#organization:edit`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT accounts/:account_identifier/members/:identifier
 
 
-## Remove Member
+### Remove Member
 
 **Permission needed:** `#organization:edit`
 
@@ -76,3 +80,4 @@ Available in:
 `DELETE` Remove a member from an account
 
 > DELETE accounts/:account_identifier/members/:identifier
+

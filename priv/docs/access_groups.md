@@ -1,4 +1,8 @@
-## List Access Groups
+## Access Groups
+
+Access Groups allow you to define a set of users to which an application policy can be applied. You can reuse Access groups to quickly create policies that apply to the same set of users
+
+### List Access Groups
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/groups
 
 
-## Access Group Details
+### Access Group Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:identifier/access/groups/:uuid
 
 
-## Create Access Group
+### Create Access Group
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:identifier/access/groups
 
 
-## Update Access Group
+### Update Access Group
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT accounts/:identifier/access/groups/:uuid
 
 
-## Delete Access Group
+### Delete Access Group
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Delete an Access Group
 
 > DELETE accounts/:identifier/access/groups/:uuid
+

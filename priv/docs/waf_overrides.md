@@ -1,4 +1,8 @@
-## List URI-controlled WAF configurations
+## Waf Overrides
+
+Overrides for turning WAF packages on or off
+
+### List URI-controlled WAF configurations
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/waf/overrides
 
 
-## Create a URI-controlled WAF configuration
+### Create a URI-controlled WAF configuration
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone_identifier/firewall/waf/overrides
 
 
-## URI-controlled WAF configuration details
+### URI-controlled WAF configuration details
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/waf/overrides/:id
 
 
-## Update URI-controlled WAF configuration
+### Update URI-controlled WAF configuration
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:zone_identifier/firewall/waf/overrides/:id
 
 
-## Delete URI-controlled WAF configuration
+### Delete URI-controlled WAF configuration
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/firewall/waf/overrides/:id
+

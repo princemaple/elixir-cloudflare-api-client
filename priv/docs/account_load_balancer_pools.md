@@ -1,4 +1,8 @@
-## List Pools
+## Account Load Balancer Pools
+
+Account-level Load Balancer Pools
+
+### List Pools
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/load_balancers/pools
 
 
-## Create Pool
+### Create Pool
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/load_balancers/pools
 
 
-## Pool Details
+### Pool Details
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET accounts/:account_identifier/load_balancers/pools/:identifier
 
 
-## Pool Health Details
+### Pool Health Details
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > GET accounts/:account_identifier/load_balancers/pools/:identifier/health
 
 
-## Update Pool
+### Update Pool
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > PUT accounts/:account_identifier/load_balancers/pools/:identifier
 
 
-## Patch Pool
+### Patch Pool
 
 **Permission needed:** `None`
 
@@ -76,7 +80,7 @@ Available in:
 > PATCH accounts/:account_identifier/load_balancers/pools/:identifier
 
 
-## Delete Pool
+### Delete Pool
 
 **Permission needed:** `None`
 
@@ -89,7 +93,7 @@ Available in:
 > DELETE accounts/:account_identifier/load_balancers/pools/:identifier
 
 
-## Preview Pool
+### Preview Pool
 
 **Permission needed:** `None`
 
@@ -102,7 +106,7 @@ Available in:
 > POST accounts/:account_identifier/load_balancers/pools/:identifier/preview
 
 
-## List Pool References
+### List Pool References
 
 **Permission needed:** `None`
 
@@ -113,3 +117,4 @@ Available in:
 `GET` Get the list of resources that reference the provided pool
 
 > GET accounts/:account_identifier/load_balancers/pools/:identifier/references
+

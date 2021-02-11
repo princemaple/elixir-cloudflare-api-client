@@ -1,4 +1,8 @@
-## List account rulesets
+## Account rulesets
+
+Account-level rulesets
+
+### List account rulesets
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET accounts/:account_id/rulesets
 
 
-## Create account ruleset
+### Create account ruleset
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST accounts/:account_id/rulesets
 
 
-## Get an account ruleset
+### Get an account ruleset
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET accounts/:account_id/rulesets/:ruleset_id
 
 
-## List versions of an account ruleset
+### List versions of an account ruleset
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > GET accounts/:account_id/rulesets/:ruleset_id/versions
 
 
-## Get an account ruleset version
+### Get an account ruleset version
 
 **Permission needed:** `None`
 
@@ -78,7 +82,7 @@ Available in:
 > GET accounts/:account_id/rulesets/:ruleset_id/versions/:ruleset_version
 
 
-## Delete account ruleset
+### Delete account ruleset
 
 **Permission needed:** `None`
 
@@ -94,7 +98,7 @@ Available in:
 > DELETE accounts/:account_id/rulesets/:ruleset_id
 
 
-## Delete a version of an account ruleset
+### Delete a version of an account ruleset
 
 **Permission needed:** `None`
 
@@ -110,7 +114,7 @@ Available in:
 > DELETE accounts/:account_id/rulesets/:ruleset_id/versions/:ruleset_version
 
 
-## Update account ruleset
+### Update account ruleset
 
 **Permission needed:** `None`
 
@@ -126,7 +130,7 @@ Available in:
 > PUT accounts/:account_id/rulesets/:ruleset_id
 
 
-## Import a schema
+### Import a schema
 
 **Permission needed:** `None`
 
@@ -140,3 +144,4 @@ Available in:
 `POST` Import an OpenAPI Swagger specification
 
 > POST accounts/:account_id/rulesets/import
+

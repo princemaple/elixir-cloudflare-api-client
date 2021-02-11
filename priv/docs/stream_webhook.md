@@ -1,4 +1,8 @@
-## Create a webhook
+## Stream Webhook
+
+Create a webhook to notify your service when videos are ready to stream.
+
+### Create a webhook
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > PUT accounts/:account_identifier/stream/webhook
 
 
-## View the webhook
+### View the webhook
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/stream/webhook
 
 
-## Delete the webhook
+### Delete the webhook
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` 
 
 > DELETE accounts/:account_identifier/stream/webhook
+

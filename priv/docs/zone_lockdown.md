@@ -1,4 +1,8 @@
-## List Lockdown Rules
+## Zone Lockdown
+
+Lock access to URLs in this zone to only permitted addresses or address ranges.
+
+### List Lockdown Rules
 
 **Permission needed:** `None`
 
@@ -13,7 +17,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/lockdowns
 
 
-## Create Lockdown Rule
+### Create Lockdown Rule
 
 **Permission needed:** `None`
 
@@ -28,7 +32,7 @@ Available in:
 > POST zones/:zone_identifier/firewall/lockdowns
 
 
-## Lockdown Rule Details
+### Lockdown Rule Details
 
 **Permission needed:** `None`
 
@@ -43,7 +47,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/lockdowns/:id
 
 
-## Update Lockdown Rule
+### Update Lockdown Rule
 
 **Permission needed:** `None`
 
@@ -58,7 +62,7 @@ Available in:
 > PUT zones/:zone_identifier/firewall/lockdowns/:id
 
 
-## Delete Lockdown Rule
+### Delete Lockdown Rule
 
 **Permission needed:** `None`
 
@@ -71,3 +75,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/firewall/lockdowns/:id
+

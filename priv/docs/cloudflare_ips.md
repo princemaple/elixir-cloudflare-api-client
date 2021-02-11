@@ -1,4 +1,8 @@
-## Cloudflare IP Details
+## Cloudflare IPs
+
+Cloudflare IP space
+
+### Cloudflare IP Details
 
 **Permission needed:** `None`
 
@@ -9,3 +13,4 @@ Available in:
 `GET` Get Cloudflare IPs
 
 > GET ips
+

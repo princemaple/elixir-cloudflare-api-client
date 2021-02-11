@@ -1,4 +1,8 @@
-## List Namespaces
+## Workers KV Namespace
+
+A Namespace is a collection of key-value pairs stored in Workers KV.
+
+### List Namespaces
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.namespace.list`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/storage/kv/namespaces
 
 
-## Create a Namespace
+### Create a Namespace
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.namespace.create`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/storage/kv/namespaces
 
 
-## Remove a Namespace
+### Remove a Namespace
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.namespace.delete`
 
@@ -37,7 +41,7 @@ Available in:
 > DELETE accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier
 
 
-## Rename a Namespace
+### Rename a Namespace
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.namespace.delete`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier
 
 
-## List a Namespace's Keys
+### List a Namespace's Keys
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.list`
 
@@ -63,7 +67,7 @@ Available in:
 > GET accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/keys
 
 
-## Read key-value pair
+### Read key-value pair
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.read`
 
@@ -76,7 +80,7 @@ Available in:
 > GET accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name
 
 
-## Write key-value pair
+### Write key-value pair
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.update`
 
@@ -89,7 +93,7 @@ Available in:
 > PUT accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name?expiration=:expiration&expiration_ttl=:expiration_ttl
 
 
-## Write key-value pair with metadata
+### Write key-value pair with metadata
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.update`
 
@@ -102,7 +106,7 @@ Available in:
 > PUT accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name?expiration=:expiration&expiration_ttl=:expiration_ttl
 
 
-## Write multiple key-value pairs
+### Write multiple key-value pairs
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.update`
 
@@ -115,7 +119,7 @@ Available in:
 > PUT accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/bulk
 
 
-## Delete key-value pair
+### Delete key-value pair
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.delete`
 
@@ -128,7 +132,7 @@ Available in:
 > DELETE accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name
 
 
-## Delete multiple key-value pairs
+### Delete multiple key-value pairs
 
 **Permission needed:** `com.cloudflare.edge.storage.kv.key.delete`
 
@@ -139,3 +143,4 @@ Available in:
 `DELETE` Remove multiple KV pairs from the Namespace. Body should be an array of up to 10,000 keys to be removed.
 
 > DELETE accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/bulk
+

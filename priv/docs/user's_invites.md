@@ -1,4 +1,8 @@
-## List Invitations
+## User's Invites
+
+Your pending invitations to organizations
+
+### List Invitations
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET user/invites
 
 
-## Invitation Details
+### Invitation Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET user/invites/:identifier
 
 
-## Respond to Invitation
+### Respond to Invitation
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `PATCH` Respond to an invitation
 
 > PATCH user/invites/:identifier
+

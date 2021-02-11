@@ -1,4 +1,8 @@
-## Get log retention flag
+## Logs Received
+
+Edge http logs received
+
+### Get log retention flag
 
 **Permission needed:** `#logs:edit`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/logs/control/retention/flag
 
 
-## Update log retention flag
+### Update log retention flag
 
 **Permission needed:** `#logs:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone_identifier/logs/control/retention/flag
 
 
-## Logs Received
+### Logs Received
 
 **Permission needed:** `#logs:read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/logs/received
 
 
-## Logs RayIDs
+### Logs RayIDs
 
 **Permission needed:** `#logs:read`
 
@@ -50,7 +54,7 @@ Available in:
 > GET zones/:zone_identifier/logs/rayids/:ray_identifier
 
 
-## Fields
+### Fields
 
 **Permission needed:** `#logs:read`
 
@@ -61,3 +65,4 @@ Available in:
 `GET` The list of all fields available. The response is json object with key-value pairs where keys are field names, and values are descriptions.
 
 > GET zones/:zone_identifier/logs/received/fields
+

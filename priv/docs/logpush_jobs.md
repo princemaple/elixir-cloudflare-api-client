@@ -1,4 +1,8 @@
-## List Logpush Jobs
+## Logpush Jobs
+
+Logpush jobs
+
+### List Logpush Jobs
 
 **Permission needed:** `#logs:edit`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/logpush/jobs
 
 
-## List Logpush Jobs for a dataset
+### List Logpush Jobs for a dataset
 
 **Permission needed:** `#logs:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > GET zones/:zone_identifier/logpush/datasets/:dataset/jobs
 
 
-## Fields
+### Fields
 
 **Permission needed:** `#logs:edit`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/logpush/datasets/:dataset/fields
 
 
-## Get Ownership Challenge
+### Get Ownership Challenge
 
 **Permission needed:** `#logs:edit`
 
@@ -50,7 +54,7 @@ Available in:
 > POST zones/:zone_identifier/logpush/ownership
 
 
-## Validate Ownership Challenge
+### Validate Ownership Challenge
 
 **Permission needed:** `#logs:edit`
 
@@ -63,7 +67,7 @@ Available in:
 > POST zones/:zone_identifier/logpush/ownership/validate
 
 
-## Validate Origin
+### Validate Origin
 
 **Permission needed:** `#logs:edit`
 
@@ -76,7 +80,7 @@ Available in:
 > POST zones/:zone_identifier/logpush/validate/origin
 
 
-## Create Logpush Job
+### Create Logpush Job
 
 **Permission needed:** `#logs:edit`
 
@@ -89,7 +93,7 @@ Available in:
 > POST zones/:zone_identifier/logpush/jobs
 
 
-## Logpush Job Details
+### Logpush Job Details
 
 **Permission needed:** `#logs:edit`
 
@@ -102,7 +106,7 @@ Available in:
 > GET zones/:zone_identifier/logpush/jobs/:job_identifier
 
 
-## Update Logpush Job
+### Update Logpush Job
 
 **Permission needed:** `#logs:edit`
 
@@ -115,7 +119,7 @@ Available in:
 > PUT zones/:zone_identifier/logpush/jobs/:job_identifier
 
 
-## Delete Logpush Job
+### Delete Logpush Job
 
 **Permission needed:** `#logs:edit`
 
@@ -128,7 +132,7 @@ Available in:
 > DELETE zones/:zone_identifier/logpush/jobs/:job_identifier
 
 
-## Check Destination Exists
+### Check Destination Exists
 
 **Permission needed:** `#logs:edit`
 
@@ -139,3 +143,4 @@ Available in:
 `POST` Check if there is an existing job with a destination
 
 > POST zones/:zone_identifier/logpush/validate/destination/exists
+

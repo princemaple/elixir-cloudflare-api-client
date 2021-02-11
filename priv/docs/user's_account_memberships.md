@@ -1,4 +1,8 @@
-## List Memberships
+## User's Account Memberships
+
+A list of memberships of accounts this user can access
+
+### List Memberships
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET memberships
 
 
-## Membership Details
+### Membership Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET memberships/:identifier
 
 
-## Update Membership
+### Update Membership
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT memberships/:identifier
 
 
-## Delete Membership
+### Delete Membership
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `DELETE` Remove the associated member from an account
 
 > DELETE memberships/:identifier
+

@@ -1,4 +1,8 @@
-## Get Enablement Setting for Zone
+## Zone-Level Authenticated Origin Pulls
+
+Setup authenticated origin pulls for your zone.
+
+### Get Enablement Setting for Zone
 
 **Permission needed:** `#ssl:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/origin_tls_client_auth/settings
 
 
-## Set Enablement for Zone
+### Set Enablement for Zone
 
 **Permission needed:** `#ssl:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > PUT zones/:zone_identifier/origin_tls_client_auth/settings
 
 
-## Upload Certificate
+### Upload Certificate
 
 **Permission needed:** `#ssl:edit`
 
@@ -46,7 +50,7 @@ Available in:
 > POST zones/:zone_identifier/origin_tls_client_auth
 
 
-## List Certificates
+### List Certificates
 
 **Permission needed:** `#ssl:read`
 
@@ -62,7 +66,7 @@ Available in:
 > GET zones/:zone_identifier/origin_tls_client_auth
 
 
-## Get Certificate Details
+### Get Certificate Details
 
 **Permission needed:** `#ssl:read`
 
@@ -78,7 +82,7 @@ Available in:
 > GET zones/:zone_identifier/origin_tls_client_auth/:identifier
 
 
-## Delete Certificate
+### Delete Certificate
 
 **Permission needed:** `#ssl:edit`
 
@@ -92,3 +96,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/origin_tls_client_auth/:identifier
+

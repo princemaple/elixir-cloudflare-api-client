@@ -1,4 +1,8 @@
-## Argo Analytics for a zone at differnt PoPs
+## Argo Analytics for Geolocation
+
+Argo Smart Routing Analytics for a zone at different PoPs
+
+### Argo Analytics for a zone at differnt PoPs
 
 **Permission needed:** `#analytics:read`
 
@@ -12,3 +16,4 @@ Available in:
 `GET` 
 
 > GET zones/:zone_identifier/analytics/latency/colos
+

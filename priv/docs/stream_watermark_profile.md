@@ -1,4 +1,8 @@
-## Create a Watermark Profile from an URL
+## Stream Watermark Profile
+
+You can create watermark profile for different videos.
+
+### Create a Watermark Profile from an URL
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > POST accounts/:account_identifier/stream/watermarks
 
 
-## Create a Watermark Profile via Basic Upload
+### Create a Watermark Profile via Basic Upload
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/stream/watermarks
 
 
-## List Watermark Profiles
+### List Watermark Profiles
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET accounts/:account_identifier/stream/watermarks
 
 
-## Watermark Profile Details
+### Watermark Profile Details
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > GET accounts/:account_identifier/stream/watermarks/:identifier
 
 
-## Delete Watermark Profile
+### Delete Watermark Profile
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Mark a watermark profile as deleted
 
 > DELETE accounts/:account_identifier/stream/watermarks/:identifier
+

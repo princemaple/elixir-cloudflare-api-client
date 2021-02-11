@@ -1,4 +1,8 @@
-## List Organizations
+## User's Organizations
+
+A list of organizations this user is a member of
+
+### List Organizations
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET user/organizations
 
 
-## Organization Details
+### Organization Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET user/organizations/:identifier
 
 
-## Leave Organization
+### Leave Organization
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` Remove association to an organization
 
 > DELETE user/organizations/:identifier
+

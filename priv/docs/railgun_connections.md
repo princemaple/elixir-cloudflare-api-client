@@ -1,4 +1,8 @@
-## List Connections
+## Railgun Connections
+
+Railguns associated with a zone
+
+### List Connections
 
 **Permission needed:** `#organization:read`
 
@@ -12,7 +16,7 @@ Available in:
 > GET accounts/:account_identifier/railguns/:railgun_identifier/connections
 
 
-## Connection Details
+### Connection Details
 
 **Permission needed:** `#organization:read`
 
@@ -26,7 +30,7 @@ Available in:
 > GET accounts/:account_identifier/railguns/:railgun_identifier/connections/:identifier
 
 
-## Update Connection
+### Update Connection
 
 **Permission needed:** `#organization:edit`
 
@@ -40,7 +44,7 @@ Available in:
 > PUT accounts/:account_identifier/railguns/:railgun_identifier/connections/:identifier
 
 
-## Delete Connection
+### Delete Connection
 
 **Permission needed:** `#organization:edit`
 
@@ -54,7 +58,7 @@ Available in:
 > DELETE accounts/:account_identifier/railguns/:railgun_identifier/connections/:identifier
 
 
-## Create Connection
+### Create Connection
 
 **Permission needed:** `#organization:edit`
 
@@ -66,3 +70,4 @@ Available in:
 `POST` Associates a zone to the Railgun
 
 > POST accounts/:account_identifier/railguns/:railgun_identifier/connections
+

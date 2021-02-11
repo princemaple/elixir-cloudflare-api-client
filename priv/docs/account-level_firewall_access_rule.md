@@ -1,4 +1,8 @@
-## List Access Rules
+## Account-level Firewall access rule
+
+A firewall access rule applied to all zones owned by the account
+
+### List Access Rules
 
 **Permission needed:** `#waf:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET accounts/:account_identifier/firewall/access_rules/rules
 
 
-## Create Access Rule
+### Create Access Rule
 
 **Permission needed:** `#waf:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST accounts/:account_identifier/firewall/access_rules/rules
 
 
-## Access Rule Details
+### Access Rule Details
 
 **Permission needed:** `#waf:read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET accounts/:account_identifier/firewall/access_rules/rules/:identifier
 
 
-## Update Access Rule
+### Update Access Rule
 
 **Permission needed:** `#waf:edit`
 
@@ -62,7 +66,7 @@ Available in:
 > PATCH accounts/:account_identifier/firewall/access_rules/rules/:identifier
 
 
-## Delete Access Rule
+### Delete Access Rule
 
 **Permission needed:** `#waf:edit`
 
@@ -76,3 +80,4 @@ Available in:
 `DELETE` Remove an access rule so it is no longer evaluated during requests. This will apply to all zones owned by the account
 
 > DELETE accounts/:account_identifier/firewall/access_rules/rules/:identifier
+

@@ -1,4 +1,8 @@
-## List Access Applications
+## Access Applications
+
+Access Applications define the routes that Access will block.
+
+### List Access Applications
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/apps
 
 
-## Access Applications Details
+### Access Applications Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:identifier/access/apps/:uuid
 
 
-## Create Access Application
+### Create Access Application
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:identifier/access/apps
 
 
-## Update Access Application
+### Update Access Application
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT accounts/:identifier/access/apps/:uuid
 
 
-## Delete Access Application
+### Delete Access Application
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > DELETE accounts/:identifier/access/apps/:uuid
 
 
-## Revoke Access Tokens
+### Revoke Access Tokens
 
 **Permission needed:** `None`
 
@@ -74,3 +78,4 @@ Available in:
 `POST` Revoke any outstanding tokens issued for the Application.
 
 > POST accounts/:identifier/access/apps/:uuid/revoke_tokens
+

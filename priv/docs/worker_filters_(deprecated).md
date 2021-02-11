@@ -1,4 +1,8 @@
-## List Filters
+## Worker Filters (Deprecated)
+
+Filters are basic patterns used to enable or disable workers that match requests.
+
+### List Filters
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_id/workers/filters
 
 
-## Update Filter
+### Update Filter
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > PUT zones/:zone_id/workers/filters/:filter_id
 
 
-## Delete Filter
+### Delete Filter
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > DELETE zones/:zone_id/workers/filters/:filter_id
 
 
-## Create Filter
+### Create Filter
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `POST` 
 
 > POST zones/:zone_id/workers/filters
+

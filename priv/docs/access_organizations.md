@@ -1,4 +1,8 @@
-## Access Organization Details
+## Access Organizations
+
+Access Organizations control the look and feel of your login page and the authentication domain it is located at.
+
+### Access Organization Details
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/organizations
 
 
-## Create Access Organization
+### Create Access Organization
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:identifier/access/organizations
 
 
-## Update Access Organization
+### Update Access Organization
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT accounts/:identifier/access/organizations
 
 
-## Revoke all Access Tokens for a user
+### Revoke all Access Tokens for a user
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `POST` Revoke any outstanding tokens issued for a specific user
 
 > POST accounts/:identifier/access/organizations/revoke_user
+

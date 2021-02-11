@@ -1,4 +1,8 @@
-## List Invitations
+## Organization Invites
+
+Invitations to potential members that this organization has created
+
+### List Invitations
 
 **Permission needed:** `#organization:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET organizations/:organization_identifier/invites
 
 
-## Create Invitation
+### Create Invitation
 
 **Permission needed:** `#organization:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > POST organizations/:organization_identifier/invites
 
 
-## Invitation Details
+### Invitation Details
 
 **Permission needed:** `#organization:read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET organizations/:organization_identifier/invites/:identifier
 
 
-## Edit Invitation Roles
+### Edit Invitation Roles
 
 **Permission needed:** `#organization:edit`
 
@@ -50,7 +54,7 @@ Available in:
 > PATCH organizations/:organization_identifier/invites/:identifier
 
 
-## Cancel Invitation
+### Cancel Invitation
 
 **Permission needed:** `#organization:edit`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Cancel an existing invitation
 
 > DELETE organizations/:organization_identifier/invites/:identifier
+

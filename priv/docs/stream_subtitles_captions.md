@@ -1,4 +1,8 @@
-## Upload a caption/subtitle
+## Stream Subtitles/Captions
+
+Add subtitles or captions to Stream videos for any language.
+
+### Upload a caption/subtitle
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > PUT accounts/:account_identifier/stream/:video_identifier/captions/:language
 
 
-## List captions/subtitles
+### List captions/subtitles
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/stream/:video_identifier/captions
 
 
-## Delete a caption/subtitle
+### Delete a caption/subtitle
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` Remove the caption or subtitle from a video
 
 > DELETE accounts/:account_identifier/stream/:video_identifier/captions/:language
+

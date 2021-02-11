@@ -1,4 +1,8 @@
-## List Account Custom Nameservers
+## Account-Level Custom Nameservers
+
+Configure custom nameservers that can be used by multiple zones in the account
+
+### List Account Custom Nameservers
 
 **Permission needed:** `#dns_records:read#organization:read`
 
@@ -12,7 +16,7 @@ Available in:
 > GET accounts/:identifier/custom_ns
 
 
-## Add Account Custom Nameserver
+### Add Account Custom Nameserver
 
 **Permission needed:** `#dns_records:edit#organization:edit`
 
@@ -26,7 +30,7 @@ Available in:
 > POST accounts/:identifier/custom_ns
 
 
-## Verify Account Custom Nameserver Glue Records
+### Verify Account Custom Nameserver Glue Records
 
 **Permission needed:** `#dns_records:edit#organization:edit`
 
@@ -40,7 +44,7 @@ Available in:
 > POST accounts/:identifier/custom_ns/verify
 
 
-## Delete Account Custom Nameserver
+### Delete Account Custom Nameserver
 
 **Permission needed:** `#dns_records:edit#organization:edit`
 
@@ -54,7 +58,7 @@ Available in:
 > DELETE accounts/:identifier/custom_ns/:ns_name
 
 
-## Get Eligible Zones for Account Custom Nameservers
+### Get Eligible Zones for Account Custom Nameservers
 
 **Permission needed:** `#dns_records:read#organization:read`
 
@@ -66,3 +70,4 @@ Available in:
 `GET` 
 
 > GET accounts/:identifier/custom_ns/availability
+

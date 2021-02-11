@@ -1,4 +1,8 @@
-## List DNS Firewall Clusters
+## DNS Firewall
+
+Account-level DNS Firewall Management
+
+### List DNS Firewall Clusters
 
 **Permission needed:** `#dns_records:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/virtual_dns
 
 
-## DNS Firewall Cluster Details
+### DNS Firewall Cluster Details
 
 **Permission needed:** `#dns_records:read`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/virtual_dns/:identifier
 
 
-## Update DNS Firewall Cluster
+### Update DNS Firewall Cluster
 
 **Permission needed:** `#dns_records:edit`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT accounts/:account_identifier/virtual_dns/:identifier
 
 
-## Delete DNS Firewall Cluster
+### Delete DNS Firewall Cluster
 
 **Permission needed:** `#dns_records:edit`
 
@@ -50,7 +54,7 @@ Available in:
 > DELETE accounts/:account_identifier/virtual_dns/:identifier
 
 
-## Create DNS Firewall Cluster
+### Create DNS Firewall Cluster
 
 **Permission needed:** `#dns_records:edit`
 
@@ -61,3 +65,4 @@ Available in:
 `POST` Create a configured DNS Firewall Cluster
 
 > POST accounts/:account_identifier/virtual_dns
+

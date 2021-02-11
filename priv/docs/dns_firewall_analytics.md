@@ -1,4 +1,8 @@
-## Table
+## DNS Firewall Analytics
+
+Analytics data for a DNS Firewall cluster.
+
+### Table
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/virtual_dns/:identifier/dns_analytics/report
 
 
-## By Time
+### By Time
 
 **Permission needed:** `None`
 
@@ -22,3 +26,4 @@ Available in:
 `GET` Retrieves a list of aggregate metrics grouped by time interval.
 
 > GET accounts/:account_identifier/virtual_dns/:identifier/dns_analytics/report/bytime
+

@@ -1,4 +1,8 @@
-## Zone Subscription Details
+## Zone Subscription
+
+A subscription associated with a zone containing plan and add-ons
+
+### Zone Subscription Details
 
 **Permission needed:** `#billing:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:identifier/subscription
 
 
-## Update Zone Subscription
+### Update Zone Subscription
 
 **Permission needed:** `#billing:read#billing:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > PUT zones/:identifier/subscription
 
 
-## Create Zone Subscription
+### Create Zone Subscription
 
 **Permission needed:** `#billing:read#billing:edit`
 
@@ -44,3 +48,4 @@ Available in:
 `POST` Create a Zone subscriptions. Either plan or add-ons
 
 > POST zones/:identifier/subscription
+

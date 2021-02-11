@@ -1,4 +1,8 @@
-## Billing Profile Details
+## User Billing Profile
+
+A user billing profile
+
+### Billing Profile Details
 
 **Permission needed:** `#billing:read`
 
@@ -12,3 +16,4 @@ Available in:
 `GET` Access your billing profile object
 
 > GET user/billing/profile
+

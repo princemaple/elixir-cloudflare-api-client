@@ -1,4 +1,8 @@
-## User Details
+## User
+
+The currently logged in/authenticated User
+
+### User Details
 
 **Permission needed:** `com.cloudflare.api.user.read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET user
 
 
-## Edit User
+### Edit User
 
 **Permission needed:** `com.cloudflare.api.user.update`
 
@@ -28,3 +32,4 @@ Available in:
 `PATCH` Edit part of your user details
 
 > PATCH user
+

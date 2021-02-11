@@ -1,4 +1,8 @@
-## List Short-Lived Certificates
+## Access Short-Lived Certificates
+
+Short-lived certificates improve access security to infrastructure with ephemeral certificates. Serves as a replacement to traditional SSH key models.
+
+### List Short-Lived Certificates
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/apps/ca
 
 
-## Short-Lived Certificate Details
+### Short-Lived Certificate Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:identifier/access/apps/:uuid/ca
 
 
-## Create Short-Lived Certificate
+### Create Short-Lived Certificate
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:identifier/access/apps/:uuid/ca
 
 
-## Delete Access Certificate
+### Delete Access Certificate
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `DELETE` Delete an Access Certificate
 
 > DELETE accounts/:identifier/access/apps/:uuid/ca
+

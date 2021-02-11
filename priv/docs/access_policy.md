@@ -1,4 +1,8 @@
-## List Access Policies
+## Access Policy
+
+Access Policies define the users or groups who can, or cannot, reach the Application Resource.
+
+### List Access Policies
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/apps/:uuid/policies
 
 
-## Access Policy Details
+### Access Policy Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:identifier/access/apps/:uuid/policies/:uuid
 
 
-## Create Access Policy
+### Create Access Policy
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:identifier/access/apps/:uuid/policies
 
 
-## Update Access Policy
+### Update Access Policy
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT accounts/:identifier/access/apps/:uuid/policies/:uuid
 
 
-## Delete Access Policy
+### Delete Access Policy
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Delete an Access Policy
 
 > DELETE accounts/:identifier/access/apps/:uuid/policies/:uuid
+

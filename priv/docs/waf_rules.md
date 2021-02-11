@@ -1,4 +1,8 @@
-## List Rules
+## WAF Rules
+
+A firewall rule for a zone
+
+### List Rules
 
 **Permission needed:** `None`
 
@@ -13,7 +17,7 @@ Available in:
 > GET zones/:zone_id/firewall/waf/packages/:package_id/rules
 
 
-## Rule Details
+### Rule Details
 
 **Permission needed:** `None`
 
@@ -28,7 +32,7 @@ Available in:
 > GET zones/:zone_id/firewall/waf/packages/:package_id/rules/:identifier
 
 
-## Edit Rule
+### Edit Rule
 
 **Permission needed:** `None`
 
@@ -41,3 +45,4 @@ Available in:
 `PATCH` Update the action the rule will perform if triggered on the zone
 
 > PATCH zones/:zone_id/firewall/waf/packages/:package_id/rules/:identifier
+

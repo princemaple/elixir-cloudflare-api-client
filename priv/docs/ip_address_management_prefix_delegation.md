@@ -1,4 +1,8 @@
-## List Prefix Delegations
+## IP Address Management Prefix Delegation
+
+Describe and modify delegations for the account's IP prefixes.
+
+### List Prefix Delegations
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/addressing/prefixes/:prefix_identifier/delegations
 
 
-## Create Prefix Delegation
+### Create Prefix Delegation
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/addressing/prefixes/:prefix_identifier/delegations
 
 
-## Delete Prefix Delegation
+### Delete Prefix Delegation
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` Delete an account delegation for a given IP prefix.
 
 > DELETE accounts/:account_identifier/addressing/prefixes/:prefix_identifier/delegations/:delegation_identifier
+

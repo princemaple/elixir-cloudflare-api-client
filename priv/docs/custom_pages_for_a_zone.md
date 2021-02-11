@@ -1,4 +1,8 @@
-## List Available Custom Pages
+## Custom Pages for a Zone
+
+Custom pages associated with a zone
+
+### List Available Custom Pages
 
 **Permission needed:** `#zone_settings:read`
 
@@ -13,7 +17,7 @@ Available in:
 > GET zones/:zone_identifier/custom_pages
 
 
-## Custom Page Details
+### Custom Page Details
 
 **Permission needed:** `#zone_settings:read`
 
@@ -28,7 +32,7 @@ Available in:
 > GET zones/:zone_identifier/custom_pages/:identifier
 
 
-## Update Custom Page URL
+### Update Custom Page URL
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -41,3 +45,4 @@ Available in:
 `PUT` Update custom page URL
 
 > PUT zones/:zone_identifier/custom_pages/:identifier
+

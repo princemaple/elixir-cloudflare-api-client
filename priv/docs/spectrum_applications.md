@@ -1,4 +1,8 @@
-## List Spectrum Applications
+## Spectrum Applications
+
+You can extend the power of Cloudflare's DDoS, TLS, and IP Firewall to your other TCP-based services.
+
+### List Spectrum Applications
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone/spectrum/apps
 
 
-## Create Spectrum Application
+### Create Spectrum Application
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone/spectrum/apps
 
 
-## Get Spectrum Application Configuration
+### Get Spectrum Application Configuration
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone/spectrum/apps/:app_id
 
 
-## Update Spectrum Application Configuration
+### Update Spectrum Application Configuration
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:zone/spectrum/apps/:app_id
 
 
-## Delete Spectrum Application
+### Delete Spectrum Application
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Delete a previously existing application.
 
 > DELETE zones/:zone/spectrum/apps/:app_id
+

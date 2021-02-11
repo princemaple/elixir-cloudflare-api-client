@@ -1,4 +1,8 @@
-## Create Route
+## Worker Routes
+
+Routes are basic patterns used to enable or disable workers that match requests.
+
+### Create Route
 
 **Permission needed:** `com.cloudflare.edge.worker.route.create`
 
@@ -11,7 +15,7 @@ Available in:
 > POST zones/:zone_id/workers/routes
 
 
-## List Routes
+### List Routes
 
 **Permission needed:** `com.cloudflare.edge.worker.route.list`
 
@@ -24,7 +28,7 @@ Available in:
 > GET zones/:zone_id/workers/routes
 
 
-## Get Route
+### Get Route
 
 **Permission needed:** `com.cloudflare.edge.worker.route.read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_id/workers/routes/:route_id
 
 
-## Update Route
+### Update Route
 
 **Permission needed:** `com.cloudflare.edge.worker.route.update`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:zone_id/workers/routes/:route_id
 
 
-## Delete Route
+### Delete Route
 
 **Permission needed:** `com.cloudflare.edge.worker.route.delete`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_id/workers/routes/:route_id
+

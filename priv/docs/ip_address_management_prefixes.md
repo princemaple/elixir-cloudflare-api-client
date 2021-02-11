@@ -1,4 +1,8 @@
-## List Prefixes
+## IP Address Management Prefixes
+
+Describe and modify the account's IP prefixes.
+
+### List Prefixes
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/addressing/prefixes
 
 
-## Prefix Details
+### Prefix Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/addressing/prefixes/:prefix_identifier
 
 
-## Update Prefix Description
+### Update Prefix Description
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `PATCH` Modify the description for a prefix owned by the account.
 
 > PATCH accounts/:account_identifier/addressing/prefixes/:prefix_identifier
+

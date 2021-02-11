@@ -1,4 +1,8 @@
-## List Rate Limits
+## Rate Limits for a Zone
+
+Documentation for Cloudflare Rate Limits
+
+### List Rate Limits
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/rate_limits
 
 
-## Create Rate Limit
+### Create Rate Limit
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_identifier/rate_limits
 
 
-## Rate Limit Details
+### Rate Limit Details
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:zone_identifier/rate_limits/:id
 
 
-## Update Rate Limit
+### Update Rate Limit
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/rate_limits/:id
 
 
-## Delete Rate Limit
+### Delete Rate Limit
 
 **Permission needed:** `None`
 
@@ -76,3 +80,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/rate_limits/:id
+

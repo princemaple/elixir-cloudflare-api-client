@@ -1,4 +1,8 @@
-## List filters
+## Filters
+
+Filters are basic patterns used to enable or disable workers that match requests.
+
+### List filters
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/filters
 
 
-## List individual filter
+### List individual filter
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > GET zones/:zone_identifier/filters/:id
 
 
-## Create Filters
+### Create Filters
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > POST zones/:zone_identifier/filters
 
 
-## Update filters
+### Update filters
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/filters
 
 
-## Update individual filter
+### Update individual filter
 
 **Permission needed:** `None`
 
@@ -78,7 +82,7 @@ Available in:
 > PUT zones/:zone_identifier/filters/:id
 
 
-## Delete filters
+### Delete filters
 
 **Permission needed:** `None`
 
@@ -94,7 +98,7 @@ Available in:
 > DELETE zones/:zone_identifier/filters
 
 
-## Delete individual filter
+### Delete individual filter
 
 **Permission needed:** `None`
 
@@ -108,3 +112,4 @@ Available in:
 `DELETE` Delete existing filters.
 
 > DELETE zones/:zone_identifier/filters/:id
+

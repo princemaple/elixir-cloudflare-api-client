@@ -1,4 +1,8 @@
-## List Access Certificates
+## Access Mutual TLS Authentication
+
+Mutual TLS authentication ensures that the traffic is secure and trusted in both directions between a client and server
+
+### List Access Certificates
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/certificates
 
 
-## Access Certificate Details
+### Access Certificate Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:identifier/access/certificates/:uuid
 
 
-## Create Access Certificate
+### Create Access Certificate
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST accounts/:identifier/access/certificates
 
 
-## Update Access Certificate
+### Update Access Certificate
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT accounts/:identifier/access/certificates/:uuid
 
 
-## Delete Access Certificate
+### Delete Access Certificate
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Delete an Access Certificate
 
 > DELETE accounts/:identifier/access/certificates/:uuid
+

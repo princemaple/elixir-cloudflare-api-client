@@ -1,4 +1,8 @@
-## Upload Worker
+## Worker Script
+
+A Worker script is a single script that is executed on matching routes in the Cloudflare edge
+
+### Upload Worker
 
 **Permission needed:** `com.cloudflare.edge.worker.script.create`
 
@@ -11,7 +15,7 @@ Available in:
 > PUT accounts/:account_identifier/workers/scripts/:script_name
 
 
-## List Workers
+### List Workers
 
 **Permission needed:** `com.cloudflare.edge.worker.script.list`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/workers/scripts
 
 
-## Download Worker
+### Download Worker
 
 **Permission needed:** `com.cloudflare.edge.worker.script.read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET accounts/:account_identifier/workers/scripts/:script_name
 
 
-## Delete Worker
+### Delete Worker
 
 **Permission needed:** `com.cloudflare.edge.worker.script.delete`
 
@@ -48,3 +52,4 @@ Available in:
 `DELETE` Delete your worker. This call has no response body on a successful delete.
 
 > DELETE accounts/:account_identifier/workers/scripts/:script_name
+

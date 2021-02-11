@@ -1,4 +1,8 @@
-## Access Organization Details
+## Zone-Level Access Organizations
+
+Access Organizations control the look and feel of your login page and the authentication domain it is located at. (NOTE: it's recommended that the account route namespace is used instead: https://api.cloudflare.com/#access-organizations-properties.)
+
+### Access Organization Details
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:identifier/access/organizations
 
 
-## Create Access Organization
+### Create Access Organization
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:identifier/access/organizations
 
 
-## Update Access Organization
+### Update Access Organization
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT zones/:identifier/access/organizations
 
 
-## Revoke all Access Tokens for a user
+### Revoke all Access Tokens for a user
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `POST` Revoke any outstanding tokens issued for a specific user
 
 > POST zones/:identifier/access/organizations/revoke_user
+

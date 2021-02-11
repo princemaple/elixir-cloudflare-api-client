@@ -1,4 +1,8 @@
-## List Load Balancers
+## Load Balancers
+
+Zone-level Load Balancers
+
+### List Load Balancers
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:identifier/load_balancers
 
 
-## Create Load Balancer
+### Create Load Balancer
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:identifier/load_balancers
 
 
-## Load Balancer Details
+### Load Balancer Details
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:identifier/load_balancers/:identifier
 
 
-## Update Load Balancer
+### Update Load Balancer
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:identifier/load_balancers/:identifier
 
 
-## Patch Load Balancer
+### Patch Load Balancer
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > PATCH zones/:identifier/load_balancers/:identifier
 
 
-## Delete Load Balancer
+### Delete Load Balancer
 
 **Permission needed:** `None`
 
@@ -74,3 +78,4 @@ Available in:
 `DELETE` Delete a configured load balancer
 
 > DELETE zones/:identifier/load_balancers/:identifier
+

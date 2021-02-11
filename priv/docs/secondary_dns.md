@@ -1,4 +1,8 @@
-## Secondary Zone Configuration Details
+## Secondary DNS
+
+Secondary DNS Zone
+
+### Secondary Zone Configuration Details
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:identifier/secondary_dns
 
 
-## Update Secondary Zone Configuration
+### Update Secondary Zone Configuration
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > PUT zones/:identifier/secondary_dns
 
 
-## Delete Secondary Zone Configuration
+### Delete Secondary Zone Configuration
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > DELETE zones/:identifier/secondary_dns
 
 
-## Create Secondary Zone Configuration
+### Create Secondary Zone Configuration
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > POST zones/:identifier/secondary_dns
 
 
-## Force Secondary Zone AXFR
+### Force Secondary Zone AXFR
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `POST` Force Secondary Zone AXFR
 
 > POST zones/:identifier/secondary_dns/force_axfr
+

@@ -1,4 +1,8 @@
-## List Health Checks
+## Health Checks
+
+Zone-level stand-alone health checks
+
+### List Health Checks
 
 **Permission needed:** `None`
 
@@ -13,7 +17,7 @@ Available in:
 > GET zones/:zone_identifier/healthchecks
 
 
-## Create Health Check
+### Create Health Check
 
 **Permission needed:** `None`
 
@@ -28,7 +32,7 @@ Available in:
 > POST zones/:zone_identifier/healthchecks
 
 
-## Health Check Details
+### Health Check Details
 
 **Permission needed:** `None`
 
@@ -43,7 +47,7 @@ Available in:
 > GET zones/:zone_identifier/healthchecks/:identifier
 
 
-## Update Health Check
+### Update Health Check
 
 **Permission needed:** `None`
 
@@ -58,7 +62,7 @@ Available in:
 > PUT zones/:zone_identifier/healthchecks/:identifier
 
 
-## Patch Health Check
+### Patch Health Check
 
 **Permission needed:** `None`
 
@@ -73,7 +77,7 @@ Available in:
 > PATCH zones/:zone_identifier/healthchecks/:identifier
 
 
-## Delete Health Check
+### Delete Health Check
 
 **Permission needed:** `None`
 
@@ -88,7 +92,7 @@ Available in:
 > DELETE zones/:zone_identifier/healthchecks/:identifier
 
 
-## Create Preview Health Check
+### Create Preview Health Check
 
 **Permission needed:** `None`
 
@@ -103,7 +107,7 @@ Available in:
 > POST zones/:zone_identifier/healthchecks/preview
 
 
-## Health Check Preview Details
+### Health Check Preview Details
 
 **Permission needed:** `None`
 
@@ -118,7 +122,7 @@ Available in:
 > GET zones/:zone_identifier/healthchecks/preview/:identifier
 
 
-## Delete Preview Health Check
+### Delete Preview Health Check
 
 **Permission needed:** `None`
 
@@ -131,3 +135,4 @@ Available in:
 `DELETE` Delete a health check
 
 > DELETE zones/:zone_identifier/healthchecks/preview/:identifier
+

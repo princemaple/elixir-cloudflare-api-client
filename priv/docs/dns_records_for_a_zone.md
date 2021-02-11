@@ -1,4 +1,8 @@
-## List DNS Records
+## DNS Records for a Zone
+
+Documentation for Cloudflare DNS records
+
+### List DNS Records
 
 **Permission needed:** `#dns_records:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/dns_records
 
 
-## Create DNS Record
+### Create DNS Record
 
 **Permission needed:** `#dns_records:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_identifier/dns_records
 
 
-## DNS Record Details
+### DNS Record Details
 
 **Permission needed:** `#dns_records:read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:zone_identifier/dns_records/:identifier
 
 
-## Update DNS Record
+### Update DNS Record
 
 **Permission needed:** `#dns_records:edit`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/dns_records/:identifier
 
 
-## Patch DNS Record
+### Patch DNS Record
 
 **Permission needed:** `#dns_records:edit`
 
@@ -78,7 +82,7 @@ Available in:
 > PATCH zones/:zone_identifier/dns_records/:identifier
 
 
-## Delete DNS Record
+### Delete DNS Record
 
 **Permission needed:** `#dns_records:edit`
 
@@ -94,7 +98,7 @@ Available in:
 > DELETE zones/:zone_identifier/dns_records/:identifier
 
 
-## Import DNS Records
+### Import DNS Records
 
 **Permission needed:** `#dns_records:edit`
 
@@ -110,7 +114,7 @@ Available in:
 > POST zones/:zone_identifier/dns_records/import
 
 
-## Export DNS Records
+### Export DNS Records
 
 **Permission needed:** `#dns_records:read`
 
@@ -124,3 +128,4 @@ Available in:
 `GET` You can export your BIND config through this endpoint.
 
 > GET zones/:zone_identifier/dns_records/export
+

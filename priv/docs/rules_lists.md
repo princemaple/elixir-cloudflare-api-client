@@ -1,4 +1,8 @@
-## List Lists
+## Rules Lists
+
+Lists of IPs and CIDRs
+
+### List Lists
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET accounts/:account_identifier/rules/lists
 
 
-## Create List
+### Create List
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST accounts/:account_identifier/rules/lists
 
 
-## Get List
+### Get List
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET accounts/:account_identifier/rules/lists/:list_id
 
 
-## Update List
+### Update List
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT accounts/:account_identifier/rules/lists/:list_id
 
 
-## Delete List
+### Delete List
 
 **Permission needed:** `None`
 
@@ -78,7 +82,7 @@ Available in:
 > DELETE accounts/:account_identifier/rules/lists/:list_id
 
 
-## List List Items
+### List List Items
 
 **Permission needed:** `None`
 
@@ -94,7 +98,7 @@ Available in:
 > GET accounts/:account_identifier/rules/lists/:list_id/items
 
 
-## Create List Items
+### Create List Items
 
 **Permission needed:** `None`
 
@@ -110,7 +114,7 @@ Available in:
 > POST accounts/:account_identifier/rules/lists/:list_id/items
 
 
-## Replace List Items
+### Replace List Items
 
 **Permission needed:** `None`
 
@@ -126,7 +130,7 @@ Available in:
 > PUT accounts/:account_identifier/rules/lists/:list_id/items
 
 
-## Delete List Items
+### Delete List Items
 
 **Permission needed:** `None`
 
@@ -142,7 +146,7 @@ Available in:
 > DELETE accounts/:account_identifier/rules/lists/:list_id/items
 
 
-## Get List Item
+### Get List Item
 
 **Permission needed:** `None`
 
@@ -158,7 +162,7 @@ Available in:
 > GET accounts/:account_identifier/rules/lists/:list_id/items/:item_id
 
 
-## Get Bulk Operation
+### Get Bulk Operation
 
 **Permission needed:** `None`
 
@@ -172,3 +176,4 @@ Available in:
 `GET` Get the current status of a Lists asynchronous operation.If the operation has failed then an error message will be available in the response.
 
 > GET accounts/:account_identifier/rules/lists/bulk_operations/:operation_id
+

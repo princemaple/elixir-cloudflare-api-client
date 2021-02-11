@@ -1,4 +1,8 @@
-## List Monitors
+## Load Balancer Monitors
+
+User-level Monitor configurations. Monitors define whether we check over HTTP, HTTPS or TCP, the status code(s) we look for, the interval at which we check, timeouts and response body matching.
+
+### List Monitors
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET user/load_balancers/monitors
 
 
-## Create Monitor
+### Create Monitor
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST user/load_balancers/monitors
 
 
-## Monitor Details
+### Monitor Details
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET user/load_balancers/monitors/:identifier
 
 
-## Update Monitor
+### Update Monitor
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT user/load_balancers/monitors/:identifier
 
 
-## Patch Monitor
+### Patch Monitor
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > PATCH user/load_balancers/monitors/:identifier
 
 
-## Delete Monitor
+### Delete Monitor
 
 **Permission needed:** `None`
 
@@ -76,7 +80,7 @@ Available in:
 > DELETE user/load_balancers/monitors/:identifier
 
 
-## Preview Monitor
+### Preview Monitor
 
 **Permission needed:** `None`
 
@@ -89,7 +93,7 @@ Available in:
 > POST user/load_balancers/monitors/:identifier/preview
 
 
-## Preview Result
+### Preview Result
 
 **Permission needed:** `None`
 
@@ -102,7 +106,7 @@ Available in:
 > GET user/load_balancers/preview/:preview_id
 
 
-## List Monitor References
+### List Monitor References
 
 **Permission needed:** `None`
 
@@ -113,3 +117,4 @@ Available in:
 `GET` Get the list of resources that reference the provided monitor
 
 > GET user/load_balancers/monitors/:identifier/references
+

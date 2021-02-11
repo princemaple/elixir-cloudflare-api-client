@@ -1,4 +1,8 @@
-## List Domains
+## Registrar Domains
+
+Manage Domains Names
+
+### List Domains
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > POST accounts/:account_identifier/registrar/domains
 
 
-## Get Domain
+### Get Domain
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/registrar/domains/:domain_name
 
 
-## Update Domain
+### Update Domain
 
 **Permission needed:** `None`
 
@@ -35,3 +39,4 @@ Available in:
 `PUT` Update individual domain
 
 > PUT accounts/:account_identifier/registrar/domains/:domain_name
+

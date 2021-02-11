@@ -1,4 +1,8 @@
-## List Access Rules
+## User-level Firewall Access Rule
+
+A firewall access rule applied to all zones owned by the user
+
+### List Access Rules
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET user/firewall/access_rules/rules
 
 
-## Create Access Rule
+### Create Access Rule
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST user/firewall/access_rules/rules
 
 
-## Edit Access Rule
+### Edit Access Rule
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > PATCH user/firewall/access_rules/rules/:identifier
 
 
-## Delete Access Rule
+### Delete Access Rule
 
 **Permission needed:** `None`
 
@@ -60,3 +64,4 @@ Available in:
 `DELETE` Remove an access rule so it is no longer evaluated during requests. This will apply to all zones owned by the user
 
 > DELETE user/firewall/access_rules/rules/:identifier
+

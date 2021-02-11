@@ -1,4 +1,8 @@
-## List Waiting Rooms
+## Waiting Room
+
+Zone-level waiting rooms
+
+### List Waiting Rooms
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/waiting_rooms
 
 
-## Create Waiting Room
+### Create Waiting Room
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone_identifier/waiting_rooms
 
 
-## Waiting Room Details
+### Waiting Room Details
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/waiting_rooms/:identifier
 
 
-## Update Waiting Room
+### Update Waiting Room
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:zone_identifier/waiting_rooms/:identifier
 
 
-## Patch Waiting Room
+### Patch Waiting Room
 
 **Permission needed:** `None`
 
@@ -63,7 +67,7 @@ Available in:
 > PATCH zones/:zone_identifier/waiting_rooms/:identifier
 
 
-## Delete Waiting Room
+### Delete Waiting Room
 
 **Permission needed:** `None`
 
@@ -76,7 +80,7 @@ Available in:
 > DELETE zones/:zone_identifier/waiting_rooms/:identifier
 
 
-## Get Waiting Room status
+### Get Waiting Room status
 
 **Permission needed:** `None`
 
@@ -89,7 +93,7 @@ Available in:
 > GET zones/:zone_identifier/waiting_rooms/:identifier/status
 
 
-## Create a custom Waiting Room page preview
+### Create a custom Waiting Room page preview
 
 **Permission needed:** `None`
 
@@ -100,3 +104,4 @@ Available in:
 `POST` Upload a custom waiting room page for preview
 
 > POST zones/:zone_identifier/waiting_rooms/preview
+

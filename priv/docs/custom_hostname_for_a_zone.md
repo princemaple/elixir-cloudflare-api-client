@@ -1,4 +1,8 @@
-## List Custom Hostnames
+## Custom Hostname for a Zone
+
+Manage hostnames for your zone that are routed via CNAME.
+
+### List Custom Hostnames
 
 **Permission needed:** `#ssl:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/custom_hostnames
 
 
-## Create Custom Hostname
+### Create Custom Hostname
 
 **Permission needed:** `#ssl:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone_identifier/custom_hostnames
 
 
-## Custom Hostname Details
+### Custom Hostname Details
 
 **Permission needed:** `#ssl:read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/custom_hostnames/:identifier
 
 
-## Edit Custom Hostname
+### Edit Custom Hostname
 
 **Permission needed:** `#ssl:edit`
 
@@ -50,7 +54,7 @@ Available in:
 > PATCH zones/:zone_identifier/custom_hostnames/:identifier
 
 
-## Delete Custom Hostname (and any issued SSL certificates)
+### Delete Custom Hostname (and any issued SSL certificates)
 
 **Permission needed:** `#ssl:edit`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/custom_hostnames/:identifier
+

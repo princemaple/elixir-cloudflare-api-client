@@ -1,4 +1,8 @@
-## List Railguns
+## Railgun
+
+Cloudflare Railgun
+
+### List Railguns
 
 **Permission needed:** `None`
 
@@ -12,7 +16,7 @@ Available in:
 > GET railguns
 
 
-## Create Railgun
+### Create Railgun
 
 **Permission needed:** `None`
 
@@ -26,7 +30,7 @@ Available in:
 > POST railguns
 
 
-## Railgun Details
+### Railgun Details
 
 **Permission needed:** `None`
 
@@ -40,7 +44,7 @@ Available in:
 > GET railguns/:identifier
 
 
-## Enable or Disable a Railgun
+### Enable or Disable a Railgun
 
 **Permission needed:** `None`
 
@@ -54,7 +58,7 @@ Available in:
 > PATCH railguns/:identifier
 
 
-## Delete Railgun
+### Delete Railgun
 
 **Permission needed:** `None`
 
@@ -68,7 +72,7 @@ Available in:
 > DELETE railguns/:identifier
 
 
-## List Railgun Zones
+### List Railgun Zones
 
 **Permission needed:** `None`
 
@@ -80,3 +84,4 @@ Available in:
 `GET` The zones that are currently using this Railgun
 
 > GET railguns/:identifier/zones
+

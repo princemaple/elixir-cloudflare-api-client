@@ -1,4 +1,8 @@
-## Upload a Hostname Client Certificate
+## Per-hostname Authenticated Origin Pull
+
+Setup a client certficate per hostname to be sent in a request to Origin
+
+### Upload a Hostname Client Certificate
 
 **Permission needed:** `#ssl:edit`
 
@@ -14,7 +18,7 @@ Available in:
 > POST zones/:zone_identifier/origin_tls_client_auth/hostnames/certificates
 
 
-## Get the Hostname Client Certificate
+### Get the Hostname Client Certificate
 
 **Permission needed:** `#ssl:read`
 
@@ -30,7 +34,7 @@ Available in:
 > GET zones/:zone_identifier/origin_tls_client_auth/hostnames/certificates/:identifier
 
 
-## Delete Hostname Client Certificate
+### Delete Hostname Client Certificate
 
 **Permission needed:** `#ssl:edit`
 
@@ -46,7 +50,7 @@ Available in:
 > DELETE zones/:zone_identifier/origin_tls_client_auth/hostnames/certificates/:identifier
 
 
-## Enable or Disable a Hostname for Client Authentication
+### Enable or Disable a Hostname for Client Authentication
 
 **Permission needed:** `#ssl:edit`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/origin_tls_client_auth/hostnames
 
 
-## Get the Hostname Status for Client Authentication
+### Get the Hostname Status for Client Authentication
 
 **Permission needed:** `#ssl:read`
 
@@ -76,3 +80,4 @@ Available in:
 `GET` 
 
 > GET zones/:zone_identifier/origin_tls_client_auth/hostnames/:hostname
+

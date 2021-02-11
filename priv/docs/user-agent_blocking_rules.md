@@ -1,4 +1,8 @@
-## List UserAgent Rules
+## User-Agent Blocking Rules
+
+Perform access control when matching the exact UserAgent reported by the client
+
+### List UserAgent Rules
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/ua_rules
 
 
-## Create UserAgent Rule
+### Create UserAgent Rule
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_identifier/firewall/ua_rules
 
 
-## UserAgent Rule Details
+### UserAgent Rule Details
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/ua_rules/:id
 
 
-## Update UserAgent Rule
+### Update UserAgent Rule
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/firewall/ua_rules/:id
 
 
-## Delete UserAgent Rule
+### Delete UserAgent Rule
 
 **Permission needed:** `None`
 
@@ -76,3 +80,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/firewall/ua_rules/:id
+

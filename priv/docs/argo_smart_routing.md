@@ -1,4 +1,8 @@
-## Get Argo Smart Routing setting
+## Argo Smart Routing
+
+Query, enable and disable Argo smart routing for a zone.
+
+### Get Argo Smart Routing setting
 
 **Permission needed:** `#argo:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/argo/smart_routing
 
 
-## Patch Argo Smart Routing setting
+### Patch Argo Smart Routing setting
 
 **Permission needed:** `#argo:read#argo:edit`
 
@@ -28,3 +32,4 @@ Available in:
 `PATCH` 
 
 > PATCH zones/:zone_identifier/argo/smart_routing
+

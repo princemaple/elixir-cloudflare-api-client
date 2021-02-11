@@ -1,4 +1,8 @@
-## List Subscriptions
+## Account Subscriptions
+
+Listing of an account's subscriptions
+
+### List Subscriptions
 
 **Permission needed:** `#billing:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET accounts/:account_identifier/subscriptions
 
 
-## Create Subscription
+### Create Subscription
 
 **Permission needed:** `#billing:read#billing:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST accounts/:account_identifier/subscriptions
 
 
-## Update Subscription
+### Update Subscription
 
 **Permission needed:** `#billing:read#billing:edit`
 
@@ -46,7 +50,7 @@ Available in:
 > PUT accounts/:account_identifier/subscriptions/:subscription_identifier
 
 
-## Delete Subscription
+### Delete Subscription
 
 **Permission needed:** `#billing:edit`
 
@@ -57,3 +61,4 @@ Available in:
 `DELETE` Deletes an account's subscription
 
 > DELETE accounts/:account_identifier/subscriptions/:subscription_identifier
+

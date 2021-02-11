@@ -1,4 +1,8 @@
-## List Zones
+## Zone
+
+A zone rate plan from the billing service
+
+### List Zones
 
 **Permission needed:** `#zone:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones
 
 
-## Create Zone
+### Create Zone
 
 **Permission needed:** `#zone:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones
 
 
-## Zone Details
+### Zone Details
 
 **Permission needed:** `#zone:read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:identifier
 
 
-## Edit Zone
+### Edit Zone
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PATCH zones/:identifier
 
 
-## Delete Zone
+### Delete Zone
 
 **Permission needed:** `#zone:edit`
 
@@ -78,7 +82,7 @@ Available in:
 > DELETE zones/:identifier
 
 
-## Zone Activation Check
+### Zone Activation Check
 
 **Permission needed:** `#zone:edit`
 
@@ -94,7 +98,7 @@ Available in:
 > PUT zones/:identifier/activation_check
 
 
-## Purge All Files
+### Purge All Files
 
 **Permission needed:** `#cache_purge:edit`
 
@@ -110,7 +114,7 @@ Available in:
 > POST zones/:identifier/purge_cache
 
 
-## Purge Files by URL
+### Purge Files by URL
 
 **Permission needed:** `#cache_purge:edit`
 
@@ -124,3 +128,4 @@ Available in:
 `POST` Granularly remove one or more files from Cloudflare's cache either by specifying URLs. All tiers can purge by URL.To purge files with custom cache keys, include the headers used to compute the cache key as in the example. To purge files with ${geo} or ${devicetype} in their cache keys, include the CF-Device-Type or CF-IPCountry headers.NB: When including the Origin header, be sure to include the scheme and hostname. The port number can be omitted if it is the default port (80 for http, 443 for https), but must be included otherwise.
 
 > POST zones/:identifier/purge_cache
+

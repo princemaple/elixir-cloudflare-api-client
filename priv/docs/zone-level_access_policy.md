@@ -1,4 +1,8 @@
-## List Access Policies
+## Zone-Level Access Policy
+
+Access Policies define the users or groups who can, or cannot, reach the Application Resource. (NOTE: it's recommended that the account route namespace is used instead: https://api.cloudflare.com/#access-policy-properties.)
+
+### List Access Policies
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:identifier/access/apps/:uuid/policies
 
 
-## Access Policy Details
+### Access Policy Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET zones/:identifier/access/apps/:uuid/policies/:uuid
 
 
-## Create Access Policy
+### Create Access Policy
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > POST zones/:identifier/access/apps/:uuid/policies
 
 
-## Update Access Policy
+### Update Access Policy
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > PUT zones/:identifier/access/apps/:uuid/policies/:uuid
 
 
-## Delete Access Policy
+### Delete Access Policy
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Delete an Access Policy
 
 > DELETE zones/:identifier/access/apps/:uuid/policies/:uuid
+

@@ -1,4 +1,8 @@
-## List Keyless SSL Configurations
+## Keyless SSL for a Zone
+
+A Keyless certificate is an SSL certificate where the SSL private key is not stored on Cloudflare
+
+### List Keyless SSL Configurations
 
 **Permission needed:** `#ssl:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/keyless_certificates
 
 
-## Create Keyless SSL Configuration
+### Create Keyless SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > POST zones/:zone_identifier/keyless_certificates
 
 
-## Get Keyless SSL Configuration
+### Get Keyless SSL Configuration
 
 **Permission needed:** `#ssl:read`
 
@@ -37,7 +41,7 @@ Available in:
 > GET zones/:zone_identifier/keyless_certificates/:identifier
 
 
-## Edit Keyless SSL Configuration
+### Edit Keyless SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -50,7 +54,7 @@ Available in:
 > PATCH zones/:zone_identifier/keyless_certificates/:identifier
 
 
-## Delete Keyless SSL Configuration
+### Delete Keyless SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/keyless_certificates/:identifier
+

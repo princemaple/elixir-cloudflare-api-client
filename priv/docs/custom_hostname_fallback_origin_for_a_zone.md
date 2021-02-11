@@ -1,4 +1,8 @@
-## Get Fallback Origin for Custom Hostnames
+## Custom Hostname Fallback Origin for a Zone
+
+Setup Fallback Origin for all Custom Hostnames for your zone.
+
+### Get Fallback Origin for Custom Hostnames
 
 **Permission needed:** `#ssl:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET zones/:zone_identifier/custom_hostnames/fallback_origin
 
 
-## Update Fallback Origin for Custom Hostnames
+### Update Fallback Origin for Custom Hostnames
 
 **Permission needed:** `#ssl:edit`
 
@@ -24,7 +28,7 @@ Available in:
 > PUT zones/:zone_identifier/custom_hostnames/fallback_origin
 
 
-## Delete Fallback Origin for Custom Hostnames
+### Delete Fallback Origin for Custom Hostnames
 
 **Permission needed:** `#ssl:edit`
 
@@ -35,3 +39,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/custom_hostnames/fallback_origin
+

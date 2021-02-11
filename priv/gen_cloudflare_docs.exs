@@ -23,7 +23,7 @@ doc =
       other
   end)
 
-maybe_none = fn
+convert_empty = fn
   "" -> "None"
   other -> other
 end
@@ -33,6 +33,16 @@ for group <- groups |> Enum.drop(1) do
     Floki.find(group, "a.open")
     |> Floki.text()
     |> String.trim()
+
+  group_description =
+    doc
+    |> Floki.find("h2:fl-contains(\"#{group_name}\") + h4")
+    |> Enum.take(1)
+    |> Floki.text()
+    |> String.trim()
+
+  filename =
+    group_name
     |> String.downcase()
     |> String.replace(~r/\s+|\//, "_")
     |> Macro.underscore()
@@ -63,13 +73,15 @@ for group <- groups |> Enum.drop(1) do
           |> Floki.find("small")
           |> Floki.text()
           |> String.trim_leading("permission needed:")
-          |> maybe_none.()
+          |> convert_empty.()
 
         plans =
           section
           |> Floki.find(".available-plans .false")
           |> Floki.text(sep: " ")
-          |> String.split()
+          |> String.split(" ", trim: true)
+          |> Enum.map(&"* #{&1}")
+          |> Enum.join("\n")
 
         description =
           section
@@ -82,13 +94,13 @@ for group <- groups |> Enum.drop(1) do
           |> Floki.text(sep: " ")
 
         """
-        ## #{title}
+        ### #{title}
 
-        **Permission needed:** `#{permission || "None"}`
+        **Permission needed:** `#{permission}`
 
         Available in:
 
-        #{plans |> Enum.map(&"* #{&1}") |> Enum.join("\n")}
+        #{plans}
 
         `#{method}` #{description}
 
@@ -100,5 +112,14 @@ for group <- groups |> Enum.drop(1) do
     |> Enum.reject(&is_nil/1)
     |> Enum.join("\n\n")
 
-  File.write!("#{__DIR__}/docs/#{group_name}.md", content)
+  File.write!(
+    "#{__DIR__}/docs/#{filename}.md",
+    """
+    ## #{group_name}
+
+    #{group_description}
+
+    #{content}
+    """
+  )
 end

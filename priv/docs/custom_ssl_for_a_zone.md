@@ -1,4 +1,8 @@
-## List SSL Configurations
+## Custom SSL for a Zone
+
+Custom SSL certificate for a zone
+
+### List SSL Configurations
 
 **Permission needed:** `#ssl:read`
 
@@ -12,7 +16,7 @@ Available in:
 > GET zones/:zone_identifier/custom_certificates
 
 
-## Create SSL Configuration
+### Create SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -26,7 +30,7 @@ Available in:
 > POST zones/:zone_identifier/custom_certificates
 
 
-## SSL Configuration Details
+### SSL Configuration Details
 
 **Permission needed:** `#ssl:read`
 
@@ -40,7 +44,7 @@ Available in:
 > GET zones/:zone_identifier/custom_certificates/:identifier
 
 
-## Edit SSL Configuration
+### Edit SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -54,7 +58,7 @@ Available in:
 > PATCH zones/:zone_identifier/custom_certificates/:identifier
 
 
-## Delete SSL Configuration
+### Delete SSL Configuration
 
 **Permission needed:** `#ssl:edit`
 
@@ -68,7 +72,7 @@ Available in:
 > DELETE zones/:zone_identifier/custom_certificates/:identifier
 
 
-## Re-prioritize SSL Certificates
+### Re-prioritize SSL Certificates
 
 **Permission needed:** `#ssl:edit`
 
@@ -80,3 +84,4 @@ Available in:
 `PUT` If a zone has multiple SSL certificates, you can set the order in which they should be used during a request. The higher priority will break ties across overlapping 'legacy_custom' certificates.
 
 > PUT zones/:zone_identifier/custom_certificates/prioritize
+

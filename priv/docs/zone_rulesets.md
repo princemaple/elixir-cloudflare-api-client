@@ -1,4 +1,8 @@
-## List zone rulesets
+## Zone rulesets
+
+Zone-level rulesets
+
+### List zone rulesets
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_id/rulesets
 
 
-## Create zone ruleset
+### Create zone ruleset
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_id/rulesets
 
 
-## Get a zone ruleset
+### Get a zone ruleset
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:zone_id/rulesets/:ruleset_id
 
 
-## Get a zone ruleset version
+### Get a zone ruleset version
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > GET zones/:zone_id/rulesets/:ruleset_id/versions/:ruleset_version
 
 
-## Delete zone ruleset
+### Delete zone ruleset
 
 **Permission needed:** `None`
 
@@ -78,7 +82,7 @@ Available in:
 > DELETE zones/:zone_id/rulesets/:ruleset_id
 
 
-## Delete a version of a zone ruleset
+### Delete a version of a zone ruleset
 
 **Permission needed:** `None`
 
@@ -94,7 +98,7 @@ Available in:
 > DELETE zones/:zone_id/rulesets/:ruleset_id/versions/:ruleset_version
 
 
-## Update a zone ruleset
+### Update a zone ruleset
 
 **Permission needed:** `None`
 
@@ -108,3 +112,4 @@ Available in:
 `PUT` Update an existing zone ruleset
 
 > PUT zones/:zone_id/rulesets/:ruleset_id
+

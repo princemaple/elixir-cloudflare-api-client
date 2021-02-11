@@ -1,4 +1,8 @@
-## List User Audit Logs
+## Audit Logs
+
+A log of changes made to your Cloudflare account
+
+### List User Audit Logs
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET user/audit_logs
 
 
-## List Account Audit Logs
+### List Account Audit Logs
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > GET accounts/:account_identifier/audit_logs
 
 
-## List Organization Audit Logs
+### List Organization Audit Logs
 
 **Permission needed:** `None`
 
@@ -41,3 +45,4 @@ Available in:
 `GET` Get audit logs for an organization, filter by who made the change, which zone was the change was made on, and the timeframe of the change
 
 > GET organizations/:organization_identifier/audit_logs
+

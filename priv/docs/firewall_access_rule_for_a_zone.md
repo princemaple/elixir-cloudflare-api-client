@@ -1,4 +1,8 @@
-## List Access Rules
+## Firewall Access Rule for a Zone
+
+An IP, IP range, or country specific firewall rule applied directly to a zone or inherited from user or organization-level rules.
+
+### List Access Rules
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_id/firewall/access_rules/rules
 
 
-## Create Access Rule
+### Create Access Rule
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_id/firewall/access_rules/rules
 
 
-## Edit Access Rule
+### Edit Access Rule
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > PATCH zones/:zone_id/firewall/access_rules/rules/:identifier
 
 
-## Delete Access Rule
+### Delete Access Rule
 
 **Permission needed:** `None`
 
@@ -60,3 +64,4 @@ Available in:
 `DELETE` Remove an access rule so it is no longer evaluated during requests. Optionally, specify how to delete rules that match the mode and configuration across all other zones that this zone owner manages. 'none' is the default, and will only delete this rule. 'basic' will delete rules that match the same mode and configuration. 'aggressive' will delete rules that match the same configuration.
 
 > DELETE zones/:zone_id/firewall/access_rules/rules/:identifier
+

@@ -1,4 +1,8 @@
-## List Access Service Tokens
+## Access Service Tokens
+
+Access Service Tokens allow automated requests to reach protected domains
+
+### List Access Service Tokens
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:identifier/access/service_tokens
 
 
-## Create Access Service Token
+### Create Access Service Token
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:identifier/access/service_tokens
 
 
-## Update Access Service Token
+### Update Access Service Token
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT accounts/:identifier/access/service_tokens/:uuid
 
 
-## Delete Access Service Token
+### Delete Access Service Token
 
 **Permission needed:** `None`
 
@@ -48,3 +52,4 @@ Available in:
 `DELETE` Delete an Access Service Token
 
 > DELETE accounts/:identifier/access/service_tokens/:uuid
+

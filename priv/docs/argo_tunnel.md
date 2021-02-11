@@ -1,4 +1,8 @@
-## List Argo Tunnels
+## Argo Tunnel
+
+A tunnel that can route traffic to a user origin.
+
+### List Argo Tunnels
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/tunnels
 
 
-## Create Argo Tunnel
+### Create Argo Tunnel
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > POST accounts/:account_identifier/tunnels
 
 
-## Get Argo Tunnel
+### Get Argo Tunnel
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > GET accounts/:account_identifier/tunnels/:uuid
 
 
-## Delete Argo Tunnel
+### Delete Argo Tunnel
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > DELETE accounts/:account_identifier/tunnels/:uuid
 
 
-## Clean Up Argo Tunnel Connections
+### Clean Up Argo Tunnel Connections
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `DELETE` Remove stale connection resources from an Argo Tunnel
 
 > DELETE accounts/:account_identifier/tunnels/:uuid/connections
+

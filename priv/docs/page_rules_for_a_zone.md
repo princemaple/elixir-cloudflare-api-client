@@ -1,4 +1,8 @@
-## List Page Rules
+## Page Rules for a Zone
+
+A rule describing target patterns for requests and actions to perform on matching requests
+
+### List Page Rules
 
 **Permission needed:** `#zone:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/pagerules
 
 
-## Create Page Rule
+### Create Page Rule
 
 **Permission needed:** `#zone:edit`
 
@@ -30,7 +34,7 @@ Available in:
 > POST zones/:zone_identifier/pagerules
 
 
-## Page Rule Details
+### Page Rule Details
 
 **Permission needed:** `#zone:read`
 
@@ -46,7 +50,7 @@ Available in:
 > GET zones/:zone_identifier/pagerules/:identifier
 
 
-## Update Page Rule
+### Update Page Rule
 
 **Permission needed:** `#zone:edit`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/pagerules/:identifier
 
 
-## Edit Page Rule
+### Edit Page Rule
 
 **Permission needed:** `#zone:edit`
 
@@ -78,7 +82,7 @@ Available in:
 > PATCH zones/:zone_identifier/pagerules/:identifier
 
 
-## Delete Page Rule
+### Delete Page Rule
 
 **Permission needed:** `#zone:edit`
 
@@ -92,3 +96,4 @@ Available in:
 `DELETE` 
 
 > DELETE zones/:zone_identifier/pagerules/:identifier
+

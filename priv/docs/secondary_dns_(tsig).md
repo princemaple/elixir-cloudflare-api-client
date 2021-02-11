@@ -1,4 +1,8 @@
-## List TSIGs
+## Secondary DNS (TSIG)
+
+TSIG key management for secondary DNS
+
+### List TSIGs
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/secondary_dns/tsigs
 
 
-## TSIG Details
+### TSIG Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/secondary_dns/tsigs/:identifier
 
 
-## Update TSIG
+### Update TSIG
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT accounts/:account_identifier/secondary_dns/tsigs/:identifier
 
 
-## Delete TSIG
+### Delete TSIG
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > DELETE accounts/:account_identifier/secondary_dns/tsigs/:identifier
 
 
-## Create TSIG
+### Create TSIG
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `POST` Create TSIG
 
 > POST accounts/:account_identifier/secondary_dns/tsigs
+

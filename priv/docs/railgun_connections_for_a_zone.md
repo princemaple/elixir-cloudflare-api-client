@@ -1,4 +1,8 @@
-## List Available Railguns
+## Railgun Connections for a Zone
+
+Railguns associated with a zone
+
+### List Available Railguns
 
 **Permission needed:** `#zone_settings:read`
 
@@ -12,7 +16,7 @@ Available in:
 > GET zones/:zone_identifier/railguns
 
 
-## Railgun Details
+### Railgun Details
 
 **Permission needed:** `#zone_settings:read`
 
@@ -26,7 +30,7 @@ Available in:
 > GET zones/:zone_identifier/railguns/:identifier
 
 
-## Connect or Disconnect a Railgun
+### Connect or Disconnect a Railgun
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -40,7 +44,7 @@ Available in:
 > PATCH zones/:zone_identifier/railguns/:identifier
 
 
-## Test Railgun Connection
+### Test Railgun Connection
 
 **Permission needed:** `#zone_settings:read`
 
@@ -52,3 +56,4 @@ Available in:
 `GET` Test Railgun connection to the Zone
 
 > GET zones/:zone_identifier/railguns/:identifier/diagnose
+

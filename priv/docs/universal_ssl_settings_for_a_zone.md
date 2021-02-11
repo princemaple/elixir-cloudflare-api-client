@@ -1,4 +1,8 @@
-## Universal SSL Settings Details
+## Universal SSL Settings for a Zone
+
+Universal SSL Settings for a Zone
+
+### Universal SSL Settings Details
 
 **Permission needed:** `#ssl:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/ssl/universal/settings
 
 
-## Edit Universal SSL Settings
+### Edit Universal SSL Settings
 
 **Permission needed:** `#ssl:read#ssl:edit`
 
@@ -28,3 +32,4 @@ Available in:
 `PATCH` Patch Universal SSL Settings for a Zone
 
 > PATCH zones/:zone_identifier/ssl/universal/settings
+

@@ -1,4 +1,8 @@
-## List Rule Groups
+## WAF Rule Groups
+
+A group of web application firewall rules that share common functionality and traits
+
+### List Rule Groups
 
 **Permission needed:** `None`
 
@@ -13,7 +17,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups
 
 
-## Rule Group Details
+### Rule Group Details
 
 **Permission needed:** `None`
 
@@ -28,7 +32,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups/:identifier
 
 
-## Edit Rule Group
+### Edit Rule Group
 
 **Permission needed:** `None`
 
@@ -41,3 +45,4 @@ Available in:
 `PATCH` Update the state of a rule group
 
 > PATCH zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups/:identifier
+

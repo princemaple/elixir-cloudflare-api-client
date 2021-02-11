@@ -1,4 +1,8 @@
-## List Members
+## Organization Members
+
+A member is the association of a Cloudflare user with an Organization.
+
+### List Members
 
 **Permission needed:** `#organization:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET organizations/:organization_identifier/members
 
 
-## Member Details
+### Member Details
 
 **Permission needed:** `#organization:read`
 
@@ -24,7 +28,7 @@ Available in:
 > GET organizations/:organization_identifier/members/:identifier
 
 
-## Edit Member Roles
+### Edit Member Roles
 
 **Permission needed:** `#organization:edit`
 
@@ -37,7 +41,7 @@ Available in:
 > PATCH organizations/:organization_identifier/members/:identifier
 
 
-## Remove Member
+### Remove Member
 
 **Permission needed:** `#organization:edit`
 
@@ -48,3 +52,4 @@ Available in:
 `DELETE` Remove a member from an organization
 
 > DELETE organizations/:organization_identifier/members/:identifier
+

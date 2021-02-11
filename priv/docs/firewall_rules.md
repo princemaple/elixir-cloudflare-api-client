@@ -1,4 +1,8 @@
-## List of firewall rules
+## Firewall rules
+
+Define Firewall rules using filter expressions for more control over how traffic is matched to the rule.
+
+### List of firewall rules
 
 **Permission needed:** `None`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/rules
 
 
-## Get individual Firewall Rule
+### Get individual Firewall Rule
 
 **Permission needed:** `None`
 
@@ -30,7 +34,7 @@ Available in:
 > GET zones/:zone_identifier/firewall/rules/:id
 
 
-## Create firewall rules
+### Create firewall rules
 
 **Permission needed:** `None`
 
@@ -46,7 +50,7 @@ Available in:
 > POST zones/:zone_identifier/firewall/rules
 
 
-## Update firewall rules
+### Update firewall rules
 
 **Permission needed:** `None`
 
@@ -62,7 +66,7 @@ Available in:
 > PUT zones/:zone_identifier/firewall/rules
 
 
-## Update individual firewall rule
+### Update individual firewall rule
 
 **Permission needed:** `None`
 
@@ -78,7 +82,7 @@ Available in:
 > PUT zones/:zone_identifier/firewall/rules/:id
 
 
-## Delete firewall rules
+### Delete firewall rules
 
 **Permission needed:** `None`
 
@@ -94,7 +98,7 @@ Available in:
 > DELETE zones/:zone_identifier/firewall/rules
 
 
-## Delete individual firewall rules
+### Delete individual firewall rules
 
 **Permission needed:** `None`
 
@@ -108,3 +112,4 @@ Available in:
 `DELETE` Delete existing firewall rules.
 
 > DELETE zones/:zone_identifier/firewall/rules/:id
+

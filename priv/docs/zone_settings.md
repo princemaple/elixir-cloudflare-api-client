@@ -1,4 +1,8 @@
-## Get all Zone settings
+## Zone Settings
+
+A Zone setting changes how the Zone works in relation to caching, security, or other features of Cloudflare
+
+### Get all Zone settings
 
 **Permission needed:** `#zone_settings:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/settings
 
 
-## Get Advanced DDOS setting
+### Get Advanced DDOS setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -28,7 +32,7 @@ Available in:
 > GET zones/:zone_identifier/settings/advanced_ddos
 
 
-## Get Always Online setting
+### Get Always Online setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -44,7 +48,7 @@ Available in:
 > GET zones/:zone_identifier/settings/always_online
 
 
-## Get Always Use HTTPS setting
+### Get Always Use HTTPS setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -60,7 +64,7 @@ Available in:
 > GET zones/:zone_identifier/settings/always_use_https
 
 
-## Get Opportunistic Onion setting
+### Get Opportunistic Onion setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -76,7 +80,7 @@ Available in:
 > GET zones/:zone_identifier/settings/opportunistic_onion
 
 
-## Get Orange to Orange (O2O)
+### Get Orange to Orange (O2O)
 
 **Permission needed:** `#zone_settings:read`
 
@@ -89,7 +93,7 @@ Available in:
 > GET zones/:zone_identifier/settings/orange_to_orange
 
 
-## Get Automatic HTTPS Rewrites setting
+### Get Automatic HTTPS Rewrites setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -105,7 +109,7 @@ Available in:
 > GET zones/:zone_identifier/settings/automatic_https_rewrites
 
 
-## Get Browser Cache TTL setting
+### Get Browser Cache TTL setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -121,7 +125,7 @@ Available in:
 > GET zones/:zone_identifier/settings/browser_cache_ttl
 
 
-## Get Browser Check setting
+### Get Browser Check setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -137,7 +141,7 @@ Available in:
 > GET zones/:zone_identifier/settings/browser_check
 
 
-## Get Cache Level setting
+### Get Cache Level setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -153,7 +157,7 @@ Available in:
 > GET zones/:zone_identifier/settings/cache_level
 
 
-## Get Challenge TTL setting
+### Get Challenge TTL setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -169,7 +173,7 @@ Available in:
 > GET zones/:zone_identifier/settings/challenge_ttl
 
 
-## Get Development Mode setting
+### Get Development Mode setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -185,7 +189,7 @@ Available in:
 > GET zones/:zone_identifier/settings/development_mode
 
 
-## Get Email Obfuscation setting
+### Get Email Obfuscation setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -201,7 +205,7 @@ Available in:
 > GET zones/:zone_identifier/settings/email_obfuscation
 
 
-## Get Hotlink Protection setting
+### Get Hotlink Protection setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -217,7 +221,7 @@ Available in:
 > GET zones/:zone_identifier/settings/hotlink_protection
 
 
-## Get IP Geolocation setting
+### Get IP Geolocation setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -233,7 +237,7 @@ Available in:
 > GET zones/:zone_identifier/settings/ip_geolocation
 
 
-## Get IPv6 setting
+### Get IPv6 setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -249,7 +253,7 @@ Available in:
 > GET zones/:zone_identifier/settings/ipv6
 
 
-## Get Minify setting
+### Get Minify setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -265,7 +269,7 @@ Available in:
 > GET zones/:zone_identifier/settings/minify
 
 
-## Get Mobile Redirect setting
+### Get Mobile Redirect setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -281,7 +285,7 @@ Available in:
 > GET zones/:zone_identifier/settings/mobile_redirect
 
 
-## Get Mirage setting
+### Get Mirage setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -297,7 +301,7 @@ Available in:
 > GET zones/:zone_identifier/settings/mirage
 
 
-## Get Enable Error Pages On setting
+### Get Enable Error Pages On setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -310,7 +314,7 @@ Available in:
 > GET zones/:zone_identifier/settings/origin_error_page_pass_thru
 
 
-## Get Opportunistic Encryption setting
+### Get Opportunistic Encryption setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -326,7 +330,7 @@ Available in:
 > GET zones/:zone_identifier/settings/opportunistic_encryption
 
 
-## Get Polish setting
+### Get Polish setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -342,7 +346,7 @@ Available in:
 > GET zones/:zone_identifier/settings/polish
 
 
-## Get WebP setting
+### Get WebP setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -358,7 +362,7 @@ Available in:
 > GET zones/:zone_identifier/settings/webp
 
 
-## Get Brotli setting
+### Get Brotli setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -374,7 +378,7 @@ Available in:
 > GET zones/:zone_identifier/settings/brotli
 
 
-## Get Prefetch Preload setting
+### Get Prefetch Preload setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -387,7 +391,7 @@ Available in:
 > GET zones/:zone_identifier/settings/prefetch_preload
 
 
-## Get Privacy Pass setting
+### Get Privacy Pass setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -403,7 +407,7 @@ Available in:
 > GET zones/:zone_identifier/settings/privacy_pass
 
 
-## Get Response Buffering setting
+### Get Response Buffering setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -416,7 +420,7 @@ Available in:
 > GET zones/:zone_identifier/settings/response_buffering
 
 
-## Get Rocket Loader setting
+### Get Rocket Loader setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -432,7 +436,7 @@ Available in:
 > GET zones/:zone_identifier/settings/rocket_loader
 
 
-## Get Security Header (HSTS) setting
+### Get Security Header (HSTS) setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -448,7 +452,7 @@ Available in:
 > GET zones/:zone_identifier/settings/security_header
 
 
-## Get Security Level setting
+### Get Security Level setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -464,7 +468,7 @@ Available in:
 > GET zones/:zone_identifier/settings/security_level
 
 
-## Get Server Side Exclude setting
+### Get Server Side Exclude setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -480,7 +484,7 @@ Available in:
 > GET zones/:zone_identifier/settings/server_side_exclude
 
 
-## Get Enable Query String Sort setting
+### Get Enable Query String Sort setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -493,7 +497,7 @@ Available in:
 > GET zones/:zone_identifier/settings/sort_query_string_for_cache
 
 
-## Get SSL setting
+### Get SSL setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -509,7 +513,7 @@ Available in:
 > GET zones/:zone_identifier/settings/ssl
 
 
-## Get Minimum TLS Version setting
+### Get Minimum TLS Version setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -525,7 +529,7 @@ Available in:
 > GET zones/:zone_identifier/settings/min_tls_version
 
 
-## Get Ciphers setting
+### Get Ciphers setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -541,7 +545,7 @@ Available in:
 > GET zones/:zone_identifier/settings/ciphers
 
 
-## Get TLS Client Auth setting
+### Get TLS Client Auth setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -554,7 +558,7 @@ Available in:
 > GET zones/:zone_identifier/settings/tls_client_auth
 
 
-## Get True Client IP setting
+### Get True Client IP setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -567,7 +571,7 @@ Available in:
 > GET zones/:zone_identifier/settings/true_client_ip_header
 
 
-## Get Web Application Firewall (WAF) setting
+### Get Web Application Firewall (WAF) setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -582,7 +586,7 @@ Available in:
 > GET zones/:zone_identifier/settings/waf
 
 
-## Get HTTP2 setting
+### Get HTTP2 setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -598,7 +602,7 @@ Available in:
 > GET zones/:zone_identifier/settings/http2
 
 
-## Get HTTP3 setting
+### Get HTTP3 setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -614,7 +618,7 @@ Available in:
 > GET zones/:zone_identifier/settings/http3
 
 
-## Get 0-RTT session resumption setting
+### Get 0-RTT session resumption setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -630,7 +634,7 @@ Available in:
 > GET zones/:zone_identifier/settings/0rtt
 
 
-## Get Pseudo IPv4 setting
+### Get Pseudo IPv4 setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -646,7 +650,7 @@ Available in:
 > GET zones/:zone_identifier/settings/pseudo_ipv4
 
 
-## Get WebSockets setting
+### Get WebSockets setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -662,7 +666,7 @@ Available in:
 > GET zones/:zone_identifier/settings/websockets
 
 
-## Get Image Resizing setting
+### Get Image Resizing setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -676,7 +680,7 @@ Available in:
 > GET zones/:zone_identifier/settings/image_resizing
 
 
-## Get HTTP/2 Edge Prioritization setting
+### Get HTTP/2 Edge Prioritization setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -691,7 +695,7 @@ Available in:
 > GET zones/:zone_identifier/settings/h2_prioritization
 
 
-## Get Automatic Platform Optimization for WordPress setting
+### Get Automatic Platform Optimization for WordPress setting
 
 **Permission needed:** `#zone_settings:read`
 
@@ -707,7 +711,7 @@ Available in:
 > GET zones/:zone_identifier/settings/automatic_platform_optimization
 
 
-## Edit zone settings info
+### Edit zone settings info
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -723,7 +727,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings
 
 
-## Change Always Online setting
+### Change Always Online setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -739,7 +743,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/always_online
 
 
-## Change Always Use HTTPS setting
+### Change Always Use HTTPS setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -755,7 +759,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/always_use_https
 
 
-## Change Opportunistic Onion setting
+### Change Opportunistic Onion setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -771,7 +775,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/opportunistic_onion
 
 
-## Change Orange to Orange (O2O)
+### Change Orange to Orange (O2O)
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -784,7 +788,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/orange_to_orange
 
 
-## Change Automatic HTTPS Rewrites setting
+### Change Automatic HTTPS Rewrites setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -800,7 +804,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/automatic_https_rewrites
 
 
-## Change Browser Cache TTL setting
+### Change Browser Cache TTL setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -816,7 +820,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/browser_cache_ttl
 
 
-## Change Browser Check setting
+### Change Browser Check setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -832,7 +836,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/browser_check
 
 
-## Change Cache Level setting
+### Change Cache Level setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -848,7 +852,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/cache_level
 
 
-## Change Challenge TTL setting
+### Change Challenge TTL setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -864,7 +868,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/challenge_ttl
 
 
-## Change Development Mode setting
+### Change Development Mode setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -880,7 +884,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/development_mode
 
 
-## Change Email Obfuscation setting
+### Change Email Obfuscation setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -896,7 +900,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/email_obfuscation
 
 
-## Change Enable Error Pages On setting
+### Change Enable Error Pages On setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -909,7 +913,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/origin_error_page_pass_thru
 
 
-## Change Enable Query String Sort setting
+### Change Enable Query String Sort setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -922,7 +926,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/sort_query_string_for_cache
 
 
-## Change Hotlink Protection setting
+### Change Hotlink Protection setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -938,7 +942,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/hotlink_protection
 
 
-## Change IP Geolocation setting
+### Change IP Geolocation setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -954,7 +958,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/ip_geolocation
 
 
-## Change IPv6 setting
+### Change IPv6 setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -969,7 +973,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/ipv6
 
 
-## Change Minify setting
+### Change Minify setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -985,7 +989,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/minify
 
 
-## Change Mobile Redirect setting
+### Change Mobile Redirect setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1001,7 +1005,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/mobile_redirect
 
 
-## Change Mirage setting
+### Change Mirage setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1016,7 +1020,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/mirage
 
 
-## Change Opportunistic Encryption setting
+### Change Opportunistic Encryption setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1032,7 +1036,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/opportunistic_encryption
 
 
-## Change Polish setting
+### Change Polish setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1047,7 +1051,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/polish
 
 
-## Change WebP setting
+### Change WebP setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1062,7 +1066,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/webp
 
 
-## Change Brotli setting
+### Change Brotli setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1078,7 +1082,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/brotli
 
 
-## Change Prefetch Preload setting
+### Change Prefetch Preload setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1091,7 +1095,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/prefetch_preload
 
 
-## Change Privacy Pass setting
+### Change Privacy Pass setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1107,7 +1111,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/privacy_pass
 
 
-## Change Response Buffering setting
+### Change Response Buffering setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1120,7 +1124,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/response_buffering
 
 
-## Change Rocket Loader setting
+### Change Rocket Loader setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1136,7 +1140,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/rocket_loader
 
 
-## Change Security Header (HSTS) setting
+### Change Security Header (HSTS) setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1152,7 +1156,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/security_header
 
 
-## Change Security Level setting
+### Change Security Level setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1168,7 +1172,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/security_level
 
 
-## Change Server Side Exclude setting
+### Change Server Side Exclude setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1184,7 +1188,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/server_side_exclude
 
 
-## Change SSL setting
+### Change SSL setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1200,7 +1204,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/ssl
 
 
-## Change TLS Client Auth setting
+### Change TLS Client Auth setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1213,7 +1217,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/tls_client_auth
 
 
-## Change True Client IP setting
+### Change True Client IP setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1226,7 +1230,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/true_client_ip_header
 
 
-## Change Minimum TLS Version setting
+### Change Minimum TLS Version setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1242,7 +1246,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/min_tls_version
 
 
-## Change Ciphers setting
+### Change Ciphers setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1258,7 +1262,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/ciphers
 
 
-## Change Web Application Firewall (WAF) setting
+### Change Web Application Firewall (WAF) setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1273,7 +1277,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/waf
 
 
-## Change HTTP2 setting
+### Change HTTP2 setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1288,7 +1292,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/http2
 
 
-## Change HTTP3 setting
+### Change HTTP3 setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1303,7 +1307,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/http3
 
 
-## Change 0-RTT session resumption setting
+### Change 0-RTT session resumption setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1318,7 +1322,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/0rtt
 
 
-## Change Pseudo IPv4 setting
+### Change Pseudo IPv4 setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1333,7 +1337,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/pseudo_ipv4
 
 
-## Change WebSockets setting
+### Change WebSockets setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1349,7 +1353,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/websockets
 
 
-## Change Image Resizing setting
+### Change Image Resizing setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1363,7 +1367,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/image_resizing
 
 
-## Change HTTP/2 Edge Prioritization setting
+### Change HTTP/2 Edge Prioritization setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1378,7 +1382,7 @@ Available in:
 > PATCH zones/:zone_identifier/settings/h2_prioritization
 
 
-## Change Automatic Platform Optimization for WordPress setting
+### Change Automatic Platform Optimization for WordPress setting
 
 **Permission needed:** `#zone_settings:edit`
 
@@ -1392,3 +1396,4 @@ Available in:
 `PATCH` Automatic Platform Optimization for WordPress serves your WordPress site from Cloudflare's edge network and caches third party fonts.
 
 > PATCH zones/:zone_identifier/settings/automatic_platform_optimization
+

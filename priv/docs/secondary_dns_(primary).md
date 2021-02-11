@@ -1,4 +1,8 @@
-## List Primaries
+## Secondary DNS (Primary)
+
+Primary nameservers for secondary DNS
+
+### List Primaries
 
 **Permission needed:** `None`
 
@@ -11,7 +15,7 @@ Available in:
 > GET accounts/:account_identifier/secondary_dns/primaries
 
 
-## Primary Details
+### Primary Details
 
 **Permission needed:** `None`
 
@@ -24,7 +28,7 @@ Available in:
 > GET accounts/:account_identifier/secondary_dns/primaries/:identifier
 
 
-## Update Primary
+### Update Primary
 
 **Permission needed:** `None`
 
@@ -37,7 +41,7 @@ Available in:
 > PUT accounts/:account_identifier/secondary_dns/primaries/:identifier
 
 
-## Delete Primary
+### Delete Primary
 
 **Permission needed:** `None`
 
@@ -50,7 +54,7 @@ Available in:
 > DELETE accounts/:account_identifier/secondary_dns/primaries/:identifier
 
 
-## Create Primary
+### Create Primary
 
 **Permission needed:** `None`
 
@@ -61,3 +65,4 @@ Available in:
 `POST` Create Primary
 
 > POST accounts/:account_identifier/secondary_dns/primaries
+

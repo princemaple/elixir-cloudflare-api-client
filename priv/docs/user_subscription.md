@@ -1,4 +1,8 @@
-## Get User Subscriptions
+## User Subscription
+
+Listing of a user's subscriptions
+
+### Get User Subscriptions
 
 **Permission needed:** `#billing:read`
 
@@ -11,7 +15,7 @@ Available in:
 > GET user/subscriptions
 
 
-## Update User Subscription
+### Update User Subscription
 
 **Permission needed:** `#billing:read#billing:edit`
 
@@ -27,7 +31,7 @@ Available in:
 > PUT user/subscriptions/:identifier
 
 
-## Delete User Subscription
+### Delete User Subscription
 
 **Permission needed:** `#billing:edit`
 
@@ -38,3 +42,4 @@ Available in:
 `DELETE` Deletes a user's subscription
 
 > DELETE user/subscriptions/:identifier
+

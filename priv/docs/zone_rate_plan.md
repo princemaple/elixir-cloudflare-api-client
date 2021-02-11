@@ -1,4 +1,8 @@
-## List Available Rate Plans
+## Zone Rate Plan
+
+A zone rate plan from the billing service
+
+### List Available Rate Plans
 
 **Permission needed:** `#billing:read`
 
@@ -14,7 +18,7 @@ Available in:
 > GET zones/:zone_identifier/available_rate_plans
 
 
-## List Available Plans
+### List Available Plans
 
 **Permission needed:** `#billing:read`
 
@@ -30,7 +34,7 @@ Available in:
 > GET zones/:zone_identifier/available_plans
 
 
-## Available Plan Details
+### Available Plan Details
 
 **Permission needed:** `#billing:read`
 
@@ -44,3 +48,4 @@ Available in:
 `GET` Details of an available plan that the zone can subscribe to.
 
 > GET zones/:zone_identifier/available_plans/:plan_identifier
+
