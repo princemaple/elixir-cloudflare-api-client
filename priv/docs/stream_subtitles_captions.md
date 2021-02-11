@@ -1,0 +1,37 @@
+## Upload a caption/subtitle
+
+**Permission needed:** `None`
+
+Available in:
+
+
+
+`PUT` Upload the file to the endpoint for a specific BCP47 language. One caption/subtitle per language is allowed.
+
+> PUT accounts/:account_identifier/stream/:video_identifier/captions/:language
+
+
+## List captions/subtitles
+
+**Permission needed:** `None`
+
+Available in:
+
+
+
+`GET` View the currently available captions for a specific video.
+
+> GET accounts/:account_identifier/stream/:video_identifier/captions
+
+
+## Delete a caption/subtitle
+
+**Permission needed:** `None`
+
+Available in:
+
+
+
+`DELETE` Remove the caption or subtitle from a video
+
+> DELETE accounts/:account_identifier/stream/:video_identifier/captions/:language
