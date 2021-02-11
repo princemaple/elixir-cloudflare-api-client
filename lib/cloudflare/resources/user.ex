@@ -1,7 +1,5 @@
 defmodule Cloudflare.User do
-  @moduledoc """
-  The currently logged in/authenticated User
-  """
+  @moduledoc Cloudflare.docs("user")
 
   use Restlax.Resource,
     endpoint: "user",

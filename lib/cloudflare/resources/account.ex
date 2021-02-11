@@ -1,8 +1,5 @@
 defmodule Cloudflare.Account do
-  @moduledoc """
-  An Account is the root object which owns other resources such as zones,
-  load balancers and billing details.
-  """
+  @moduledoc Cloudflare.docs("accounts")
 
   use Restlax.Resource,
     endpoint: "accounts",

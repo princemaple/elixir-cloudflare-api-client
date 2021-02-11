@@ -1,7 +1,5 @@
 defmodule Cloudflare.Zone do
-  @moduledoc """
-  A Zone is a domain name along with its subdomains and other identities
-  """
+  @moduledoc Cloudflare.docs("zone")
 
   use Restlax.Resource, endpoint: "zones"
 
