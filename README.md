@@ -72,3 +72,13 @@ Cloudflare.DnsRecord.create(
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/cloudflare](https://hexdocs.pm/cloudflare).
+
+## Development
+
+Half manually scraped Cloudflare docs are located in `priv/docs`. Pick an entity and write module for it.
+
+Simple entities can be as easy as `Cloudflare.Account` and `Cloudflare.User`
+
+Some need a little customization like `Cloudflare.DnsRecord`
+
+Some need more `Cloudflare.ZoneSetting`
