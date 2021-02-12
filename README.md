@@ -1,6 +1,6 @@
 # Cloudflare
 
-`Cloudflare` API Client. NOT OFFICIAL. Written for the Elixir community, based on `:restlax`.
+`Cloudflare` API Client. Written for the Elixir community, based on `:restlax`.
 
 ## Installation
 

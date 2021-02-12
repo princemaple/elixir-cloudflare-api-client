@@ -14,7 +14,7 @@ defmodule Cloudflare.MixProject do
 
       # Package
       name: "Cloudflare",
-      description: "UNOFFICIAL Cloudflare API Client",
+      description: "Cloudflare API Client",
       package: package(),
       docs: docs()
     ]
