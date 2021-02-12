@@ -30,18 +30,43 @@ config :cloudflare,
   auth_key: "my-auth-key"
 ```
 
-Or both.
+Or both `¯\(°_o)/¯`.
 
-### Passed in
+### Or passed in
 
 ```elixir
 Cloudflare.Zone.index(opts: [auth_token: "my-auth-token"])
+```
+
+```elixir
+Cloudflare.Zone.index(opts: [auth_email: "my@email.com", auth_key: "my-auth-key"])
 ```
 
 Or directly as header
 
 ```elixir
 Cloudflare.Zone.index(headers: [{"Authorization", "Bearer my-auth-token"}])
+```
+
+```elixir
+Cloudflare.Zone.index(headers: [{"X-Auth-Email", "my@email.com"}, {"X-Auth-Key", "my-auth-key"}])
+```
+
+## Usage
+
+```elixir
+Cloudflare.Zone.index()
+```
+
+```elixir
+Cloudflare.DnsRecord.index(params: [zone_id: "my-zone-id"])
+```
+
+```elixir
+Cloudflare.DnsRecord.create(
+  %{type: "A", name: "my.domain", content: "127.0.0.1", ttl: 120},
+  params: [zone_id: "my-zone-id"]
+)
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)

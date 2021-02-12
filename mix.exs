@@ -38,6 +38,8 @@ defmodule Cloudflare.MixProject do
       source_ref: "v#{@version}",
       canonical: "http://hexdocs.pm/cloudflare",
       source_url: @source_url,
+      extra_section: "Cloudflare Docs",
+      extras: extras(),
       groups_for_modules: [
         Resources: resource_modules()
       ]
@@ -48,5 +50,9 @@ defmodule Cloudflare.MixProject do
     Path.wildcard("lib/cloudflare/resources/*")
     |> Enum.map(&(&1 |> Path.rootname() |> Path.basename() |> Macro.camelize()))
     |> Enum.map(&Module.concat(Cloudflare, &1))
+  end
+
+  defp extras do
+    Path.wildcard("priv/docs/*.md")
   end
 end
