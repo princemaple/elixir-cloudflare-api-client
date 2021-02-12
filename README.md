@@ -15,6 +15,35 @@ def deps do
 end
 ```
 
+## Configuration
+
+```elixir
+config :cloudflare,
+  auth_token: "my-auth-token"
+```
+
+Or
+
+```elixir
+config :cloudflare,
+  auth_email: "my@email.com",
+  auth_key: "my-auth-key"
+```
+
+Or both.
+
+### Passed in
+
+```elixir
+Cloudflare.Zone.index(opts: [auth_token: "my-auth-token"])
+```
+
+Or directly as header
+
+```elixir
+Cloudflare.Zone.index(headers: [{"Authorization", "Bearer my-auth-token"}])
+```
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/cloudflare](https://hexdocs.pm/cloudflare).
