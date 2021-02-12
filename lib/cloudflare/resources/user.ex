@@ -1,5 +1,5 @@
 defmodule Cloudflare.User do
-  @moduledoc Cloudflare.docs("user")
+  use Cloudflare.Doc, "user"
 
   use Restlax.Resource,
     endpoint: "user",

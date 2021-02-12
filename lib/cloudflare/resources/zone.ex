@@ -1,5 +1,5 @@
 defmodule Cloudflare.Zone do
-  @moduledoc Cloudflare.docs("zone")
+  use Cloudflare.Doc, "zone"
 
   use Restlax.Resource, endpoint: "zones"
 

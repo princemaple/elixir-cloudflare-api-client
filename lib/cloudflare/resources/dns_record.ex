@@ -1,5 +1,5 @@
 defmodule Cloudflare.DnsRecord do
-  @moduledoc Cloudflare.docs("dns_records_for_a_zone")
+  use Cloudflare.Doc, "dns_records_for_a_zone"
 
   use Restlax.Resource, endpoint: "zones/:zone_id/dns_records"
 

@@ -1,5 +1,5 @@
 defmodule Cloudflare.ZoneSetting do
-  @moduledoc Cloudflare.docs("zone_settings")
+  use Cloudflare.Doc, "zone_settings"
 
   use Restlax.Resource,
     endpoint: "zones/:zone_id/settings",
