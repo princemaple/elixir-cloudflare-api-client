@@ -11,6 +11,11 @@ defmodule Cloudflare.MixProject do
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+
+      # Package
+      name: "Cloudflare",
+      description: "UNOFFICIAL Cloudflare API Client",
+      package: package(),
       docs: docs()
     ]
   end
@@ -32,12 +37,22 @@ defmodule Cloudflare.MixProject do
     ]
   end
 
+  defp package do
+    [
+      maintainers: ["Po Chen"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => @source_url},
+      files: ~w(.formatter.exs mix.exs lib README.md CHANGELOG.md LICENSE)
+    ]
+  end
+
   defp docs do
     [
       main: "Cloudflare",
       source_ref: "v#{@version}",
       canonical: "http://hexdocs.pm/cloudflare",
       source_url: @source_url,
+      skip_undefined_reference_warnings_on: ["CHANGELOG.md"],
       extra_section: "Cloudflare Docs",
       extras: extras(),
       groups_for_modules: [
