@@ -17,6 +17,8 @@ end
 
 ## Configuration
 
+### Authentication
+
 ```elixir
 config :cloudflare,
   auth_token: "my-auth-token"
@@ -32,7 +34,7 @@ config :cloudflare,
 
 Or both `¯\(°_o)/¯`.
 
-### Or passed in
+#### Or passed in
 
 ```elixir
 Cloudflare.Zone.index(opts: [auth_token: "my-auth-token"])
@@ -50,6 +52,12 @@ Cloudflare.Zone.index(headers: [{"Authorization", "Bearer my-auth-token"}])
 
 ```elixir
 Cloudflare.Zone.index(headers: [{"X-Auth-Email", "my@email.com"}, {"X-Auth-Key", "my-auth-key"}])
+```
+
+### Register client
+
+```elixir
+Cloudflare.Client.init()
 ```
 
 ## Usage
