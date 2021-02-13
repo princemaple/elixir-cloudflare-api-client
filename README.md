@@ -1,6 +1,7 @@
 # Cloudflare
 
-`Cloudflare` API Client. Written for the Elixir community, based on `:restlax`.
+`Cloudflare` API Client. Written for the Elixir community,
+based on [`:restlax`](https://github.com/princemaple/restlax).
 
 ## Installation
 
@@ -108,7 +109,7 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/cloudflare](https://hexdocs.pm/cloudflare).
 
-## Development
+## Contribution
 
 Half manually scraped Cloudflare docs are located in `priv/docs`. Pick an entity and write module for it.
 
