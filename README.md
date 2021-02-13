@@ -56,8 +56,35 @@ Cloudflare.Zone.index(headers: [{"X-Auth-Email", "my@email.com"}, {"X-Auth-Key",
 
 ### Register client
 
+Normally it's teadius to explicitly pass the client module in.
+
 ```elixir
-Cloudflare.Client.init()
+Cloudflare.Zone.index(client: CloudFlare.Client)
+```
+
+It can be registered on application start, e.g. in `YourApp.Application.start`
+
+```elixir
+defmodule YourApp.Application do
+  use Application
+
+  def start(_type, _args) do
+    Cloudflare.Client.init() # <- You can add this line
+    children = [
+      {Phoenix.PubSub, name: App.PubSub},
+      App.Repo,
+      AppWeb.Endpoint
+    ]
+
+    opts = [strategy: :one_for_one, name: App.Supervisor]
+    Supervisor.start_link(children, opts)
+  end
+
+  def config_change(changed, _new, removed) do
+    AppWeb.Endpoint.config_change(changed, removed)
+    :ok
+  end
+end
 ```
 
 ## Usage
