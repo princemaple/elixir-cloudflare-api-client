@@ -1,5 +1,9 @@
 # Cloudflare
 
+[![hex.pm](https://img.shields.io/hexpm/v/cloudflare.svg)](https://hex.pm/packages/cloudflare)
+[![hex.pm](https://img.shields.io/hexpm/l/cloudflare.svg)](https://hex.pm/packages/cloudflare)
+[![github.com](https://img.shields.io/github/last-commit/princemaple/elixir-cloudflare-api-client.svg)](https://github.com/princemaple/elixir-cloudflare-api-client)
+
 `Cloudflare` API Client. Written for the Elixir community,
 based on [`:restlax`](https://github.com/princemaple/restlax).
 
