@@ -1,7 +1,7 @@
 defmodule Cloudflare.MixProject do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.2.0"
   @source_url "https://github.com/princemaple/elixir-cloudflare-api-client"
 
   def project do
@@ -42,7 +42,7 @@ defmodule Cloudflare.MixProject do
       maintainers: ["Po Chen"],
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
-      files: ~w(.formatter.exs mix.exs lib README.md CHANGELOG.md LICENSE)
+      files: ~w(.formatter.exs mix.exs lib priv README.md CHANGELOG.md LICENSE)
     ]
   end
 
