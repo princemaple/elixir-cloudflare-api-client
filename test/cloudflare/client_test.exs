@@ -21,17 +21,18 @@ defmodule Cloudflare.ClientTest do
     %{bypass: bypass, client: module}
   end
 
-  test "uses bearer auth token from request options", %{bypass: bypass, client: client} do
+  test "uses bearer auth token from request headers", %{bypass: bypass, client: client} do
     Bypass.expect_once(bypass, fn conn ->
       assert [auth] = Plug.Conn.get_req_header(conn, "authorization")
       assert auth == "Bearer token-from-opts"
       Plug.Conn.resp(conn, 200, ~s({"ok":true}))
     end)
 
-    assert {:ok, %{status: 200}} = client.get("/token", auth_token: "token-from-opts")
+    assert {:ok, %{status: 200}} =
+             client.get("/token", headers: [{"authorization", "Bearer token-from-opts"}])
   end
 
-  test "uses email/key auth from request options", %{bypass: bypass, client: client} do
+  test "uses email/key auth from request headers", %{bypass: bypass, client: client} do
     Bypass.expect_once(bypass, fn conn ->
       assert Plug.Conn.get_req_header(conn, "x-auth-email") == ["e@example.com"]
       assert Plug.Conn.get_req_header(conn, "x-auth-key") == ["key-123"]
@@ -39,7 +40,9 @@ defmodule Cloudflare.ClientTest do
     end)
 
     assert {:ok, %{status: 200}} =
-             client.get("/key", auth_email: "e@example.com", auth_key: "key-123")
+             client.get("/key",
+               headers: [{"x-auth-email", "e@example.com"}, {"x-auth-key", "key-123"}]
+             )
   end
 
   test "falls back to application auth config when request options are absent", %{

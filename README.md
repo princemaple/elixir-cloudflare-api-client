@@ -15,7 +15,7 @@ by adding `cloudflare` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:cloudflare, "~> 0.2"}
+    {:cloudflare, "~> 0.3"}
   ]
 end
 ```
@@ -39,17 +39,7 @@ config :cloudflare,
 
 Or both `¯\(°_o)/¯`.
 
-#### Or passed in
-
-```elixir
-Cloudflare.Zone.index(opts: [auth_token: "my-auth-token"])
-```
-
-```elixir
-Cloudflare.Zone.index(opts: [auth_email: "my@email.com", auth_key: "my-auth-key"])
-```
-
-Or directly as header
+#### Or passed in directly as header
 
 ```elixir
 Cloudflare.Zone.index(headers: [{"Authorization", "Bearer my-auth-token"}])
