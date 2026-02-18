@@ -33,7 +33,8 @@ defmodule Cloudflare.MixProject do
       {:castore, ">= 0.0.0", optional: true},
       {:jason, "~> 1.0", optional: true},
       {:floki, ">= 0.0.0", only: :dev},
-      {:ex_doc, ">= 0.0.0", only: :docs}
+      {:ex_doc, ">= 0.0.0", only: :docs},
+      {:bypass, "~> 2.1", only: :test}
     ]
   end
 
