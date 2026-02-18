@@ -6,6 +6,33 @@
 
 
 
+### Responses
+
+#### 200 Returns a list of authors
+
+> Data is at `body["result"]`
+
+```json
+[
+  {}
+]
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Get Model Schema
 
@@ -13,11 +40,71 @@
 
 
 
+### Responses
+
+#### 200 Model Schema
+
+> Data is at `body["result"]`
+
+```json
+{
+  "input": {
+    "additionalProperties": "*boolean*",
+    "description": "*string*",
+    "type": "*string*"
+  },
+  "output": {
+    "additionalProperties": "*boolean*",
+    "description": "*string*",
+    "type": "*string*"
+  }
+}
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Model Search
 
 **GET** `/accounts/{account_id}/ai/models/search`
 
+
+
+### Responses
+
+#### 200 Returns a list of models
+
+> Data is at `body["result"]`
+
+```json
+[
+  {}
+]
+```
+
+#### 404 Object not found
+
+```json
+{
+  "errors": [
+    {}
+  ],
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -32,11 +119,60 @@ model. The endpoint supports various AI model types, ensuring flexibility and ad
 
 Model specific inputs available in [Cloudflare Docs](https://developers.cloudflare.com/workers-ai/models/).
 
+### Responses
+
+#### 200 Model response
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Task Search
 
 **GET** `/accounts/{account_id}/ai/tasks/search`
 
+
+
+### Responses
+
+#### 200 Returns a list of tasks
+
+> Data is at `body["result"]`
+
+```json
+[
+  {}
+]
+```
+
+#### 404 Object not found
+
+```json
+{
+  "errors": [
+    {}
+  ],
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -46,10 +182,73 @@ Model specific inputs available in [Cloudflare Docs](https://developers.cloudfla
 
 
 
+### Responses
+
+#### 200 Model Schema
+
+> Data is at `body["result"]`
+
+```json
+[
+  {
+    "data": "*string*",
+    "format": "*string*",
+    "mimeType": "*string*",
+    "name": "*string*",
+    "tokens": "*string*"
+  }
+]
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Get all converted formats supported
 
 **GET** `/accounts/{account_id}/ai/tomarkdown/supported`
 
+
+
+### Responses
+
+#### 200 Successful response
+
+> Data is at `body["result"]`
+
+```json
+[
+  {
+    "extension": "*string*",
+    "mimeType": "*string*"
+  }
+]
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 

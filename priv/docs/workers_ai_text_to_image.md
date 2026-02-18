@@ -6,11 +6,63 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Execute @cf/black-forest-labs/flux-2-dev model.
 
 **POST** `/accounts/{account_id}/ai/run/@cf/black-forest-labs/flux-2-dev`
 
+
+
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -20,11 +72,63 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Execute @cf/black-forest-labs/flux-2-klein-9b model.
 
 **POST** `/accounts/{account_id}/ai/run/@cf/black-forest-labs/flux-2-klein-9b`
 
+
+
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -34,11 +138,63 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Execute @cf/leonardo/lucid-origin model.
 
 **POST** `/accounts/{account_id}/ai/run/@cf/leonardo/lucid-origin`
 
+
+
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -48,11 +204,63 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Execute @cf/lykon/dreamshaper-8-lcm model.
 
 **POST** `/accounts/{account_id}/ai/run/@cf/lykon/dreamshaper-8-lcm`
 
+
+
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -62,11 +270,63 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Execute @cf/runwayml/stable-diffusion-v1-5-inpainting model.
 
 **POST** `/accounts/{account_id}/ai/run/@cf/runwayml/stable-diffusion-v1-5-inpainting`
 
+
+
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -76,10 +336,59 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Open Websocket connection with @cf/sven/test-pipe-http model.
 
 **GET** `/accounts/{account_id}/ai/run/@cf/sven/test-pipe-http`
 
+
+
+### Responses
+
+#### 101 Returns a websocket connection
+
+```json
+
+```
+
+#### 400 Bad Request
+
+```json
+{
+  "errors": [
+    {
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 

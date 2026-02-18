@@ -6,12 +6,58 @@
 
 Fetches all snippets belonging to the zone.
 
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
+
 
 ## Update zone snippet rules
 
 **PUT** `/zones/{zone_id}/snippets/snippet_rules`
 
 Updates all snippet rules belonging to the zone.
+
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
 
 
 ## List zone snippet rules
@@ -20,12 +66,58 @@ Updates all snippet rules belonging to the zone.
 
 Fetches all snippet rules belonging to the zone.
 
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
+
 
 ## Delete zone snippet rules
 
 **DELETE** `/zones/{zone_id}/snippets/snippet_rules`
 
 Deletes all snippet rules belonging to the zone.
+
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
 
 
 ## Update a zone snippet
@@ -34,12 +126,58 @@ Deletes all snippet rules belonging to the zone.
 
 Creates or updates a snippet belonging to the zone.
 
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
+
 
 ## Get a zone snippet
 
 **GET** `/zones/{zone_id}/snippets/{snippet_name}`
 
 Fetches a snippet belonging to the zone.
+
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
 
 
 ## Delete a zone snippet
@@ -48,10 +186,56 @@ Fetches a snippet belonging to the zone.
 
 Deletes a snippet belonging to the zone.
 
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
+
 
 ## Get a zone snippet content
 
 **GET** `/zones/{zone_id}/snippets/{snippet_name}/content`
 
 Fetches the content of a snippet belonging to the zone.
+
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 4XX 
+
+```json
+
+```
+
+#### 5XX 
+
+```json
+
+```
+
 

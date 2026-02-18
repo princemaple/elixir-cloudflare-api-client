@@ -6,3 +6,16 @@
 
 
 
+### Responses
+
+#### 200 Successful Response
+
+> Data is at `body["result"]`
+
+```json
+[
+  null
+]
+```
+
+

@@ -53,10 +53,90 @@ It is strongly recommended that you ensure you have [custom rules](https://devel
 ```
 
 
+### Responses
+
+#### 200 Update Bot Management response
+
+> Data is at `body["result"]`
+
+```json
+null
+```
+
+#### 4XX Update Bot Management response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Get Zone Bot Management Config
 
 **GET** `/zones/{zone_id}/bot_management`
 
 Retrieve a zone's Bot Management Config
+
+### Responses
+
+#### 200 Bot Management config response
+
+> Data is at `body["result"]`
+
+```json
+null
+```
+
+#### 4XX Bot Management config response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
 

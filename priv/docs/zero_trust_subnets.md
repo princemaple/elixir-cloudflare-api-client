@@ -6,12 +6,102 @@
 
 Lists and filters subnets in an account.
 
+### Responses
+
+#### 200 List subnets response
+
+> Data is at `body["result"]`
+
+```json
+[
+  {
+    "comment": "*string*",
+    "created_at": "*string*",
+    "deleted_at": "*string*",
+    "id": "*string*",
+    "is_default_network": "*boolean*",
+    "name": "*string*",
+    "network": "*string*",
+    "subnet_type": "*string*"
+  }
+]
+```
+
+#### 4XX List subnets response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "result_info": {
+    "count": "*number*",
+    "page": "*number*",
+    "per_page": "*number*",
+    "total_count": "*number*"
+  },
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Update Cloudflare Source Subnet
 
 **PATCH** `/accounts/{account_id}/zerotrust/subnets/cloudflare_source/{address_family}`
 
 Updates the Cloudflare Source subnet of the given address family
+
+### Responses
+
+#### 200 Update subnet response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "comment": "*string*",
+  "created_at": "*string*",
+  "deleted_at": "*string*",
+  "id": "*string*",
+  "is_default_network": "*boolean*",
+  "name": "*string*",
+  "network": "*string*",
+  "subnet_type": "*string*"
+}
+```
+
+#### 4XX Update subnet response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
 
 
 ## Create WARP IP subnet
@@ -29,6 +119,47 @@ Create a WARP IP assignment subnet. Currently, only IPv4 subnets can be created.
 - The subnet must have a prefix length of `/24` or larger (e.g., `/16`, `/20`, `/24` are valid; `/25`, `/28` are not)
 
 
+### Responses
+
+#### 200 Create subnet response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "comment": "*string*",
+  "created_at": "*string*",
+  "deleted_at": "*string*",
+  "id": "*string*",
+  "is_default_network": "*boolean*",
+  "name": "*string*",
+  "network": "*string*",
+  "subnet_type": "*string*"
+}
+```
+
+#### 4XX Create subnet response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Update WARP IP subnet
 
@@ -41,6 +172,47 @@ Updates a WARP IP assignment subnet.
 - IPv6 subnets cannot be updated
 
 
+### Responses
+
+#### 200 Update subnet response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "comment": "*string*",
+  "created_at": "*string*",
+  "deleted_at": "*string*",
+  "id": "*string*",
+  "is_default_network": "*boolean*",
+  "name": "*string*",
+  "network": "*string*",
+  "subnet_type": "*string*"
+}
+```
+
+#### 4XX Update subnet response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Get WARP IP subnet
 
@@ -48,10 +220,92 @@ Updates a WARP IP assignment subnet.
 
 Get a WARP IP assignment subnet.
 
+### Responses
+
+#### 200 Get subnet response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "comment": "*string*",
+  "created_at": "*string*",
+  "deleted_at": "*string*",
+  "id": "*string*",
+  "is_default_network": "*boolean*",
+  "name": "*string*",
+  "network": "*string*",
+  "subnet_type": "*string*"
+}
+```
+
+#### 4XX Get subnet response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Delete WARP IP subnet
 
 **DELETE** `/accounts/{account_id}/zerotrust/subnets/warp/{subnet_id}`
 
 Delete a WARP IP assignment subnet. This operation is idempotent - deleting an already-deleted or non-existent subnet will return success with a null result.
+
+### Responses
+
+#### 200 Delete subnet response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "comment": "*string*",
+  "created_at": "*string*",
+  "deleted_at": "*string*",
+  "id": "*string*",
+  "is_default_network": "*boolean*",
+  "name": "*string*",
+  "network": "*string*",
+  "subnet_type": "*string*"
+}
+```
+
+#### 4XX Delete subnet response failure
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
 

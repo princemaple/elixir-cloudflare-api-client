@@ -6,3 +6,20 @@
 
 Analyze repository for automatic configuration detection
 
+### Responses
+
+#### 200 Configuration autofill data retrieved successfully
+
+> Data is at `body["result"]`
+
+```json
+{
+  "config_file": "*string*",
+  "default_worker_name": "*string*",
+  "env_worker_names": {},
+  "package_manager": "*string*",
+  "scripts": {}
+}
+```
+
+

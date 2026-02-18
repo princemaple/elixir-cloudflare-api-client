@@ -6,6 +6,85 @@
 
 
 
+### Responses
+
+#### 200 Create Zone response.
+
+> Data is at `body["result"]`
+
+```json
+{
+  "account": {
+    "id": "*string*",
+    "name": "*string*"
+  },
+  "activated_on": "*string*",
+  "cname_suffix": "*string*",
+  "created_on": "*string*",
+  "development_mode": "*number*",
+  "id": "*string*",
+  "meta": {
+    "cdn_only": "*boolean*",
+    "custom_certificate_quota": "*integer*",
+    "dns_only": "*boolean*",
+    "foundation_dns": "*boolean*",
+    "page_rule_quota": "*integer*",
+    "phishing_detected": "*boolean*",
+    "step": "*integer*"
+  },
+  "modified_on": "*string*",
+  "name": "*string*",
+  "name_servers": [
+    "*string*"
+  ],
+  "original_dnshost": "*string*",
+  "original_name_servers": [
+    "*string*"
+  ],
+  "original_registrar": "*string*",
+  "owner": {
+    "id": "*string*",
+    "name": "*string*",
+    "type": "*string*"
+  },
+  "paused": "*boolean*",
+  "permissions": [
+    "*string*"
+  ],
+  "plan": null,
+  "status": "*string*",
+  "tenant": null,
+  "tenant_unit": null,
+  "type": "*string*",
+  "vanity_name_servers": [
+    "*string*"
+  ],
+  "verification_key": "*string*"
+}
+```
+
+#### 4XX Create Zone response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## List Zones
 
@@ -15,6 +94,87 @@ Lists, searches, sorts, and filters your zones. Listing zones across more than 5
 is currently not allowed.
 
 
+### Responses
+
+#### 200 List Zones response.
+
+> Data is at `body["result"]`
+
+```json
+[
+  {
+    "account": {
+      "id": "*string*",
+      "name": "*string*"
+    },
+    "activated_on": "*string*",
+    "cname_suffix": "*string*",
+    "created_on": "*string*",
+    "development_mode": "*number*",
+    "id": "*string*",
+    "meta": {
+      "cdn_only": "*boolean*",
+      "custom_certificate_quota": "*integer*",
+      "dns_only": "*boolean*",
+      "foundation_dns": "*boolean*",
+      "page_rule_quota": "*integer*",
+      "phishing_detected": "*boolean*",
+      "step": "*integer*"
+    },
+    "modified_on": "*string*",
+    "name": "*string*",
+    "name_servers": [
+      "*string*"
+    ],
+    "original_dnshost": "*string*",
+    "original_name_servers": [
+      "*string*"
+    ],
+    "original_registrar": "*string*",
+    "owner": {
+      "id": "*string*",
+      "name": "*string*",
+      "type": "*string*"
+    },
+    "paused": "*boolean*",
+    "permissions": [
+      "*string*"
+    ],
+    "plan": null,
+    "status": "*string*",
+    "tenant": null,
+    "tenant_unit": null,
+    "type": "*string*",
+    "vanity_name_servers": [
+      "*string*"
+    ],
+    "verification_key": "*string*"
+  }
+]
+```
+
+#### 4XX List Zones response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Edit Zone
 
@@ -22,11 +182,169 @@ is currently not allowed.
 
 Edits a zone. Only one zone property can be changed at a time.
 
+### Responses
+
+#### 200 Edit Zone response.
+
+> Data is at `body["result"]`
+
+```json
+{
+  "account": {
+    "id": "*string*",
+    "name": "*string*"
+  },
+  "activated_on": "*string*",
+  "cname_suffix": "*string*",
+  "created_on": "*string*",
+  "development_mode": "*number*",
+  "id": "*string*",
+  "meta": {
+    "cdn_only": "*boolean*",
+    "custom_certificate_quota": "*integer*",
+    "dns_only": "*boolean*",
+    "foundation_dns": "*boolean*",
+    "page_rule_quota": "*integer*",
+    "phishing_detected": "*boolean*",
+    "step": "*integer*"
+  },
+  "modified_on": "*string*",
+  "name": "*string*",
+  "name_servers": [
+    "*string*"
+  ],
+  "original_dnshost": "*string*",
+  "original_name_servers": [
+    "*string*"
+  ],
+  "original_registrar": "*string*",
+  "owner": {
+    "id": "*string*",
+    "name": "*string*",
+    "type": "*string*"
+  },
+  "paused": "*boolean*",
+  "permissions": [
+    "*string*"
+  ],
+  "plan": null,
+  "status": "*string*",
+  "tenant": null,
+  "tenant_unit": null,
+  "type": "*string*",
+  "vanity_name_servers": [
+    "*string*"
+  ],
+  "verification_key": "*string*"
+}
+```
+
+#### 4XX Edit Zone response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Zone Details
 
 **GET** `/zones/{zone_id}`
 
+
+
+### Responses
+
+#### 200 Zone Details response.
+
+> Data is at `body["result"]`
+
+```json
+{
+  "account": {
+    "id": "*string*",
+    "name": "*string*"
+  },
+  "activated_on": "*string*",
+  "cname_suffix": "*string*",
+  "created_on": "*string*",
+  "development_mode": "*number*",
+  "id": "*string*",
+  "meta": {
+    "cdn_only": "*boolean*",
+    "custom_certificate_quota": "*integer*",
+    "dns_only": "*boolean*",
+    "foundation_dns": "*boolean*",
+    "page_rule_quota": "*integer*",
+    "phishing_detected": "*boolean*",
+    "step": "*integer*"
+  },
+  "modified_on": "*string*",
+  "name": "*string*",
+  "name_servers": [
+    "*string*"
+  ],
+  "original_dnshost": "*string*",
+  "original_name_servers": [
+    "*string*"
+  ],
+  "original_registrar": "*string*",
+  "owner": {
+    "id": "*string*",
+    "name": "*string*",
+    "type": "*string*"
+  },
+  "paused": "*boolean*",
+  "permissions": [
+    "*string*"
+  ],
+  "plan": null,
+  "status": "*string*",
+  "tenant": null,
+  "tenant_unit": null,
+  "type": "*string*",
+  "vanity_name_servers": [
+    "*string*"
+  ],
+  "verification_key": "*string*"
+}
+```
+
+#### 4XX Zone Details response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 
 
@@ -36,6 +354,40 @@ Edits a zone. Only one zone property can be changed at a time.
 
 Deletes an existing zone.
 
+### Responses
+
+#### 200 Delete Zone response.
+
+> Data is at `body["result"]`
+
+```json
+{
+  "id": "*string*"
+}
+```
+
+#### 4XX Delete Zone response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Rerun the Activation Check
 
@@ -44,6 +396,48 @@ Deletes an existing zone.
 Triggeres a new activation check for a PENDING Zone. This can be
 triggered every 5 min for paygo/ent customers, every hour for FREE
 Zones.
+
+### Responses
+
+#### 200 Successful Response
+
+> Data is at `body["result"]`
+
+```json
+{
+  "id": "*string*"
+}
+```
+
+#### 4XX Client Error
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "documentation_url": "*string*",
+      "message": "*string*",
+      "source": {
+        "pointer": "*string*"
+      }
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
 
 
 ## Purge Cached Content
@@ -90,5 +484,39 @@ Flex purge with prefixes:
 
 ### Availability and limits
 please refer to [purge cache availability and limits documentation page](https://developers.cloudflare.com/cache/how-to/purge-cache/#availability-and-limits).
+
+
+### Responses
+
+#### 200 Request to purge cached content successfull.
+
+> Data is at `body["result"]`
+
+```json
+{
+  "id": "*string*"
+}
+```
+
+#### 4XX Request to purge cached content failed.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
 
 

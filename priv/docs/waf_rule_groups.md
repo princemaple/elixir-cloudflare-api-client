@@ -8,6 +8,57 @@ Fetches the WAF rule groups in a WAF package.
 
 **Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
+### Responses
+
+#### 200 Defines the list WAF rule groups response.
+
+> Data is at `body["result"]`
+
+```json
+[
+  {
+    "allowed_modes": [
+      null
+    ],
+    "description": "*string*",
+    "id": "*string*",
+    "mode": "*string*",
+    "modified_rules_count": "*number*",
+    "name": "*string*",
+    "package_id": "*string*",
+    "rules_count": "*number*"
+  }
+]
+```
+
+#### 4XX Defines the list WAF rule groups response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "result_info": {
+    "count": "*number*",
+    "page": "*number*",
+    "per_page": "*number*",
+    "total_count": "*number*"
+  },
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Update a WAF rule group
 
@@ -17,6 +68,38 @@ Updates a WAF rule group. You can update the state (`mode` parameter) of a rule 
 
 **Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
+### Responses
+
+#### 200 Update a WAF rule group response.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 4XX Update a WAF rule group response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+
 
 ## Get a WAF rule group
 
@@ -25,4 +108,36 @@ Updates a WAF rule group. You can update the state (`mode` parameter) of a rule 
 Fetches the details of a WAF rule group.
 
 **Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
+
+### Responses
+
+#### 200 Get a WAF rule group response.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 4XX Get a WAF rule group response failure.
+
+```json
+{
+  "errors": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "messages": [
+    {
+      "code": "*integer*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
 

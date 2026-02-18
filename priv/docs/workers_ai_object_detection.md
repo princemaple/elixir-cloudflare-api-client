@@ -6,3 +6,29 @@
 
 
 
+### Responses
+
+#### 200 Object with user data.
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 400 Bad request
+
+```json
+{
+  "errors": [
+    {
+      "code": "*string*",
+      "message": "*string*"
+    }
+  ],
+  "result": {},
+  "success": "*boolean*"
+}
+```
+
+

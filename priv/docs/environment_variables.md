@@ -6,6 +6,23 @@
 
 Create or update environment variables for a trigger
 
+### Responses
+
+#### 200 Environment variables updated successfully
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+#### 404 
+
+```json
+
+```
+
+
 
 ## List environment variables
 
@@ -13,10 +30,38 @@ Create or update environment variables for a trigger
 
 Get all environment variables for a trigger
 
+### Responses
+
+#### 200 Environment variables retrieved successfully
+
+> Data is at `body["result"]`
+
+```json
+{}
+```
+
+
 
 ## Delete environment variable
 
 **DELETE** `/accounts/{account_id}/builds/triggers/{trigger_uuid}/environment_variables/{environment_variable_key}`
 
 Remove a specific environment variable from a trigger
+
+### Responses
+
+#### 200 
+
+> Data is at `body["result"]`
+
+```json
+
+```
+
+#### 404 
+
+```json
+
+```
+
 
