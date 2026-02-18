@@ -57,7 +57,8 @@ defmodule Cloudflare.ZoneSetting do
 
   @type setting :: unquote(setting_type)
 
-  @spec show(__MODULE__.setting(), Restlax.Resource.action_options()) :: Tesla.Env.result()
+  @spec show(__MODULE__.setting(), Restlax.Resource.action_options()) ::
+          {:ok, map()} | {:error, term()}
   for setting <- @settings do
     def show(unquote(setting), opts) do
       client(opts).get(path_for(nil, action: unquote(to_string(setting))), opts)
@@ -68,7 +69,7 @@ defmodule Cloudflare.ZoneSetting do
           __MODULE__.setting(),
           Restlax.Resource.action_body(),
           Restlax.Resource.action_options()
-        ) :: Tesla.Env.result()
+        ) :: {:ok, map()} | {:error, term()}
   for setting <- @settings do
     def update(unquote(setting), body, opts) do
       client(opts).patch(path_for(nil, action: unquote(to_string(setting))), body, opts)

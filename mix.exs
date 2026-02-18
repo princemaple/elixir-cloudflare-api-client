@@ -28,12 +28,13 @@ defmodule Cloudflare.MixProject do
 
   defp deps do
     [
-      {:restlax, "~> 0.1"},
+      {:restlax, "~> 1.0"},
       {:mint, "~> 1.0", optional: true},
       {:castore, ">= 0.0.0", optional: true},
       {:jason, "~> 1.0", optional: true},
       {:floki, ">= 0.0.0", only: :dev},
-      {:ex_doc, ">= 0.0.0", only: :docs}
+      {:ex_doc, ">= 0.0.0", only: :docs},
+      {:bypass, "~> 2.1", only: :test}
     ]
   end
 
