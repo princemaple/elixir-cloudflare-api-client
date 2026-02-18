@@ -1,19 +1,59 @@
 defmodule Cloudflare.Client do
-  use Restlax.Client,
-    base_url: "https://api.cloudflare.com/client/v4"
+  @base_url "https://api.cloudflare.com/client/v4"
 
-  def init do
-    :persistent_term.put({:cloudflare, :client}, Cloudflare.Client)
+  use Restlax.Client,
+    base_url: @base_url
+
+  def init(opts \\ []) do
+    :persistent_term.put({:cloudflare, :client}, new(opts))
+  end
+
+  def new(opts) do
+    :persistent_term.put({:cloudflare, :client_opts}, client_opts(opts))
+    __MODULE__
   end
 
   def req(request) do
-    {auth_token, options} = Keyword.pop(request.options, :auth_token)
-    {auth_email, options} = Keyword.pop(options, :auth_email)
-    {auth_key, options} = Keyword.pop(options, :auth_key)
+    opts =
+      case :persistent_term.get({:cloudflare, :client_opts}, :undefined) do
+        :undefined -> client_opts([])
+        value -> value
+      end
 
-    request = %{request | options: options}
+    request =
+      request
+      |> Req.Request.merge_options(base_url: opts[:base_url])
+      |> as_relative_url()
 
-    Cloudflare.Auth.auth_headers(auth_token: auth_token, auth_email: auth_email, auth_key: auth_key)
-    |> Enum.reduce(request, fn {key, value}, req -> Req.Request.put_header(req, key, value) end)
+    Enum.reduce(opts[:headers], request, fn {key, value}, req ->
+      Req.Request.put_header(req, key, value)
+    end)
+  end
+
+  defp client_opts(opts) do
+    [
+      base_url: Keyword.get(opts, :base_url, @base_url),
+      headers: auth_headers(opts)
+    ]
+  end
+
+  defp as_relative_url(%{url: url} = request),
+    do: %{request | url: %{url | scheme: nil, host: nil, port: nil}}
+
+  defp auth_headers(opts) do
+    auth_token = opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
+    auth_email = opts[:auth_email] || Application.get_env(:cloudflare, :auth_email)
+    auth_key = opts[:auth_key] || Application.get_env(:cloudflare, :auth_key)
+
+    cond do
+      auth_token ->
+        [{"authorization", "Bearer #{auth_token}"}]
+
+      auth_email && auth_key ->
+        [{"x-auth-email", auth_email}, {"x-auth-key", auth_key}]
+
+      true ->
+        raise ArgumentError, "expected :auth_token or :auth_email with :auth_key"
+    end
   end
 end
