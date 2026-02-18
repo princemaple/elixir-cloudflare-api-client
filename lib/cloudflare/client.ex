@@ -23,13 +23,12 @@ defmodule Cloudflare.Client do
   end
 
   defp request(method, path, body, opts, bang) do
-    opts = opts |> Keyword.drop([:auth_token, :auth_email, :auth_key]) |> put_auth_headers(opts)
+    auth_headers = Cloudflare.Auth.auth_headers(opts)
+    opts = opts |> Keyword.drop([:auth_token, :auth_email, :auth_key]) |> put_auth_headers(auth_headers)
     Restlax.Client.request(__MODULE__, method, path, body, opts, bang)
   end
 
-  defp put_auth_headers(opts, auth_opts) do
-    auth_headers = Cloudflare.Auth.auth_headers(auth_opts)
-
+  defp put_auth_headers(opts, auth_headers) do
     case auth_headers do
       [] -> opts
       _ -> Keyword.update(opts, :headers, auth_headers, &(auth_headers ++ &1))
