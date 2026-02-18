@@ -28,7 +28,7 @@ defmodule Cloudflare.MixProject do
 
   defp deps do
     [
-      {:restlax, github: "princemaple/restlax", branch: "main"},
+      {:restlax, "~> 1.0"},
       {:mint, "~> 1.0", optional: true},
       {:castore, ">= 0.0.0", optional: true},
       {:jason, "~> 1.0", optional: true},
