@@ -1,4 +1,14 @@
-## 0.4.0 - 2026-02-18
+## 0.4.0 - 2026-02-19
+
+### Added
+
+- Documentation for response body types in generated OpenAPI docs
+
+### Changed
+
+- Upgrade `:restlax` to `1.0.1`
+
+## 0.3.0 - 2026-02-18
 
 ### Changed
 
