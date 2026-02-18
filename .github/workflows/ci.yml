@@ -1,0 +1,7 @@
+name: Elixir CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    uses: swoosh/actions/.github/workflows/test.yml@main
