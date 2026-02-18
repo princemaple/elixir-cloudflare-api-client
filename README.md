@@ -15,7 +15,7 @@ by adding `cloudflare` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:cloudflare, "~> 0.3"}
+    {:cloudflare, "~> 0.4"}
   ]
 end
 ```
