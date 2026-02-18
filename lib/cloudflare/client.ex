@@ -20,6 +20,8 @@ defmodule Cloudflare.Client do
         value -> value
       end
 
+    request = Req.Request.merge_options(request, base_url: opts[:base_url])
+
     Enum.reduce(opts[:headers], request, fn {key, value}, req ->
       Req.Request.put_header(req, key, value)
     end)
