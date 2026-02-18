@@ -8,9 +8,7 @@ defmodule Cloudflare.ClientTest do
 
   test "creates client with bearer auth token", %{bypass: bypass} do
     client =
-      Cloudflare.Client.new(
-        auth_token: "token-from-opts"
-      )
+      Cloudflare.Client.new(auth_token: "token-from-opts")
 
     Bypass.expect_once(bypass, fn conn ->
       assert [auth] = Plug.Conn.get_req_header(conn, "authorization")
