@@ -20,7 +20,10 @@ defmodule Cloudflare.Client do
         value -> value
       end
 
-    request = maybe_put_base_url(request, opts[:base_uri])
+    request =
+      request
+      |> Req.Request.merge_options(base_url: opts[:base_url])
+      |> as_relative_url()
 
     Enum.reduce(opts[:headers], request, fn {key, value}, req ->
       Req.Request.put_header(req, key, value)
@@ -28,27 +31,14 @@ defmodule Cloudflare.Client do
   end
 
   defp client_opts(opts) do
-    base_uri = URI.parse(Keyword.get(opts, :base_url, @base_url))
-
     [
-      base_uri: base_uri,
+      base_url: Keyword.get(opts, :base_url, @base_url),
       headers: auth_headers(opts)
     ]
   end
 
-  defp maybe_put_base_url(request, uri) do
-    url = request.url
-
-    %{
-      request
-      | url: %{
-          url
-          | scheme: if(is_nil(uri.scheme), do: url.scheme, else: uri.scheme),
-            host: if(is_nil(uri.host), do: url.host, else: uri.host),
-            port: if(is_nil(uri.port), do: url.port, else: uri.port)
-        }
-    }
-  end
+  defp as_relative_url(%{url: url} = request),
+    do: %{request | url: %{url | scheme: nil, host: nil, port: nil}}
 
   defp auth_headers(opts) do
     auth_token = opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
