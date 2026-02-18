@@ -1,35 +1,22 @@
 # User
 
-The currently logged in/authenticated User
+## Edit User
+
+**PATCH** `/user`
+
+Edit part of your user details.
+
 
 ## User Details
 
-`GET` 
-
-> GET user
-
-**Permission needed:** `com.cloudflare.api.user.read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/user`
 
 
-## Edit User
 
-`PATCH` Edit part of your user details
 
-> PATCH user
+## List user tenants
 
-**Permission needed:** `com.cloudflare.api.user.update`
+**GET** `/users/tenants`
 
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Retrieves list of tenants the authenticated user / method has access to.
 

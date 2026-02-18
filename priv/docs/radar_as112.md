@@ -1,0 +1,134 @@
+# Radar AS112
+
+## Get AS112 DNS queries by DNSSEC summary
+
+**GET** `/radar/as112/summary/dnssec`
+
+Retrieves the distribution of DNS queries to AS112 by DNSSEC (DNS Security Extensions) support.
+
+
+## Get AS112 DNS queries by EDNS summary
+
+**GET** `/radar/as112/summary/edns`
+
+Retrieves the distribution of DNS queries to AS112 by EDNS (Extension Mechanisms for DNS) support.
+
+
+## Get AS112 DNS queries by IP version summary
+
+**GET** `/radar/as112/summary/ip_version`
+
+Retrieves the distribution of DNS queries to AS112 by IP version.
+
+
+## Get AS112 DNS queries by DNS protocol summary
+
+**GET** `/radar/as112/summary/protocol`
+
+Retrieves the distribution of DNS queries to AS112 by protocol.
+
+
+## Get AS112 DNS queries by type summary
+
+**GET** `/radar/as112/summary/query_type`
+
+Retrieves the distribution of DNS queries to AS112 by type.
+
+
+## Get AS112 DNS queries by response code summary
+
+**GET** `/radar/as112/summary/response_codes`
+
+Retrieves the distribution of AS112 DNS requests classified by response code.
+
+
+## Get AS112 summary by dimension
+
+**GET** `/radar/as112/summary/{dimension}`
+
+Retrieves the distribution of AS112 queries by the specified dimension.
+
+
+## Get AS112 DNS queries time series
+
+**GET** `/radar/as112/timeseries`
+
+Retrieves the AS112 DNS queries over time.
+
+
+## Get AS112 DNS queries by DNSSEC support time series
+
+**GET** `/radar/as112/timeseries_groups/dnssec`
+
+Retrieves the distribution of AS112 DNS queries by DNSSEC (DNS Security Extensions) support over time.
+
+
+## Get AS112 DNS queries by EDNS support summary
+
+**GET** `/radar/as112/timeseries_groups/edns`
+
+Retrieves the distribution of AS112 DNS queries by EDNS (Extension Mechanisms for DNS) support over time.
+
+
+## Get AS112 DNS queries by IP version time series
+
+**GET** `/radar/as112/timeseries_groups/ip_version`
+
+Retrieves the distribution of AS112 DNS queries by IP version over time.
+
+
+## Get AS112 DNS queries by DNS protocol time series
+
+**GET** `/radar/as112/timeseries_groups/protocol`
+
+Retrieves the distribution of AS112 DNS requests classified by protocol over time.
+
+
+## Get AS112 DNS queries by type time series
+
+**GET** `/radar/as112/timeseries_groups/query_type`
+
+Retrieves the distribution of AS112 DNS queries by type over time.
+
+
+## Get AS112 DNS queries by response code time series
+
+**GET** `/radar/as112/timeseries_groups/response_codes`
+
+Retrieves the distribution of AS112 DNS requests classified by response code over time.
+
+
+## Get AS112 time series grouped by dimension
+
+**GET** `/radar/as112/timeseries_groups/{dimension}`
+
+Retrieves the distribution of AS112 queries grouped by dimension over time.
+
+
+## Get top locations by AS112 DNS queries
+
+**GET** `/radar/as112/top/locations`
+
+Retrieves the top locations by AS112 DNS queries.
+
+
+## Get top locations by AS112 DNS queries with DNSSEC support
+
+**GET** `/radar/as112/top/locations/dnssec/{dnssec}`
+
+Retrieves the top locations of DNS queries to AS112 with DNSSEC (DNS Security Extensions) support.
+
+
+## Get top locations by AS112 DNS queries with EDNS support
+
+**GET** `/radar/as112/top/locations/edns/{edns}`
+
+Retrieves the top locations of DNS queries to AS112 with EDNS (Extension Mechanisms for DNS) support.
+
+
+## Get top locations by AS112 DNS queries for an IP version
+
+**GET** `/radar/as112/top/locations/ip_version/{ip_version}`
+
+Retrieves the top locations of DNS queries to AS112 for an IP version.
+

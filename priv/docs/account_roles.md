@@ -1,29 +1,15 @@
 # Account Roles
 
-A Role defines what permissions a Member of an Account has.
-
 ## List Roles
 
-`GET` Get all available roles for an account
+**GET** `/accounts/{account_id}/roles`
 
-> GET accounts/:account_identifier/roles
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-
+Get all available roles for an account.
 
 
 ## Role Details
 
-`GET` Get information about a specific role for an account
+**GET** `/accounts/{account_id}/roles/{role_id}`
 
-> GET accounts/:account_identifier/roles/:identifier
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-
+Get information about a specific role for an account.
 

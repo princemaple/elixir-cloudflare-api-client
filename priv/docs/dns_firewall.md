@@ -1,68 +1,50 @@
 # DNS Firewall
 
-Account-level DNS Firewall Management
+## Create DNS Firewall Cluster
+
+**POST** `/accounts/{account_id}/dns_firewall`
+
+Create a DNS Firewall cluster
+
 
 ## List DNS Firewall Clusters
 
-`GET` List configured DNS Firewall clusters for an account
+**GET** `/accounts/{account_id}/dns_firewall`
 
-> GET accounts/:account_identifier/virtual_dns
-
-**Permission needed:** `#dns_records:read`
-
-Available in:
-
-* ENTERPRISE
-
-
-## DNS Firewall Cluster Details
-
-`GET` List a single configured DNS Firewall clusters for an account
-
-> GET accounts/:account_identifier/virtual_dns/:identifier
-
-**Permission needed:** `#dns_records:read`
-
-Available in:
-
-* ENTERPRISE
+List DNS Firewall clusters for an account
 
 
 ## Update DNS Firewall Cluster
 
-`PUT` Modify a DNS Firewall Cluster configuration
+**PATCH** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}`
 
-> PUT accounts/:account_identifier/virtual_dns/:identifier
+Modify the configuration of a DNS Firewall cluster
 
-**Permission needed:** `#dns_records:edit`
 
-Available in:
+## DNS Firewall Cluster Details
 
-* ENTERPRISE
+**GET** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}`
+
+Show a single DNS Firewall cluster for an account
 
 
 ## Delete DNS Firewall Cluster
 
-`DELETE` Delete a configured DNS Firewall Cluster
+**DELETE** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}`
 
-> DELETE accounts/:account_identifier/virtual_dns/:identifier
-
-**Permission needed:** `#dns_records:edit`
-
-Available in:
-
-* ENTERPRISE
+Delete a DNS Firewall cluster
 
 
-## Create DNS Firewall Cluster
+## Update DNS Firewall Cluster Reverse DNS
 
-`POST` Create a configured DNS Firewall Cluster
+**PATCH** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}/reverse_dns`
 
-> POST accounts/:account_identifier/virtual_dns
+Update reverse DNS configuration (PTR records) for a DNS Firewall cluster
 
-**Permission needed:** `#dns_records:edit`
 
-Available in:
+## Show DNS Firewall Cluster Reverse DNS
 
-* ENTERPRISE
+**GET** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}/reverse_dns`
+
+Show reverse DNS configuration (PTR records) for a DNS Firewall cluster
 

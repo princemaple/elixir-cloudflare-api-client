@@ -1,83 +1,36 @@
 # Account Members
 
-An association between a Cloudflare user and an account
+## Add Member
+
+**POST** `/accounts/{account_id}/members`
+
+Add a user to the list of members for this account.
+
 
 ## List Members
 
-`GET` List all members of an account
+**GET** `/accounts/{account_id}/members`
 
-> GET accounts/:account_identifier/members
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Add Member
-
-`POST` Add a user to the list of members for this account
-
-> POST accounts/:account_identifier/members
-
-**Permission needed:** `#organization:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Member Details
-
-`GET` Get information about a specific member of an account
-
-> GET accounts/:account_identifier/members/:identifier
-
-**Permission needed:** `#organization:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+List all members of an account.
 
 
 ## Update Member
 
-`PUT` Modify an account member
+**PUT** `/accounts/{account_id}/members/{member_id}`
 
-> PUT accounts/:account_identifier/members/:identifier
+Modify an account member.
 
-**Permission needed:** `#organization:edit`
 
-Available in:
+## Member Details
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/accounts/{account_id}/members/{member_id}`
+
+Get information about a specific member of an account.
 
 
 ## Remove Member
 
-`DELETE` Remove a member from an account
+**DELETE** `/accounts/{account_id}/members/{member_id}`
 
-> DELETE accounts/:account_identifier/members/:identifier
-
-**Permission needed:** `#organization:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Remove a member from an account.
 

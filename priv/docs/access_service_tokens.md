@@ -1,55 +1,50 @@
-# Access Service Tokens
+# Access service tokens
 
-Access Service Tokens allow automated requests to reach protected domains
+## Create a service token
 
-## List Access Service Tokens
+**POST** `/accounts/{account_id}/access/service_tokens`
 
-`GET` List Access Service Tokens
-
-> GET accounts/:identifier/access/service_tokens
-
-**Permission needed:** `None`
-
-Available in:
+Generates a new service token. **Note:** This is the only time you can get the Client Secret. If you lose the Client Secret, you will have to rotate the Client Secret or create a new service token.
 
 
+## List service tokens
+
+**GET** `/accounts/{account_id}/access/service_tokens`
+
+Lists all service tokens.
 
 
-## Create Access Service Token
+## Update a service token
 
-`POST` Create a new Access Service Token. Note: This is the only time you can get the client secret. Please save it somewhere secure.
+**PUT** `/accounts/{account_id}/access/service_tokens/{service_token_id}`
 
-> POST accounts/:identifier/access/service_tokens
-
-**Permission needed:** `None`
-
-Available in:
+Updates a configured service token.
 
 
+## Get a service token
+
+**GET** `/accounts/{account_id}/access/service_tokens/{service_token_id}`
+
+Fetches a single service token.
 
 
-## Update Access Service Token
+## Delete a service token
 
-`PUT` Update a configured Access Service Token
+**DELETE** `/accounts/{account_id}/access/service_tokens/{service_token_id}`
 
-> PUT accounts/:identifier/access/service_tokens/:uuid
-
-**Permission needed:** `None`
-
-Available in:
+Deletes a service token.
 
 
+## Refresh a service token
+
+**POST** `/accounts/{account_id}/access/service_tokens/{service_token_id}/refresh`
+
+Refreshes the expiration of a service token.
 
 
-## Delete Access Service Token
+## Rotate a service token
 
-`DELETE` Delete an Access Service Token
+**POST** `/accounts/{account_id}/access/service_tokens/{service_token_id}/rotate`
 
-> DELETE accounts/:identifier/access/service_tokens/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Generates a new Client Secret for a service token and revokes the old one.
 

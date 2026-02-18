@@ -1,35 +1,15 @@
 # Argo Smart Routing
 
-Query, enable and disable Argo smart routing for a zone.
+## Patch Argo Smart Routing setting
+
+**PATCH** `/zones/{zone_id}/argo/smart_routing`
+
+Configures the value of the Argo Smart Routing enablement setting.
+
 
 ## Get Argo Smart Routing setting
 
-`GET` 
+**GET** `/zones/{zone_id}/argo/smart_routing`
 
-> GET zones/:zone_identifier/argo/smart_routing
-
-**Permission needed:** `#argo:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Patch Argo Smart Routing setting
-
-`PATCH` 
-
-> PATCH zones/:zone_identifier/argo/smart_routing
-
-**Permission needed:** `#argo:read#argo:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Retrieves the value of Argo Smart Routing enablement setting.
 

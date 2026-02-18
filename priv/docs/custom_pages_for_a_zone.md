@@ -1,48 +1,22 @@
-# Custom Pages for a Zone
+# Custom pages for a zone
 
-Custom pages associated with a zone
+## List custom pages
 
-## List Available Custom Pages
+**GET** `/zones/{zone_identifier}/custom_pages`
 
-`GET` A list of available Custom Pages the zone can use
-
-> GET zones/:zone_identifier/custom_pages
-
-**Permission needed:** `#zone_settings:read`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches all the custom pages at the zone level.
 
 
-## Custom Page Details
+## Update a custom page
 
-`GET` Details about a specific Custom page details
+**PUT** `/zones/{zone_identifier}/custom_pages/{identifier}`
 
-> GET zones/:zone_identifier/custom_pages/:identifier
-
-**Permission needed:** `#zone_settings:read`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates the configuration of an existing custom page.
 
 
-## Update Custom Page URL
+## Get a custom page
 
-`PUT` Update custom page URL
+**GET** `/zones/{zone_identifier}/custom_pages/{identifier}`
 
-> PUT zones/:zone_identifier/custom_pages/:identifier
-
-**Permission needed:** `#zone_settings:edit`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the details of a custom page.
 

@@ -1,138 +1,106 @@
 # Health Checks
 
-Zone-level stand-alone health checks
+## Create Health Check
+
+**POST** `/zones/{zone_id}/healthchecks`
+
+Create a new health check.
+
 
 ## List Health Checks
 
-`GET` List configured health checks
+**GET** `/zones/{zone_id}/healthchecks`
 
-> GET zones/:zone_identifier/healthchecks
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Create Health Check
-
-`POST` Create a new health check
-
-> POST zones/:zone_identifier/healthchecks
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Health Check Details
-
-`GET` Fetch a single configured health check
-
-> GET zones/:zone_identifier/healthchecks/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Update Health Check
-
-`PUT` Update a configured health check
-
-> PUT zones/:zone_identifier/healthchecks/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Patch Health Check
-
-`PATCH` Patch a configured health check
-
-> PATCH zones/:zone_identifier/healthchecks/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Delete Health Check
-
-`DELETE` Delete a health check
-
-> DELETE zones/:zone_identifier/healthchecks/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+List configured health checks.
 
 
 ## Create Preview Health Check
 
-`POST` Create a new preview health check
+**POST** `/zones/{zone_id}/healthchecks/preview`
 
-> POST zones/:zone_identifier/healthchecks/preview
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Create a new preview health check.
 
 
 ## Health Check Preview Details
 
-`GET` Fetch a single configured health check preview
+**GET** `/zones/{zone_id}/healthchecks/preview/{healthcheck_id}`
 
-> GET zones/:zone_identifier/healthchecks/preview/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetch a single configured health check preview.
 
 
 ## Delete Preview Health Check
 
-`DELETE` Delete a health check
+**DELETE** `/zones/{zone_id}/healthchecks/preview/{healthcheck_id}`
 
-> DELETE zones/:zone_identifier/healthchecks/preview/:identifier
+Delete a health check.
 
-**Permission needed:** `None`
 
-Available in:
+## Update Health Check
 
-* PRO
-* BUSINESS
-* ENTERPRISE
+**PUT** `/zones/{zone_id}/healthchecks/{healthcheck_id}`
+
+Update a configured health check.
+
+
+## Patch Health Check
+
+**PATCH** `/zones/{zone_id}/healthchecks/{healthcheck_id}`
+
+Patch a configured health check.
+
+
+## Health Check Details
+
+**GET** `/zones/{zone_id}/healthchecks/{healthcheck_id}`
+
+Fetch a single configured health check.
+
+
+## Delete Health Check
+
+**DELETE** `/zones/{zone_id}/healthchecks/{healthcheck_id}`
+
+Delete a health check.
+
+
+## Create Health Check
+
+**POST** `/zones/{zone_id}/smart_shield/healthchecks`
+
+Create a new health check.
+
+
+## List Health Checks
+
+**GET** `/zones/{zone_id}/smart_shield/healthchecks`
+
+List configured health checks.
+
+
+## Update Health Check
+
+**PUT** `/zones/{zone_id}/smart_shield/healthchecks/{healthcheck_id}`
+
+Update a configured health check.
+
+
+## Patch Health Check
+
+**PATCH** `/zones/{zone_id}/smart_shield/healthchecks/{healthcheck_id}`
+
+Patch a configured health check.
+
+
+## Health Check Details
+
+**GET** `/zones/{zone_id}/smart_shield/healthchecks/{healthcheck_id}`
+
+Fetch a single configured health check.
+
+
+## Delete Health Check
+
+**DELETE** `/zones/{zone_id}/smart_shield/healthchecks/{healthcheck_id}`
+
+Delete a health check.
 

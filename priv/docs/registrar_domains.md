@@ -1,42 +1,22 @@
 # Registrar Domains
 
-Manage Domains Names
+## List domains
 
-## List Domains
+**GET** `/accounts/{account_id}/registrar/domains`
 
-`POST` List domains handled by registrar
-
-> POST accounts/:account_identifier/registrar/domains
-
-**Permission needed:** `None`
-
-Available in:
+List domains handled by Registrar.
 
 
+## Update domain
+
+**PUT** `/accounts/{account_id}/registrar/domains/{domain_name}`
+
+Update individual domain.
 
 
-## Get Domain
+## Get domain
 
-`GET` Show individual domain
+**GET** `/accounts/{account_id}/registrar/domains/{domain_name}`
 
-> GET accounts/:account_identifier/registrar/domains/:domain_name
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Update Domain
-
-`PUT` Update individual domain
-
-> PUT accounts/:account_identifier/registrar/domains/:domain_name
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Show individual domain.
 

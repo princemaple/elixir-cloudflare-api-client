@@ -1,48 +1,28 @@
-# WAF Rule Groups
+# WAF rule groups
 
-A group of web application firewall rules that share common functionality and traits
+## List WAF rule groups
 
-## List Rule Groups
+**GET** `/zones/{zone_id}/firewall/waf/packages/{package_id}/groups`
 
-`GET` Search, list, and sort rule groups contained within a package
+Fetches the WAF rule groups in a WAF package.
 
-> GET zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Rule Group Details
+## Update a WAF rule group
 
-`GET` Get a single rule group
+**PATCH** `/zones/{zone_id}/firewall/waf/packages/{package_id}/groups/{group_id}`
 
-> GET zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups/:identifier
+Updates a WAF rule group. You can update the state (`mode` parameter) of a rule group.
 
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Edit Rule Group
+## Get a WAF rule group
 
-`PATCH` Update the state of a rule group
+**GET** `/zones/{zone_id}/firewall/waf/packages/{package_id}/groups/{group_id}`
 
-> PATCH zones/:zone_identifier/firewall/waf/packages/:package_identifier/groups/:identifier
+Fetches the details of a WAF rule group.
 
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 

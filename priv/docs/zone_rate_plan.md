@@ -1,51 +1,22 @@
 # Zone Rate Plan
 
-A zone rate plan from the billing service
-
-## List Available Rate Plans
-
-`GET` List all rate plans the zone can subscribe to.
-
-> GET zones/:zone_identifier/available_rate_plans
-
-**Permission needed:** `#billing:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
 ## List Available Plans
 
-`GET` List available plans the zone can subscribe to.
+**GET** `/zones/{zone_id}/available_plans`
 
-> GET zones/:zone_identifier/available_plans
-
-**Permission needed:** `#billing:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Lists available plans the zone can subscribe to.
 
 
 ## Available Plan Details
 
-`GET` Details of an available plan that the zone can subscribe to.
+**GET** `/zones/{zone_id}/available_plans/{plan_identifier}`
 
-> GET zones/:zone_identifier/available_plans/:plan_identifier
+Details of the available plan that the zone can subscribe to.
 
-**Permission needed:** `#billing:read`
 
-Available in:
+## List Available Rate Plans
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/zones/{zone_id}/available_rate_plans`
+
+Lists all rate plans the zone can subscribe to.
 

@@ -1,67 +1,29 @@
 # Origin CA
 
-API to create Cloudflare-issued SSL certificates that can be installed on your origin server. Use your Origin CA Key as your User Service Key when calling these endpoints (see the section on request headers for details).
+## Create Certificate
+
+**POST** `/certificates`
+
+Create an Origin CA certificate. You can use an Origin CA Key as your User Service Key or an API token when calling this endpoint ([see above](#requests)).
+
 
 ## List Certificates
 
-`GET` List all existing Origin CA certificates for a given zone. Use your Origin CA Key as your User Service Key when calling this endpoint (see above).
+**GET** `/certificates`
 
-> GET certificates
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Create Certificate
-
-`POST` Create an Origin CA certificate. Use your Origin CA Key as your User Service Key when calling this endpoint (see above).
-
-> POST certificates
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+List all existing Origin CA certificates for a given zone. You can use an Origin CA Key as your User Service Key or an API token when calling this endpoint ([see above](#requests)).
 
 
 ## Get Certificate
 
-`GET` Get an existing Origin CA certificate by its serial number. Use your Origin CA Key as your User Service Key when calling this endpoint (see above).
+**GET** `/certificates/{certificate_id}`
 
-> GET certificates/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Get an existing Origin CA certificate by its serial number. You can use an Origin CA Key as your User Service Key or an API token when calling this endpoint ([see above](#requests)).
 
 
 ## Revoke Certificate
 
-`DELETE` Revoke an existing Origin CA certificate by its serial number. Use your Origin CA Key as your User Service Key when calling this endpoint (see above).
+**DELETE** `/certificates/{certificate_id}`
 
-> DELETE certificates/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Revoke an existing Origin CA certificate by its serial number. You can use an Origin CA Key as your User Service Key or an API token when calling this endpoint ([see above](#requests)).
 

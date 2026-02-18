@@ -1,45 +1,22 @@
 # User Subscription
 
-Listing of a user's subscriptions
-
 ## Get User Subscriptions
 
-`GET` Lists all a user's subscriptions
+**GET** `/user/subscriptions`
 
-> GET user/subscriptions
-
-**Permission needed:** `#billing:read`
-
-Available in:
-
-
+Lists all of a user's subscriptions.
 
 
 ## Update User Subscription
 
-`PUT` Update a user subscriptions.
+**PUT** `/user/subscriptions/{identifier}`
 
-> PUT user/subscriptions/:identifier
-
-**Permission needed:** `#billing:read#billing:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates a user's subscriptions.
 
 
 ## Delete User Subscription
 
-`DELETE` Deletes a user's subscription
+**DELETE** `/user/subscriptions/{identifier}`
 
-> DELETE user/subscriptions/:identifier
-
-**Permission needed:** `#billing:edit`
-
-Available in:
-
-
+Deletes a user's subscription.
 

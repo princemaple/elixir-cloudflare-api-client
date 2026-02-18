@@ -1,51 +1,22 @@
 # Zone Subscription
 
-A subscription associated with a zone containing plan and add-ons
-
-## Zone Subscription Details
-
-`GET` Zone subscription details
-
-> GET zones/:identifier/subscription
-
-**Permission needed:** `#billing:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
 ## Update Zone Subscription
 
-`PUT` Update Zone subscriptions. Either plan and add-ons
+**PUT** `/zones/{zone_id}/subscription`
 
-> PUT zones/:identifier/subscription
-
-**Permission needed:** `#billing:read#billing:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates zone subscriptions, either plan or add-ons.
 
 
 ## Create Zone Subscription
 
-`POST` Create a Zone subscriptions. Either plan or add-ons
+**POST** `/zones/{zone_id}/subscription`
 
-> POST zones/:identifier/subscription
+Create a zone subscription, either plan or add-ons.
 
-**Permission needed:** `#billing:read#billing:edit`
 
-Available in:
+## Zone Subscription Details
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/zones/{zone_id}/subscription`
+
+Lists zone subscription details.
 

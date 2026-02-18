@@ -1,147 +1,113 @@
-# Account rulesets
+# Account Rulesets
 
-Account-level rulesets
+## Create an account ruleset
+
+**POST** `/accounts/{account_id}/rulesets`
+
+Creates a ruleset at the account level.
+
 
 ## List account rulesets
 
-`GET` List all rulesets for an account
+**GET** `/accounts/{account_id}/rulesets`
 
-> GET accounts/:account_id/rulesets
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches all rulesets at the account level.
 
 
-## Create account ruleset
+## Update an account entry point ruleset
 
-`POST` Create an account ruleset
+**PUT** `/accounts/{account_id}/rulesets/phases/{ruleset_phase}/entrypoint`
 
-> POST accounts/:account_id/rulesets
+Updates an account entry point ruleset, creating a new version.
 
-**Permission needed:** `None`
 
-Available in:
+## Get an account entry point ruleset
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/accounts/{account_id}/rulesets/phases/{ruleset_phase}/entrypoint`
+
+Fetches the latest version of the account entry point ruleset for a given phase.
+
+
+## List an account entry point ruleset's versions
+
+**GET** `/accounts/{account_id}/rulesets/phases/{ruleset_phase}/entrypoint/versions`
+
+Fetches the versions of an account entry point ruleset.
+
+
+## Get an account entry point ruleset version
+
+**GET** `/accounts/{account_id}/rulesets/phases/{ruleset_phase}/entrypoint/versions/{ruleset_version}`
+
+Fetches a specific version of an account entry point ruleset.
+
+
+## Update an account ruleset
+
+**PUT** `/accounts/{account_id}/rulesets/{ruleset_id}`
+
+Updates an account ruleset, creating a new version.
 
 
 ## Get an account ruleset
 
-`GET` Get an account ruleset
+**GET** `/accounts/{account_id}/rulesets/{ruleset_id}`
 
-> GET accounts/:account_id/rulesets/:ruleset_id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the latest version of an account ruleset.
 
 
-## List versions of an account ruleset
+## Delete an account ruleset
 
-`GET` List versions of an account ruleset
+**DELETE** `/accounts/{account_id}/rulesets/{ruleset_id}`
 
-> GET accounts/:account_id/rulesets/:ruleset_id/versions
+Deletes all versions of an existing account ruleset.
 
-**Permission needed:** `None`
 
-Available in:
+## Create an account ruleset rule
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**POST** `/accounts/{account_id}/rulesets/{ruleset_id}/rules`
+
+Adds a new rule to an account ruleset. The rule will be added to the end of the existing list of rules in the ruleset by default.
+
+
+## Update an account ruleset rule
+
+**PATCH** `/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id}`
+
+Updates an existing rule in an account ruleset.
+
+
+## Delete an account ruleset rule
+
+**DELETE** `/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id}`
+
+Deletes an existing rule from an account ruleset.
+
+
+## List an account ruleset's versions
+
+**GET** `/accounts/{account_id}/rulesets/{ruleset_id}/versions`
+
+Fetches the versions of an account ruleset.
 
 
 ## Get an account ruleset version
 
-`GET` Get an account ruleset version
+**GET** `/accounts/{account_id}/rulesets/{ruleset_id}/versions/{ruleset_version}`
 
-> GET accounts/:account_id/rulesets/:ruleset_id/versions/:ruleset_version
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches a specific version of an account ruleset.
 
 
-## Delete account ruleset
+## Delete an account ruleset version
 
-`DELETE` Delete all versions of the account ruleset
+**DELETE** `/accounts/{account_id}/rulesets/{ruleset_id}/versions/{ruleset_version}`
 
-> DELETE accounts/:account_id/rulesets/:ruleset_id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes an existing version of an account ruleset.
 
 
-## Delete a version of an account ruleset
+## List an account ruleset version's rules by tag
 
-`DELETE` Delete a version of an account ruleset
+**GET** `/accounts/{account_id}/rulesets/{ruleset_id}/versions/{ruleset_version}/by_tag/{rule_tag}`
 
-> DELETE accounts/:account_id/rulesets/:ruleset_id/versions/:ruleset_version
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Update account ruleset
-
-`PUT` Update an existing account ruleset
-
-> PUT accounts/:account_id/rulesets/:ruleset_id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Import a schema
-
-`POST` Import an OpenAPI Swagger specification
-
-> POST accounts/:account_id/rulesets/import
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the rules of a managed account ruleset version for a given tag.
 

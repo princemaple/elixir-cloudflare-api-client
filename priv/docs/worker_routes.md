@@ -1,68 +1,36 @@
 # Worker Routes
 
-Routes are basic patterns used to enable or disable workers that match requests.
-
 ## Create Route
 
-`POST` 
+**POST** `/zones/{zone_id}/workers/routes`
 
-> POST zones/:zone_id/workers/routes
-
-**Permission needed:** `com.cloudflare.edge.worker.route.create`
-
-Available in:
-
-
+Creates a route that maps a URL pattern to a Worker.
 
 
 ## List Routes
 
-`GET` 
+**GET** `/zones/{zone_id}/workers/routes`
 
-> GET zones/:zone_id/workers/routes
-
-**Permission needed:** `com.cloudflare.edge.worker.route.list`
-
-Available in:
-
-
-
-
-## Get Route
-
-`GET` 
-
-> GET zones/:zone_id/workers/routes/:route_id
-
-**Permission needed:** `com.cloudflare.edge.worker.route.read`
-
-Available in:
-
-
+Returns routes for a zone.
 
 
 ## Update Route
 
-`PUT` 
+**PUT** `/zones/{zone_id}/workers/routes/{route_id}`
 
-> PUT zones/:zone_id/workers/routes/:route_id
-
-**Permission needed:** `com.cloudflare.edge.worker.route.update`
-
-Available in:
+Updates the URL pattern or Worker associated with a route.
 
 
+## Get Route
+
+**GET** `/zones/{zone_id}/workers/routes/{route_id}`
+
+Returns information about a route, including URL pattern and Worker.
 
 
 ## Delete Route
 
-`DELETE` 
+**DELETE** `/zones/{zone_id}/workers/routes/{route_id}`
 
-> DELETE zones/:zone_id/workers/routes/:route_id
-
-**Permission needed:** `com.cloudflare.edge.worker.route.delete`
-
-Available in:
-
-
+Deletes a route.
 

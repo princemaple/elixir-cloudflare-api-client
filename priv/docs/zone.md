@@ -1,131 +1,94 @@
 # Zone
 
-A Zone is a domain name along with its subdomains and other identities
+## Create Zone
+
+**POST** `/zones`
+
+
+
 
 ## List Zones
 
-`GET` List, search, sort, and filter your zones
+**GET** `/zones`
 
-> GET zones
+Lists, searches, sorts, and filters your zones. Listing zones across more than 500 accounts
+is currently not allowed.
 
-**Permission needed:** `#zone:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Create Zone
-
-`POST` 
-
-> POST zones
-
-**Permission needed:** `#zone:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Zone Details
-
-`GET` 
-
-> GET zones/:identifier
-
-**Permission needed:** `#zone:read`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
 
 
 ## Edit Zone
 
-`PATCH` Only one zone property can be changed at a time
+**PATCH** `/zones/{zone_id}`
 
-> PATCH zones/:identifier
+Edits a zone. Only one zone property can be changed at a time.
 
-**Permission needed:** `None`
 
-Available in:
+## Zone Details
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/zones/{zone_id}`
+
+
 
 
 ## Delete Zone
 
-`DELETE` Delete an existing zone.
+**DELETE** `/zones/{zone_id}`
 
-> DELETE zones/:identifier
-
-**Permission needed:** `#zone:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes an existing zone.
 
 
-## Zone Activation Check
+## Rerun the Activation Check
 
-`PUT` Initiate another zone activation check
+**PUT** `/zones/{zone_id}/activation_check`
 
-> PUT zones/:identifier/activation_check
-
-**Permission needed:** `#zone:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Triggeres a new activation check for a PENDING Zone. This can be
+triggered every 5 min for paygo/ent customers, every hour for FREE
+Zones.
 
 
-## Purge All Files
+## Purge Cached Content
 
-`POST` Remove ALL files from Cloudflare's cache
+**POST** `/zones/{zone_id}/purge_cache`
 
-> POST zones/:identifier/purge_cache
+### Purge All Cached Content
+Removes ALL files from Cloudflare's cache. All tiers can purge everything.
+```
+{"purge_everything": true}
+```
 
-**Permission needed:** `#cache_purge:edit`
+### Purge Cached Content by URL
+Granularly removes one or more files from Cloudflare's cache by specifying URLs. All tiers can purge by URL.
 
-Available in:
+To purge files with custom cache keys, include the headers used to compute the cache key as in the example. If you have a device type or geo in your cache key, you will need to include the CF-Device-Type or CF-IPCountry headers. If you have lang in your cache key, you will need to include the Accept-Language header.
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**NB:** When including the Origin header, be sure to include the **scheme** and **hostname**. The port number can be omitted if it is the default port (80 for http, 443 for https), but must be included otherwise.
 
+Single file purge example with files:
+```
+{"files": ["http://www.example.com/css/styles.css", "http://www.example.com/js/index.js"]}
+```
+Single file purge example with url and header pairs:
+```
+{"files": [{url: "http://www.example.com/cat_picture.jpg", headers: { "CF-IPCountry": "US", "CF-Device-Type": "desktop", "Accept-Language": "zh-CN" }}, {url: "http://www.example.com/dog_picture.jpg", headers: { "CF-IPCountry": "EU", "CF-Device-Type": "mobile", "Accept-Language": "en-US" }}]}
+```
 
-## Purge Files by URL
+### Purge Cached Content by Tag, Host or Prefix
+Granularly removes one or more files from Cloudflare's cache either by specifying the host, the associated Cache-Tag, or a Prefix.
 
-`POST` Granularly remove one or more files from Cloudflare's cache either by specifying URLs. All tiers can purge by URL.To purge files with custom cache keys, include the headers used to compute the cache key as in the example. To purge files with ${geo} or ${devicetype} in their cache keys, include the CF-Device-Type or CF-IPCountry headers.NB: When including the Origin header, be sure to include the scheme and hostname. The port number can be omitted if it is the default port (80 for http, 443 for https), but must be included otherwise.
+Flex purge with tags:
+```
+{"tags": ["a-cache-tag", "another-cache-tag"]}
+```
+Flex purge with hosts:
+```
+{"hosts": ["www.example.com", "images.example.com"]}
+```
+Flex purge with prefixes:
+```
+{"prefixes": ["www.example.com/foo", "images.example.com/bar/baz"]}
+```
 
-> POST zones/:identifier/purge_cache
+### Availability and limits
+please refer to [purge cache availability and limits documentation page](https://developers.cloudflare.com/cache/how-to/purge-cache/#availability-and-limits).
 
-**Permission needed:** `#cache_purge:edit`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
 

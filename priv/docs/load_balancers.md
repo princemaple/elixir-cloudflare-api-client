@@ -1,81 +1,43 @@
 # Load Balancers
 
-Zone-level Load Balancers
+## Create Load Balancer
+
+**POST** `/zones/{zone_id}/load_balancers`
+
+Create a new load balancer.
+
 
 ## List Load Balancers
 
-`GET` List configured load balancers
+**GET** `/zones/{zone_id}/load_balancers`
 
-> GET zones/:identifier/load_balancers
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Create Load Balancer
-
-`POST` Create a new load balancer
-
-> POST zones/:identifier/load_balancers
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Load Balancer Details
-
-`GET` Fetch a single configured load balancer
-
-> GET zones/:identifier/load_balancers/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+List configured load balancers.
 
 
 ## Update Load Balancer
 
-`PUT` Update a configured load balancer
+**PUT** `/zones/{zone_id}/load_balancers/{load_balancer_id}`
 
-> PUT zones/:identifier/load_balancers/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Update a configured load balancer.
 
 
 ## Patch Load Balancer
 
-`PATCH` Apply changes to an existing load balancer, overwriting the supplied properties.
+**PATCH** `/zones/{zone_id}/load_balancers/{load_balancer_id}`
 
-> PATCH zones/:identifier/load_balancers/:identifier
-
-**Permission needed:** `None`
-
-Available in:
+Apply changes to an existing load balancer, overwriting the supplied properties.
 
 
+## Load Balancer Details
+
+**GET** `/zones/{zone_id}/load_balancers/{load_balancer_id}`
+
+Fetch a single configured load balancer.
 
 
 ## Delete Load Balancer
 
-`DELETE` Delete a configured load balancer
+**DELETE** `/zones/{zone_id}/load_balancers/{load_balancer_id}`
 
-> DELETE zones/:identifier/load_balancers/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Delete a configured load balancer.
 

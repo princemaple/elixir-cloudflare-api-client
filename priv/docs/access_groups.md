@@ -1,68 +1,36 @@
-# Access Groups
+# Access groups
 
-Access Groups allow you to define a set of users to which an application policy can be applied. You can reuse Access groups to quickly create policies that apply to the same set of users
+## Create an Access group
 
-## List Access Groups
+**POST** `/accounts/{account_id}/access/groups`
 
-`GET` List Access Groups
-
-> GET accounts/:identifier/access/groups
-
-**Permission needed:** `None`
-
-Available in:
+Creates a new Access group.
 
 
+## List Access groups
+
+**GET** `/accounts/{account_id}/access/groups`
+
+Lists all Access groups.
 
 
-## Access Group Details
+## Update an Access group
 
-`GET` Fetch a single Access Group
+**PUT** `/accounts/{account_id}/access/groups/{group_id}`
 
-> GET accounts/:identifier/access/groups/:uuid
-
-**Permission needed:** `None`
-
-Available in:
+Updates a configured Access group.
 
 
+## Get an Access group
+
+**GET** `/accounts/{account_id}/access/groups/{group_id}`
+
+Fetches a single Access group.
 
 
-## Create Access Group
+## Delete an Access group
 
-`POST` Create a new Access Group
+**DELETE** `/accounts/{account_id}/access/groups/{group_id}`
 
-> POST accounts/:identifier/access/groups
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Update Access Group
-
-`PUT` Update a configured Access Group
-
-> PUT accounts/:identifier/access/groups/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Delete Access Group
-
-`DELETE` Delete an Access Group
-
-> DELETE accounts/:identifier/access/groups/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Deletes an Access group.
 

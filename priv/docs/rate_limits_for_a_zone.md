@@ -1,83 +1,36 @@
-# Rate Limits for a Zone
+# Rate limits for a zone
 
-Documentation for Cloudflare Rate Limits
+## Create a rate limit
 
-## List Rate Limits
+**POST** `/zones/{zone_id}/rate_limits`
 
-`GET` List the rate limits on a zone.
-
-> GET zones/:zone_identifier/rate_limits
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Creates a new rate limit for a zone. Refer to the object definition for a list of required attributes.
 
 
-## Create Rate Limit
+## List rate limits
 
-`POST` Create a new rate limit for a zone. See the record object definitions for required attributes for each record type
+**GET** `/zones/{zone_id}/rate_limits`
 
-> POST zones/:zone_identifier/rate_limits
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the rate limits for a zone.
 
 
-## Rate Limit Details
+## Update a rate limit
 
-`GET` 
+**PUT** `/zones/{zone_id}/rate_limits/{rate_limit_id}`
 
-> GET zones/:zone_identifier/rate_limits/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates an existing rate limit.
 
 
-## Update Rate Limit
+## Get a rate limit
 
-`PUT` 
+**GET** `/zones/{zone_id}/rate_limits/{rate_limit_id}`
 
-> PUT zones/:zone_identifier/rate_limits/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the details of a rate limit.
 
 
-## Delete Rate Limit
+## Delete a rate limit
 
-`DELETE` 
+**DELETE** `/zones/{zone_id}/rate_limits/{rate_limit_id}`
 
-> DELETE zones/:zone_identifier/rate_limits/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes an existing rate limit.
 

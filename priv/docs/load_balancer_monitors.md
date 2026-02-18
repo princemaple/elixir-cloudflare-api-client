@@ -1,120 +1,64 @@
 # Load Balancer Monitors
 
-User-level Monitor configurations. Monitors define whether we check over HTTP, HTTPS or TCP, the status code(s) we look for, the interval at which we check, timeouts and response body matching.
+## Create Monitor
+
+**POST** `/user/load_balancers/monitors`
+
+Create a configured monitor.
+
 
 ## List Monitors
 
-`GET` List configured monitors for a user
+**GET** `/user/load_balancers/monitors`
 
-> GET user/load_balancers/monitors
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Create Monitor
-
-`POST` Create a configured monitor
-
-> POST user/load_balancers/monitors
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Monitor Details
-
-`GET` List a single configured monitor for a user
-
-> GET user/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+List configured monitors for a user.
 
 
 ## Update Monitor
 
-`PUT` Modify a configured monitor
+**PUT** `/user/load_balancers/monitors/{monitor_id}`
 
-> PUT user/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Modify a configured monitor.
 
 
 ## Patch Monitor
 
-`PATCH` Apply changes to an existing monitor, overwriting the supplied properties.
+**PATCH** `/user/load_balancers/monitors/{monitor_id}`
 
-> PATCH user/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
+Apply changes to an existing monitor, overwriting the supplied properties.
 
 
+## Monitor Details
+
+**GET** `/user/load_balancers/monitors/{monitor_id}`
+
+List a single configured monitor for a user.
 
 
 ## Delete Monitor
 
-`DELETE` Delete a configured monitor
+**DELETE** `/user/load_balancers/monitors/{monitor_id}`
 
-> DELETE user/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Delete a configured monitor.
 
 
 ## Preview Monitor
 
-`POST` Preview pools using the specified monitor with provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
+**POST** `/user/load_balancers/monitors/{monitor_id}/preview`
 
-> POST user/load_balancers/monitors/:identifier/preview
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Preview Result
-
-`GET` Get the result of a previous preview operation using the provided preview_id
-
-> GET user/load_balancers/preview/:preview_id
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Preview pools using the specified monitor with provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
 
 
 ## List Monitor References
 
-`GET` Get the list of resources that reference the provided monitor
+**GET** `/user/load_balancers/monitors/{monitor_id}/references`
 
-> GET user/load_balancers/monitors/:identifier/references
-
-**Permission needed:** `None`
-
-Available in:
+Get the list of resources that reference the provided monitor.
 
 
+## Preview Result
+
+**GET** `/user/load_balancers/preview/{preview_id}`
+
+Get the result of a previous preview operation using the provided preview_id.
 

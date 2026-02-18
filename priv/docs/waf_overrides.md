@@ -1,68 +1,46 @@
-# Waf Overrides
+# WAF overrides
 
-Overrides for turning WAF packages on or off
+## Create a WAF override
 
-## List URI-controlled WAF configurations
+**POST** `/zones/{zone_id}/firewall/waf/overrides`
 
-`GET` List the WAF configurations on a zone.
+Creates a URI-based WAF override for a zone.
 
-> GET zones/:zone_identifier/firewall/waf/overrides
-
-**Permission needed:** `None`
-
-Available in:
-
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Create a URI-controlled WAF configuration
+## List WAF overrides
 
-`POST` Create a new WAF configuration for a zone. See the record object definitions for required attributes for each record type.
+**GET** `/zones/{zone_id}/firewall/waf/overrides`
 
-> POST zones/:zone_identifier/firewall/waf/overrides
+Fetches the URI-based WAF overrides in a zone.
 
-**Permission needed:** `None`
-
-Available in:
-
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## URI-controlled WAF configuration details
+## Update WAF override
 
-`GET` 
+**PUT** `/zones/{zone_id}/firewall/waf/overrides/{overrides_id}`
 
-> GET zones/:zone_identifier/firewall/waf/overrides/:id
+Updates an existing URI-based WAF override.
 
-**Permission needed:** `None`
-
-Available in:
-
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Update URI-controlled WAF configuration
+## Get a WAF override
 
-`PUT` 
+**GET** `/zones/{zone_id}/firewall/waf/overrides/{overrides_id}`
 
-> PUT zones/:zone_identifier/firewall/waf/overrides/:id
+Fetches the details of a URI-based WAF override.
 
-**Permission needed:** `None`
-
-Available in:
-
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Delete URI-controlled WAF configuration
+## Delete a WAF override
 
-`DELETE` 
+**DELETE** `/zones/{zone_id}/firewall/waf/overrides/{overrides_id}`
 
-> DELETE zones/:zone_identifier/firewall/waf/overrides/:id
+Deletes an existing URI-based WAF override.
 
-**Permission needed:** `None`
-
-Available in:
-
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 

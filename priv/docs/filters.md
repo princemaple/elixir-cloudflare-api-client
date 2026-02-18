@@ -1,115 +1,50 @@
 # Filters
 
-Filter expressions that can be referenced across multiple features
+## Update filters
+
+**PUT** `/zones/{zone_id}/filters`
+
+Updates one or more existing filters.
+
+
+## Create filters
+
+**POST** `/zones/{zone_id}/filters`
+
+Creates one or more filters.
+
 
 ## List filters
 
-`GET` List all the filters currently defined
+**GET** `/zones/{zone_id}/filters`
 
-> GET zones/:zone_identifier/filters
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## List individual filter
-
-`GET` List one filters currently defined
-
-> GET zones/:zone_identifier/filters/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Create Filters
-
-`POST` Create new filters
-
-> POST zones/:zone_identifier/filters
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Update filters
-
-`PUT` Update existing filters. See the record object definitions for required attributes for each record type
-
-> PUT zones/:zone_identifier/filters
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Update individual filter
-
-`PUT` Update an existing filter. See the record object definitions for required attributes for each record type
-
-> PUT zones/:zone_identifier/filters/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches filters in a zone. You can filter the results using several optional parameters.
 
 
 ## Delete filters
 
-`DELETE` Delete existing filters.
+**DELETE** `/zones/{zone_id}/filters`
 
-> DELETE zones/:zone_identifier/filters
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes one or more existing filters.
 
 
-## Delete individual filter
+## Update a filter
 
-`DELETE` Delete existing filters.
+**PUT** `/zones/{zone_id}/filters/{filter_id}`
 
-> DELETE zones/:zone_identifier/filters/:id
+Updates an existing filter.
 
-**Permission needed:** `None`
 
-Available in:
+## Get a filter
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**GET** `/zones/{zone_id}/filters/{filter_id}`
+
+Fetches the details of a filter.
+
+
+## Delete a filter
+
+**DELETE** `/zones/{zone_id}/filters/{filter_id}`
+
+Deletes an existing filter.
 

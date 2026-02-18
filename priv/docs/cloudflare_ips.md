@@ -1,16 +1,8 @@
 # Cloudflare IPs
 
-Cloudflare IP space
+## Cloudflare/JD Cloud IP Details
 
-## Cloudflare IP Details
+**GET** `/ips`
 
-`GET` Get Cloudflare IPs
-
-> GET ips
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Get IPs used on the Cloudflare/JD Cloud network, see https://www.cloudflare.com/ips for Cloudflare IPs or https://developers.cloudflare.com/china-network/reference/infrastructure/ for JD Cloud IPs.
 

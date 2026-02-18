@@ -1,42 +1,43 @@
 # Stream Subtitles/Captions
 
-Add subtitles or captions to Stream videos for any language.
+## List captions or subtitles
 
-## Upload a caption/subtitle
+**GET** `/accounts/{account_id}/stream/{identifier}/captions`
 
-`PUT` Upload the file to the endpoint for a specific BCP47 language. One caption/subtitle per language is allowed.
-
-> PUT accounts/:account_identifier/stream/:video_identifier/captions/:language
-
-**Permission needed:** `None`
-
-Available in:
+Lists the available captions or subtitles for a specific video.
 
 
+## Upload captions or subtitles
+
+**PUT** `/accounts/{account_id}/stream/{identifier}/captions/{language}`
+
+Uploads the caption or subtitle file to the endpoint for a specific BCP47 language. One caption or subtitle file per language is allowed.
 
 
-## List captions/subtitles
+## List captions or subtitles for a provided language
 
-`GET` View the currently available captions for a specific video.
+**GET** `/accounts/{account_id}/stream/{identifier}/captions/{language}`
 
-> GET accounts/:account_identifier/stream/:video_identifier/captions
-
-**Permission needed:** `None`
-
-Available in:
+Lists the captions or subtitles for provided language.
 
 
+## Delete captions or subtitles
+
+**DELETE** `/accounts/{account_id}/stream/{identifier}/captions/{language}`
+
+Removes the captions or subtitles from a video.
 
 
-## Delete a caption/subtitle
+## Generate captions or subtitles for a provided language via AI
 
-`DELETE` Remove the caption or subtitle from a video
+**POST** `/accounts/{account_id}/stream/{identifier}/captions/{language}/generate`
 
-> DELETE accounts/:account_identifier/stream/:video_identifier/captions/:language
-
-**Permission needed:** `None`
-
-Available in:
+Generate captions or subtitles for provided language via AI.
 
 
+## Return WebVTT captions for a provided language
+
+**GET** `/accounts/{account_id}/stream/{identifier}/captions/{language}/vtt`
+
+Return WebVTT captions for a provided language.
 

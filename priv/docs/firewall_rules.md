@@ -1,115 +1,64 @@
 # Firewall rules
 
-Define Firewall rules using filter expressions for more control over how traffic is matched to the rule.
+## Update firewall rules
 
-## List of firewall rules
+**PUT** `/zones/{zone_id}/firewall/rules`
 
-`GET` List all the firewall rules currently defined.
-
-> GET zones/:zone_identifier/firewall/rules
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
-
-
-## Get individual Firewall Rule
-
-`GET` Retrieve the properties of an individual firewall rule
-
-> GET zones/:zone_identifier/firewall/rules/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates one or more existing firewall rules.
 
 
 ## Create firewall rules
 
-`POST` Create new firewall rules. See the record object definitions for required attributes for each record type
+**POST** `/zones/{zone_id}/firewall/rules`
 
-> POST zones/:zone_identifier/firewall/rules
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Create one or more firewall rules.
 
 
-## Update firewall rules
+## Update priority of firewall rules
 
-`PUT` Update existing firewall rules. See the record object definitions for required attributes for each record type
+**PATCH** `/zones/{zone_id}/firewall/rules`
 
-> PUT zones/:zone_identifier/firewall/rules
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates the priority of existing firewall rules.
 
 
-## Update individual firewall rule
+## List firewall rules
 
-`PUT` Update an individual existing firewall rule. See the record object definitions for required attributes for each record type
+**GET** `/zones/{zone_id}/firewall/rules`
 
-> PUT zones/:zone_identifier/firewall/rules/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches firewall rules in a zone. You can filter the results using several optional parameters.
 
 
 ## Delete firewall rules
 
-`DELETE` Delete existing firewall rules.
+**DELETE** `/zones/{zone_id}/firewall/rules`
 
-> DELETE zones/:zone_identifier/firewall/rules
-
-**Permission needed:** `None`
-
-Available in:
-
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes existing firewall rules.
 
 
-## Delete individual firewall rules
+## Update a firewall rule
 
-`DELETE` Delete existing firewall rules.
+**PUT** `/zones/{zone_id}/firewall/rules/{rule_id}`
 
-> DELETE zones/:zone_identifier/firewall/rules/:id
+Updates an existing firewall rule.
 
-**Permission needed:** `None`
 
-Available in:
+## Update priority of a firewall rule
 
-* FREE
-* PRO
-* BUSINESS
-* ENTERPRISE
+**PATCH** `/zones/{zone_id}/firewall/rules/{rule_id}`
+
+Updates the priority of an existing firewall rule.
+
+
+## Get a firewall rule
+
+**GET** `/zones/{zone_id}/firewall/rules/{rule_id}`
+
+Fetches the details of a firewall rule.
+
+
+## Delete a firewall rule
+
+**DELETE** `/zones/{zone_id}/firewall/rules/{rule_id}`
+
+Deletes an existing firewall rule.
 

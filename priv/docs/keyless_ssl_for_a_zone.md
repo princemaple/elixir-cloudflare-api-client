@@ -1,68 +1,36 @@
 # Keyless SSL for a Zone
 
-A Keyless certificate is an SSL certificate where the SSL private key is not stored on Cloudflare
+## Create Keyless SSL Configuration
+
+**POST** `/zones/{zone_id}/keyless_certificates`
+
+
+
 
 ## List Keyless SSL Configurations
 
-`GET` List all Keyless SSL configurations for a given zone
+**GET** `/zones/{zone_id}/keyless_certificates`
 
-> GET zones/:zone_identifier/keyless_certificates
-
-**Permission needed:** `#ssl:read`
-
-Available in:
-
-* ENTERPRISE
-
-
-## Create Keyless SSL Configuration
-
-`POST` 
-
-> POST zones/:zone_identifier/keyless_certificates
-
-**Permission needed:** `#ssl:edit`
-
-Available in:
-
-* ENTERPRISE
-
-
-## Get Keyless SSL Configuration
-
-`GET` Get details for one Keyless SSL configuration
-
-> GET zones/:zone_identifier/keyless_certificates/:identifier
-
-**Permission needed:** `#ssl:read`
-
-Available in:
-
-* ENTERPRISE
+List all Keyless SSL configurations for a given zone.
 
 
 ## Edit Keyless SSL Configuration
 
-`PATCH` This will update attributes of a Keyless SSL. Consists of one or more of the following:  host,name,port,certificate,enabled
+**PATCH** `/zones/{zone_id}/keyless_certificates/{keyless_certificate_id}`
 
-> PATCH zones/:zone_identifier/keyless_certificates/:identifier
+This will update attributes of a Keyless SSL. Consists of one or more of the following:  host,name,port.
 
-**Permission needed:** `#ssl:edit`
 
-Available in:
+## Get Keyless SSL Configuration
 
-* ENTERPRISE
+**GET** `/zones/{zone_id}/keyless_certificates/{keyless_certificate_id}`
+
+Get details for one Keyless SSL configuration.
 
 
 ## Delete Keyless SSL Configuration
 
-`DELETE` 
+**DELETE** `/zones/{zone_id}/keyless_certificates/{keyless_certificate_id}`
 
-> DELETE zones/:zone_identifier/keyless_certificates/:identifier
 
-**Permission needed:** `#ssl:edit`
-
-Available in:
-
-* ENTERPRISE
 

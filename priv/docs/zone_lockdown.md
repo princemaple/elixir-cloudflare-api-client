@@ -1,78 +1,36 @@
 # Zone Lockdown
 
-Lock access to URLs in this zone to only permitted addresses or address ranges.
+## Create a Zone Lockdown rule
 
-## List Lockdown Rules
+**POST** `/zones/{zone_id}/firewall/lockdowns`
 
-`GET` List the lockdown rules on a zone.
-
-> GET zones/:zone_identifier/firewall/lockdowns
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Creates a new Zone Lockdown rule.
 
 
-## Create Lockdown Rule
+## List Zone Lockdown rules
 
-`POST` Create a new lockdown rule for a zone. See the record object definitions for required attributes for each record type
+**GET** `/zones/{zone_id}/firewall/lockdowns`
 
-> POST zones/:zone_identifier/firewall/lockdowns
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches Zone Lockdown rules. You can filter the results using several optional parameters.
 
 
-## Lockdown Rule Details
+## Update a Zone Lockdown rule
 
-`GET` 
+**PUT** `/zones/{zone_id}/firewall/lockdowns/{lock_downs_id}`
 
-> GET zones/:zone_identifier/firewall/lockdowns/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Updates an existing Zone Lockdown rule.
 
 
-## Update Lockdown Rule
+## Get a Zone Lockdown rule
 
-`PUT` 
+**GET** `/zones/{zone_id}/firewall/lockdowns/{lock_downs_id}`
 
-> PUT zones/:zone_identifier/firewall/lockdowns/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Fetches the details of a Zone Lockdown rule.
 
 
-## Delete Lockdown Rule
+## Delete a Zone Lockdown rule
 
-`DELETE` 
+**DELETE** `/zones/{zone_id}/firewall/lockdowns/{lock_downs_id}`
 
-> DELETE zones/:zone_identifier/firewall/lockdowns/:id
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+Deletes an existing Zone Lockdown rule.
 

@@ -1,81 +1,64 @@
-# Access Applications
+# Access applications
 
-Access Applications define the routes that Access will block.
+## Add an Access application
 
-## List Access Applications
+**POST** `/accounts/{account_id}/access/apps`
 
-`GET` List Access Applications for an account
-
-> GET accounts/:identifier/access/apps
-
-**Permission needed:** `None`
-
-Available in:
+Adds a new application to Access.
 
 
+## List Access applications
+
+**GET** `/accounts/{account_id}/access/apps`
+
+Lists all Access applications in an account.
 
 
-## Access Applications Details
+## Update an Access application
 
-`GET` Fetch a single Access Application
+**PUT** `/accounts/{account_id}/access/apps/{app_id}`
 
-> GET accounts/:identifier/access/apps/:uuid
-
-**Permission needed:** `None`
-
-Available in:
+Updates an Access application.
 
 
+## Get an Access application
+
+**GET** `/accounts/{account_id}/access/apps/{app_id}`
+
+Fetches information about an Access application.
 
 
-## Create Access Application
+## Delete an Access application
 
-`POST` Create a new Access Application
+**DELETE** `/accounts/{account_id}/access/apps/{app_id}`
 
-> POST accounts/:identifier/access/apps
-
-**Permission needed:** `None`
-
-Available in:
+Deletes an application from Access.
 
 
+## Revoke application tokens
+
+**POST** `/accounts/{account_id}/access/apps/{app_id}/revoke_tokens`
+
+Revokes all tokens issued for an application.
 
 
-## Update Access Application
+## Update Access application settings
 
-`PUT` Update a configured Access Application
+**PUT** `/accounts/{account_id}/access/apps/{app_id}/settings`
 
-> PUT accounts/:identifier/access/apps/:uuid
-
-**Permission needed:** `None`
-
-Available in:
+Updates Access application settings.
 
 
+## Update Access application settings
+
+**PATCH** `/accounts/{account_id}/access/apps/{app_id}/settings`
+
+Updates Access application settings.
 
 
-## Delete Access Application
+## Test Access policies
 
-`DELETE` Delete an Access Application
+**GET** `/accounts/{account_id}/access/apps/{app_id}/user_policy_checks`
 
-> DELETE accounts/:identifier/access/apps/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Revoke Access Tokens
-
-`POST` Revoke any outstanding tokens issued for the Application.
-
-> POST accounts/:identifier/access/apps/:uuid/revoke_tokens
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Tests if a specific user has permission to access an application.
 

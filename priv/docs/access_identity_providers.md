@@ -1,68 +1,50 @@
-# Access Identity Providers
+# Access identity providers
 
-Access identity providers are the services your user’s will login against to authenticate with your site
+## Add an Access identity provider
 
-## List Access Identity Providers
+**POST** `/accounts/{account_id}/access/identity_providers`
 
-`GET` List your Access Identity Providers
-
-> GET accounts/:identifier/access/identity_providers
-
-**Permission needed:** `None`
-
-Available in:
+Adds a new identity provider to Access.
 
 
+## List Access identity providers
+
+**GET** `/accounts/{account_id}/access/identity_providers`
+
+Lists all configured identity providers.
 
 
-## Access Identity Providers Details
+## Update an Access identity provider
 
-`GET` Fetch your Access Identity Providers details
+**PUT** `/accounts/{account_id}/access/identity_providers/{identity_provider_id}`
 
-> GET accounts/:identifier/access/identity_providers/:uuid
-
-**Permission needed:** `None`
-
-Available in:
+Updates a configured identity provider.
 
 
+## Get an Access identity provider
+
+**GET** `/accounts/{account_id}/access/identity_providers/{identity_provider_id}`
+
+Fetches a configured identity provider.
 
 
-## Create Access Identity Provider
+## Delete an Access identity provider
 
-`POST` Create a new Access Identity Provider
+**DELETE** `/accounts/{account_id}/access/identity_providers/{identity_provider_id}`
 
-> POST accounts/:identifier/access/identity_providers
-
-**Permission needed:** `None`
-
-Available in:
+Deletes an identity provider from Access.
 
 
+## List SCIM Group resources
+
+**GET** `/accounts/{account_id}/access/identity_providers/{identity_provider_id}/scim/groups`
+
+Lists SCIM Group resources synced to Cloudflare via the System for Cross-domain Identity Management (SCIM).
 
 
-## Update Access Identity Provider
+## List SCIM User resources
 
-`PUT` Update a configured Access Identity Provider
+**GET** `/accounts/{account_id}/access/identity_providers/{identity_provider_id}/scim/users`
 
-> PUT accounts/:identifier/access/identity_providers/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Delete Access Identity Provider
-
-`DELETE` Delete an Access Identity Provider
-
-> DELETE accounts/:identifier/access/identity_providers/:uuid
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Lists SCIM User resources synced to Cloudflare via the System for Cross-domain Identity Management (SCIM).
 

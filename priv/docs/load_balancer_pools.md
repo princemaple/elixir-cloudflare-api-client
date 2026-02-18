@@ -1,120 +1,71 @@
 # Load Balancer Pools
 
-User-level Load Balancer Pools
+## Create Pool
+
+**POST** `/user/load_balancers/pools`
+
+Create a new pool.
+
+
+## Patch Pools
+
+**PATCH** `/user/load_balancers/pools`
+
+Apply changes to a number of existing pools, overwriting the supplied properties. Pools are ordered by ascending `name`. Returns the list of affected pools. Supports the standard pagination query parameters, either `limit`/`offset` or `per_page`/`page`.
+
 
 ## List Pools
 
-`GET` List configured pools
+**GET** `/user/load_balancers/pools`
 
-> GET user/load_balancers/pools
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Create Pool
-
-`POST` Create a new pool
-
-> POST user/load_balancers/pools
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Pool Details
-
-`GET` Fetch a single configured pool
-
-> GET user/load_balancers/pools/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Pool Health Details
-
-`GET` Fetch latest healthcheck details for a single pool
-
-> GET user/load_balancers/pools/:identifier/health
-
-**Permission needed:** `None`
-
-Available in:
-
-
+List configured pools.
 
 
 ## Update Pool
 
-`PUT` Modify a configured pool
+**PUT** `/user/load_balancers/pools/{pool_id}`
 
-> PUT user/load_balancers/pools/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Modify a configured pool.
 
 
 ## Patch Pool
 
-`PATCH` Apply changes to an existing pool, overwriting the supplied properties.
+**PATCH** `/user/load_balancers/pools/{pool_id}`
 
-> PATCH user/load_balancers/pools/:identifier
-
-**Permission needed:** `None`
-
-Available in:
+Apply changes to an existing pool, overwriting the supplied properties.
 
 
+## Pool Details
+
+**GET** `/user/load_balancers/pools/{pool_id}`
+
+Fetch a single configured pool.
 
 
 ## Delete Pool
 
-`DELETE` Delete a configured pool
+**DELETE** `/user/load_balancers/pools/{pool_id}`
 
-> DELETE user/load_balancers/pools/:identifier
-
-**Permission needed:** `None`
-
-Available in:
+Delete a configured pool.
 
 
+## Pool Health Details
+
+**GET** `/user/load_balancers/pools/{pool_id}/health`
+
+Fetch the latest pool health status for a single pool.
 
 
 ## Preview Pool
 
-`POST` Preview pool health using provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
+**POST** `/user/load_balancers/pools/{pool_id}/preview`
 
-> POST user/load_balancers/pools/:identifier/preview
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Preview pool health using provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
 
 
 ## List Pool References
 
-`GET` Get the list of resources that reference the provided pool
+**GET** `/user/load_balancers/pools/{pool_id}/references`
 
-> GET user/load_balancers/pools/:identifier/references
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Get the list of resources that reference the provided pool.
 

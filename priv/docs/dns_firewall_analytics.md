@@ -1,29 +1,19 @@
 # DNS Firewall Analytics
 
-Analytics data for a DNS Firewall cluster.
-
 ## Table
 
-`GET` Retrieves a list of summarised aggregate metrics over a given time period.
+**GET** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}/dns_analytics/report`
 
-> GET accounts/:account_identifier/virtual_dns/:identifier/dns_analytics/report
+Retrieves a list of summarised aggregate metrics over a given time period.
 
-**Permission needed:** `None`
-
-Available in:
-
-
+See [Analytics API properties](https://developers.cloudflare.com/dns/reference/analytics-api-properties/) for detailed information about the available query parameters.
 
 
 ## By Time
 
-`GET` Retrieves a list of aggregate metrics grouped by time interval.
+**GET** `/accounts/{account_id}/dns_firewall/{dns_firewall_id}/dns_analytics/report/bytime`
 
-> GET accounts/:account_identifier/virtual_dns/:identifier/dns_analytics/report/bytime
+Retrieves a list of aggregate metrics grouped by time interval.
 
-**Permission needed:** `None`
-
-Available in:
-
-
+See [Analytics API properties](https://developers.cloudflare.com/dns/reference/analytics-api-properties/) for detailed information about the available query parameters.
 

@@ -1,68 +1,36 @@
 # Spectrum Applications
 
-You can extend the power of Cloudflare's DDoS, TLS, and IP Firewall to your other TCP-based services.
+## Create Spectrum application using a name for the origin
 
-## List Spectrum Applications
+**POST** `/zones/{zone_id}/spectrum/apps`
 
-`GET` Retrieve a list of currently existing Spectrum Applications inside a zone.
-
-> GET zones/:zone/spectrum/apps
-
-**Permission needed:** `None`
-
-Available in:
+Creates a new Spectrum application from a configuration using a name for the origin.
 
 
+## List Spectrum applications
+
+**GET** `/zones/{zone_id}/spectrum/apps`
+
+Retrieves a list of currently existing Spectrum applications inside a zone.
 
 
-## Create Spectrum Application
+## Update Spectrum application configuration using a name for the origin
 
-`POST` Create a new Spectrum Application from a configuration.
+**PUT** `/zones/{zone_id}/spectrum/apps/{app_id}`
 
-> POST zones/:zone/spectrum/apps
-
-**Permission needed:** `None`
-
-Available in:
+Updates a previously existing application's configuration that uses a name for the origin.
 
 
+## Get Spectrum application configuration
+
+**GET** `/zones/{zone_id}/spectrum/apps/{app_id}`
+
+Gets the application configuration of a specific application inside a zone.
 
 
-## Get Spectrum Application Configuration
+## Delete Spectrum application
 
-`GET` Get the application configuration of a specific application inside a zone.
+**DELETE** `/zones/{zone_id}/spectrum/apps/{app_id}`
 
-> GET zones/:zone/spectrum/apps/:app_id
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Update Spectrum Application Configuration
-
-`PUT` Update a previously existing application's configuration.
-
-> PUT zones/:zone/spectrum/apps/:app_id
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Delete Spectrum Application
-
-`DELETE` Delete a previously existing application.
-
-> DELETE zones/:zone/spectrum/apps/:app_id
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Deletes a previously existing application.
 

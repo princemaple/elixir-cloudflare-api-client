@@ -1,120 +1,64 @@
 # Account Load Balancer Monitors
 
-Account-level Monitor configurations. Monitors define whether we check over HTTP, HTTPS or TCP, the status code(s) we look for, the interval at which we check, timeouts and response body matching.
+## Create Monitor
+
+**POST** `/accounts/{account_id}/load_balancers/monitors`
+
+Create a configured monitor.
+
 
 ## List Monitors
 
-`GET` List configured monitors for an account
+**GET** `/accounts/{account_id}/load_balancers/monitors`
 
-> GET accounts/:account_identifier/load_balancers/monitors
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Create Monitor
-
-`POST` Create a configured monitor
-
-> POST accounts/:account_identifier/load_balancers/monitors
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Monitor Details
-
-`GET` List a single configured monitor for an account
-
-> GET accounts/:account_identifier/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+List configured monitors for an account.
 
 
 ## Update Monitor
 
-`PUT` Modify a configured monitor
+**PUT** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}`
 
-> PUT accounts/:account_identifier/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Modify a configured monitor.
 
 
 ## Patch Monitor
 
-`PATCH` Apply changes to an existing monitor, overwriting the supplied properties.
+**PATCH** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}`
 
-> PATCH accounts/:account_identifier/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
+Apply changes to an existing monitor, overwriting the supplied properties.
 
 
+## Monitor Details
+
+**GET** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}`
+
+List a single configured monitor for an account.
 
 
 ## Delete Monitor
 
-`DELETE` Delete a configured monitor
+**DELETE** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}`
 
-> DELETE accounts/:account_identifier/load_balancers/monitors/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Delete a configured monitor.
 
 
 ## Preview Monitor
 
-`POST` Preview pools using the specified monitor with provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
+**POST** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}/preview`
 
-> POST accounts/:account_identifier/load_balancers/monitors/:identifier/preview
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Preview Result
-
-`GET` Get the result of a previous preview operation using the provided preview_id
-
-> GET accounts/:account_identifier/load_balancers/preview/:preview_id
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Preview pools using the specified monitor with provided monitor details. The returned preview_id can be used in the preview endpoint to retrieve the results.
 
 
 ## List Monitor References
 
-`GET` Get the list of resources that reference the provided monitor
+**GET** `/accounts/{account_id}/load_balancers/monitors/{monitor_id}/references`
 
-> GET accounts/:account_identifier/load_balancers/monitors/:identifier/references
-
-**Permission needed:** `None`
-
-Available in:
+Get the list of resources that reference the provided monitor.
 
 
+## Preview Result
+
+**GET** `/accounts/{account_id}/load_balancers/preview/{preview_id}`
+
+Get the result of a previous preview operation using the provided preview_id.
 

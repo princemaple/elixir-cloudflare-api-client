@@ -1,42 +1,22 @@
 # Stream Signing Keys
 
-Stream signing keys are required to use signed URLs with Stream videos.
+## Create signing keys
 
-## Create a Signing Key
+**POST** `/accounts/{account_id}/stream/keys`
 
-`POST` Upon creation you will get a RSA private key in PEM and JWK formats. Keys are created, used and deleted independently of videos. Every key can sign any of your videos. Key files are displayed only once upon creation.
-
-> POST accounts/:account_identifier/stream/keys
-
-**Permission needed:** `None`
-
-Available in:
+Creates an RSA private key in PEM and JWK formats. Key files are only displayed once after creation. Keys are created, used, and deleted independently of videos, and every key can sign any video.
 
 
+## List signing keys
+
+**GET** `/accounts/{account_id}/stream/keys`
+
+Lists the video ID and creation date and time when a signing key was created.
 
 
-## List Signing Keys
+## Delete signing keys
 
-`GET` 
+**DELETE** `/accounts/{account_id}/stream/keys/{identifier}`
 
-> GET accounts/:account_identifier/stream/keys
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Delete key
-
-`DELETE` Deleting a key revokes all signed URLs generated with the key.
-
-> DELETE accounts/:account_identifier/stream/keys/:identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+Deletes signing keys and revokes all signed URLs generated with the key.
 

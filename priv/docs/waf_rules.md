@@ -1,48 +1,28 @@
-# WAF Rules
+# WAF rules
 
-A firewall rule for a zone
+## List WAF rules
 
-## List Rules
+**GET** `/zones/{zone_id}/firewall/waf/packages/{package_id}/rules`
 
-`GET` Search, sort, and filter rules within a package
+Fetches WAF rules in a WAF package.
 
-> GET zones/:zone_id/firewall/waf/packages/:package_id/rules
-
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Rule Details
+## Update a WAF rule
 
-`GET` Individual information about a rule
+**PATCH** `/zones/{zone_id}/firewall/waf/packages/{package_id}/rules/{rule_id}`
 
-> GET zones/:zone_id/firewall/waf/packages/:package_id/rules/:identifier
+Updates a WAF rule. You can only update the mode/action of the rule.
 
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 
 
-## Edit Rule
+## Get a WAF rule
 
-`PATCH` Update the action the rule will perform if triggered on the zone
+**GET** `/zones/{zone_id}/firewall/waf/packages/{package_id}/rules/{rule_id}`
 
-> PATCH zones/:zone_id/firewall/waf/packages/:package_id/rules/:identifier
+Fetches the details of a WAF rule in a WAF package.
 
-**Permission needed:** `None`
-
-Available in:
-
-* PRO
-* BUSINESS
-* ENTERPRISE
+**Note:** Applies only to the [previous version of WAF managed rules](https://developers.cloudflare.com/support/firewall/managed-rules-web-application-firewall-waf/understanding-waf-managed-rules-web-application-firewall/).
 

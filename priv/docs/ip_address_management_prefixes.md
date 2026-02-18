@@ -1,42 +1,57 @@
 # IP Address Management Prefixes
 
-Describe and modify the account's IP prefixes.
+## Upload LOA Document
+
+**POST** `/accounts/{account_id}/addressing/loa_documents`
+
+Submit LOA document (pdf format) under the account.
+
+
+## Download LOA Document
+
+**GET** `/accounts/{account_id}/addressing/loa_documents/{loa_document_id}/download`
+
+Download specified LOA document under the account.
+
+
+## Add Prefix
+
+**POST** `/accounts/{account_id}/addressing/prefixes`
+
+Add a new prefix under the account.
+
 
 ## List Prefixes
 
-`GET` List all prefixes owned by the account.
+**GET** `/accounts/{account_id}/addressing/prefixes`
 
-> GET accounts/:account_identifier/addressing/prefixes
-
-**Permission needed:** `None`
-
-Available in:
-
-
-
-
-## Prefix Details
-
-`GET` List a particular prefix owned by the account.
-
-> GET accounts/:account_identifier/addressing/prefixes/:prefix_identifier
-
-**Permission needed:** `None`
-
-Available in:
-
-
+List all prefixes owned by the account.
 
 
 ## Update Prefix Description
 
-`PATCH` Modify the description for a prefix owned by the account.
+**PATCH** `/accounts/{account_id}/addressing/prefixes/{prefix_id}`
 
-> PATCH accounts/:account_identifier/addressing/prefixes/:prefix_identifier
-
-**Permission needed:** `None`
-
-Available in:
+Modify the description for a prefix owned by the account.
 
 
+## Prefix Details
+
+**GET** `/accounts/{account_id}/addressing/prefixes/{prefix_id}`
+
+List a particular prefix owned by the account.
+
+
+## Delete Prefix
+
+**DELETE** `/accounts/{account_id}/addressing/prefixes/{prefix_id}`
+
+Delete an unapproved prefix owned by the account.
+
+
+## Validate Prefix
+
+**POST** `/accounts/{account_id}/addressing/prefixes/{prefix_id}/validate`
+
+Triggers a new prefix validation. The checks are run asynchronously and include IRR, RPKI, and prefix ownership.
 
