@@ -4,7 +4,7 @@ defmodule Cloudflare.Zone do
   use Restlax.Resource, endpoint: "zones"
 
   @spec activation_check(id :: term(), opts :: Restlax.Resource.action_options()) ::
-          Tesla.Env.result()
+          {:ok, map()} | {:error, term()}
   def activation_check(id, opts \\ []) do
     client(opts).put(path_for(id, action: "activation_check"), %{}, opts)
   end
@@ -41,7 +41,7 @@ defmodule Cloudflare.Zone do
           id :: term(),
           matcher :: map() | keyword(),
           opts :: Restlax.Resource.action_options()
-        ) :: Tesla.Env.result()
+        ) :: {:ok, map()} | {:error, term()}
   def purge_cache(id, matcher \\ %{}, opts \\ []) do
     client(opts).post(path_for(id, action: "purge_cache"), matcher, opts)
   end

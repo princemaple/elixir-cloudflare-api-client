@@ -1,16 +1,11 @@
 defmodule Cloudflare.Auth do
-  @behaviour Tesla.Middleware
+  @spec auth_headers(keyword()) :: [{String.t(), String.t()}]
+  def auth_headers(opts \\ []) do
+    auth_token = opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
+    auth_email = opts[:auth_email] || Application.get_env(:cloudflare, :auth_email)
+    auth_key = opts[:auth_key] || Application.get_env(:cloudflare, :auth_key)
 
-  @impl Tesla.Middleware
-  def call(env, next, _) do
-    auth_token = env.opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
-    auth_email = env.opts[:auth_email] || Application.get_env(:cloudflare, :auth_email)
-    auth_key = env.opts[:auth_key] || Application.get_env(:cloudflare, :auth_key)
-
-    headers =
-      (auth_token && [{"authorization", "Bearer #{auth_token}"}]) ||
-        (auth_email && auth_key && [{"x-auth-email", auth_email}, {"x-auth-key", auth_key}]) || []
-
-    Tesla.run(%{env | headers: headers ++ env.headers}, next)
+    (auth_token && [{"authorization", "Bearer #{auth_token}"}]) ||
+      (auth_email && auth_key && [{"x-auth-email", auth_email}, {"x-auth-key", auth_key}]) || []
   end
 end
