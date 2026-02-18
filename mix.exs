@@ -28,7 +28,7 @@ defmodule Cloudflare.MixProject do
 
   defp deps do
     [
-      {:restlax, "~> 1.0"},
+      {:restlax, "~> 1.0.1"},
       {:mint, "~> 1.0", optional: true},
       {:castore, ">= 0.0.0", optional: true},
       {:jason, "~> 1.0", optional: true},

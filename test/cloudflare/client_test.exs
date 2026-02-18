@@ -8,10 +8,7 @@ defmodule Cloudflare.ClientTest do
 
   test "creates client with bearer auth token", %{bypass: bypass} do
     client =
-      Cloudflare.Client.new(
-        auth_token: "token-from-opts",
-        base_url: "http://localhost:#{bypass.port}"
-      )
+      Cloudflare.Client.new(auth_token: "token-from-opts")
 
     Bypass.expect_once(bypass, fn conn ->
       assert [auth] = Plug.Conn.get_req_header(conn, "authorization")
@@ -19,15 +16,14 @@ defmodule Cloudflare.ClientTest do
       Plug.Conn.resp(conn, 200, ~s({"ok":true}))
     end)
 
-    assert {:ok, %{status: 200}} = client.get("/token")
+    assert {:ok, %{status: 200}} = client.get("http://localhost:#{bypass.port}/token")
   end
 
   test "creates client with email/key auth", %{bypass: bypass} do
     client =
       Cloudflare.Client.new(
         auth_email: "e@example.com",
-        auth_key: "key-123",
-        base_url: "http://localhost:#{bypass.port}"
+        auth_key: "key-123"
       )
 
     Bypass.expect_once(bypass, fn conn ->
@@ -36,7 +32,7 @@ defmodule Cloudflare.ClientTest do
       Plug.Conn.resp(conn, 200, ~s({"ok":true}))
     end)
 
-    assert {:ok, %{status: 200}} = client.get("/key")
+    assert {:ok, %{status: 200}} = client.get("http://localhost:#{bypass.port}/key")
   end
 
   test "init registers auth client from application config", %{bypass: bypass} do
@@ -56,9 +52,9 @@ defmodule Cloudflare.ClientTest do
       Plug.Conn.resp(conn, 200, ~s({"ok":true}))
     end)
 
-    Cloudflare.Client.init(base_url: "http://localhost:#{bypass.port}")
+    Cloudflare.Client.init()
     client = :persistent_term.get({:cloudflare, :client})
-    assert {:ok, %{status: 200}} = client.get("/config")
+    assert {:ok, %{status: 200}} = client.get("http://localhost:#{bypass.port}/config")
   end
 
   test "raises when creating client without credentials" do
