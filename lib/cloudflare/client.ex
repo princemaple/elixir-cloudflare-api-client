@@ -9,26 +9,45 @@ defmodule Cloudflare.Client do
   end
 
   def new(opts) do
-    base_url = Keyword.get(opts, :base_url, @base_url)
-    headers = auth_headers(opts)
-
-    module = Module.concat(__MODULE__, "AuthClient#{System.unique_integer([:positive])}")
-
-    {:module, ^module, _, _} =
-      Module.create(
-        module,
-        quote do
-          use Restlax.Client,
-            base_url: unquote(base_url),
-            req_options: [headers: unquote(headers)]
-        end,
-        Macro.Env.location(__ENV__)
-      )
-
-    module
+    :persistent_term.put({:cloudflare, :client_opts}, client_opts(opts))
+    __MODULE__
   end
 
-  def req(request), do: request
+  def req(request) do
+    opts =
+      case :persistent_term.get({:cloudflare, :client_opts}, :undefined) do
+        :undefined -> client_opts([])
+        value -> value
+      end
+
+    request = maybe_put_base_url(request, opts[:base_url])
+
+    Enum.reduce(opts[:headers], request, fn {key, value}, req ->
+      Req.Request.put_header(req, key, value)
+    end)
+  end
+
+  defp client_opts(opts) do
+    [
+      base_url: Keyword.get(opts, :base_url, @base_url),
+      headers: auth_headers(opts)
+    ]
+  end
+
+  defp maybe_put_base_url(request, base_url) do
+    uri = URI.parse(base_url)
+    url = request.url
+
+    %{
+      request
+      | url: %{
+          url
+          | scheme: uri.scheme || url.scheme,
+            host: uri.host || url.host,
+            port: uri.port || url.port
+        }
+    }
+  end
 
   defp auth_headers(opts) do
     auth_token = opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
