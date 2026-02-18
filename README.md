@@ -25,46 +25,34 @@ end
 ### Authentication
 
 ```elixir
-config :cloudflare,
-  auth_token: "my-auth-token"
+client = Cloudflare.Client.new(auth_token: "my-auth-token")
 ```
 
 Or
 
 ```elixir
-config :cloudflare,
+client = Cloudflare.Client.new(
   auth_email: "my@email.com",
   auth_key: "my-auth-key"
+)
 ```
 
-Or both `¯\(°_o)/¯`.
-
-#### Or passed in directly as header
+Pass the client explicitly:
 
 ```elixir
-Cloudflare.Zone.index(headers: [{"Authorization", "Bearer my-auth-token"}])
-```
-
-```elixir
-Cloudflare.Zone.index(headers: [{"X-Auth-Email", "my@email.com"}, {"X-Auth-Key", "my-auth-key"}])
+Cloudflare.Zone.index(client: client)
 ```
 
 ### Register client
 
-Normally it's teadius to explicitly pass the client module in.
-
-```elixir
-Cloudflare.Zone.index(client: CloudFlare.Client)
-```
-
-It can be registered on application start, e.g. in `YourApp.Application.start`
+Register a default client on application start, e.g. in `YourApp.Application.start`
 
 ```elixir
 defmodule YourApp.Application do
   use Application
 
   def start(_type, _args) do
-    Cloudflare.Client.init() # <- You can add this line
+    Cloudflare.Client.init(auth_token: "my-auth-token") # <- You can add this line
     children = [
       {Phoenix.PubSub, name: App.PubSub},
       App.Repo,

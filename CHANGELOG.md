@@ -3,7 +3,7 @@
 ### Changed
 
 - Upgrade `:restlax` to `1.0.0`
-- Use `Req`-compatible request headers for per-request authentication overrides
+- Consolidate auth usage around `Cloudflare.Client.new/1` and `Cloudflare.Client.init/1`
 
 ## 0.2.0 - 2021-08-24
 
