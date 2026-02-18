@@ -20,11 +20,6 @@ defmodule Cloudflare.Client do
         value -> value
       end
 
-    request =
-      request
-      |> Req.Request.merge_options(base_url: opts[:base_url])
-      |> as_relative_url()
-
     Enum.reduce(opts[:headers], request, fn {key, value}, req ->
       Req.Request.put_header(req, key, value)
     end)
@@ -36,9 +31,6 @@ defmodule Cloudflare.Client do
       headers: auth_headers(opts)
     ]
   end
-
-  defp as_relative_url(%{url: url} = request),
-    do: %{request | url: %{url | scheme: nil, host: nil, port: nil}}
 
   defp auth_headers(opts) do
     auth_token = opts[:auth_token] || Application.get_env(:cloudflare, :auth_token)
