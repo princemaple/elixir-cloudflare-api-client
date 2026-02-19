@@ -1,3 +1,13 @@
+## 0.5.0 - 2026-02-19
+
+### Added
+
+- Lots of resources
+
+### Changed
+
+- Updated dependencies
+
 ## 0.4.0 - 2026-02-19
 
 ### Added
