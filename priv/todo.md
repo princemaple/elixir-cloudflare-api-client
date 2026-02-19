@@ -13,54 +13,91 @@ Each resource has:
 
 ---
 
-## Implemented Resources (44 total)
+## Implemented Resources (58 total)
 
-| Module                   | Doc file                                | Notes                                            |
-| ------------------------ | --------------------------------------- | ------------------------------------------------ |
-| `Account`                | `accounts.md`                           |                                                  |
-| `AccountMember`          | `account_members.md`                    |                                                  |
-| `AccessApplication`      | `access_applications.md`                | reuse, revoke_tokens custom                      |
-| `AccessGroup`            | `access_groups.md`                      |                                                  |
-| `AccessIdentityProvider` | `access_identity_providers.md`          |                                                  |
-| `AccessServiceToken`     | `access_service_tokens.md`              | refresh, rotate custom                           |
-| `AccessAppPolicy`        | `access_application_scoped_policies.md` | nested `:app_id`, make_reusable                  |
-| `AccountRuleset`         | `account_rulesets.md`                   | versions, create_rule custom                     |
-| `CertificatePack`        | `certificate_packs.md`                  | order, quota, PATCH update                       |
-| `CloudflareTunnel`       | `cloudflare_tunnel.md`                  | PATCH update, connections, token                 |
-| `CustomHostname`         | `custom_hostname_for_a_zone.md`         |                                                  |
-| `D1Database`             | `d1.md`                                 | query, export, import                            |
-| `DLPProfile`             | `dlp_profiles.md`                       | targets `dlp/profiles/custom`, all/1             |
-| `DnsRecord`              | `dns_records_for_a_zone.md`             |                                                  |
-| `EmailRoutingRule`       | `email_routing_routing_rules.md`        | catch_all, update_catch_all                      |
-| `FirewallRule`           | `firewall_rules.md`                     | update_priority PATCH collection                 |
-| `HealthCheck`            | `health_checks.md`                      |                                                  |
-| `Hyperdrive`             | `hyperdrive.md`                         |                                                  |
-| `IpAccessRule`           | `ip_access_rules_for_a_zone.md`         |                                                  |
-| `KvNamespace`            | `workers_kv_namespace.md`               |                                                  |
-| `List`                   | `lists.md`                              | items, create_items, replace_items, delete_items |
-| `LoadBalancer`           | `load_balancers.md`                     |                                                  |
-| `LogpushJob`             | `logpush_jobs_for_a_zone.md`            | get_ownership, validate_ownership                |
-| `NotificationPolicy`     | `notification_policies.md`              |                                                  |
-| `PageRule`               | `page_rules.md`                         |                                                  |
-| `PagesDeployment`        | `pages_deployment.md`                   | nested `:project_name`, logs, retry, rollback    |
-| `PagesProject`           | `pages_project.md`                      | PATCH update                                     |
-| `Queue`                  | `queue.md`                              | consumers, push_message                          |
-| `R2Bucket`               | `r2_bucket.md`                          | PATCH update, cors_policy                        |
-| `RateLimit`              | `rate_limits_for_a_zone.md`             |                                                  |
-| `StreamVideo`            | `stream_videos.md`                      | POST update, copy, create_token, storage_usage   |
-| `Turnstile`              | `turnstile.md`                          | rotate_secret                                    |
-| `User`                   | `user.md`                               |                                                  |
-| `UserApiToken`           | `user_api_tokens.md`                    |                                                  |
-| `VectorizeIndex`         | `vectorize.md`                          | upsert, query, insert, get_by_ids, delete_by_ids |
-| `WafPackage`             | `waf_packages.md`                       |                                                  |
-| `WafRule`                | `waf_rules.md`                          |                                                  |
-| `WaitingRoom`            | `waiting_room.md`                       | preview                                          |
-| `WorkerRoute`            | `worker_routes.md`                      |                                                  |
-| `WorkerScript`           | `worker_script.md`                      |                                                  |
-| `WorkersAI`              | `workers_ai.md`                         | run, models, model_schema, tasks — no CRUD       |
-| `Zone`                   | `zone.md`                               |                                                  |
-| `ZoneSetting`            | `zone_settings.md`                      |                                                  |
-| `Organization`           | `organizations.md`                      | (legacy)                                         |
+| Module                    | Doc file                                | Notes                                            |
+| ------------------------- | --------------------------------------- | ------------------------------------------------ |
+| `Account`                 | `accounts.md`                           |                                                  |
+| `AccountMember`           | `account_members.md`                    |                                                  |
+| `AccessApplication`       | `access_applications.md`                | reuse, revoke_tokens custom                      |
+| `AccessGroup`             | `access_groups.md`                      |                                                  |
+| `AccessIdentityProvider`  | `access_identity_providers.md`          |                                                  |
+| `AccessServiceToken`      | `access_service_tokens.md`              | refresh, rotate custom                           |
+| `AccessAppPolicy`         | `access_application_scoped_policies.md` | nested `:app_id`, make_reusable                  |
+| `AccountRuleset`          | `account_rulesets.md`                   | versions, create_rule custom                     |
+| `CertificatePack`         | `certificate_packs.md`                  | order, quota, PATCH update                       |
+| `CloudflareTunnel`        | `cloudflare_tunnel.md`                  | PATCH update, connections, token                 |
+| `CustomHostname`          | `custom_hostname_for_a_zone.md`         |                                                  |
+| `D1Database`              | `d1.md`                                 | query, export, import                            |
+| `DLPProfile`              | `dlp_profiles.md`                       | targets `dlp/profiles/custom`, all/1             |
+| `DnsRecord`               | `dns_records_for_a_zone.md`             |                                                  |
+| `EmailRoutingRule`        | `email_routing_routing_rules.md`        | catch_all, update_catch_all                      |
+| `FirewallRule`            | `firewall_rules.md`                     | update_priority PATCH collection                 |
+| `HealthCheck`             | `health_checks.md`                      |                                                  |
+| `Hyperdrive`              | `hyperdrive.md`                         |                                                  |
+| `IpAccessRule`            | `ip_access_rules_for_a_zone.md`         |                                                  |
+| `KvNamespace`             | `workers_kv_namespace.md`               |                                                  |
+| `List`                    | `lists.md`                              | items, create_items, replace_items, delete_items |
+| `LoadBalancer`            | `load_balancers.md`                     |                                                  |
+| `LogpushJob`              | `logpush_jobs_for_a_zone.md`            | get_ownership, validate_ownership                |
+| `NotificationPolicy`      | `notification_policies.md`              |                                                  |
+| `PageRule`                | `page_rules.md`                         |                                                  |
+| `PagesDeployment`         | `pages_deployment.md`                   | nested `:project_name`, logs, retry, rollback    |
+| `PagesProject`            | `pages_project.md`                      | PATCH update                                     |
+| `Queue`                   | `queue.md`                              | consumers, push_message                          |
+| `R2Bucket`                | `r2_bucket.md`                          | PATCH update, cors_policy                        |
+| `RateLimit`               | `rate_limits_for_a_zone.md`             |                                                  |
+| `StreamVideo`             | `stream_videos.md`                      | POST update, copy, create_token, storage_usage   |
+| `Turnstile`               | `turnstile.md`                          | rotate_secret                                    |
+| `User`                    | `user.md`                               |                                                  |
+| `UserApiToken`            | `user_api_tokens.md`                    |                                                  |
+| `VectorizeIndex`          | `vectorize.md`                          | upsert, query, insert, get_by_ids, delete_by_ids |
+| `WafPackage`              | `waf_packages.md`                       |                                                  |
+| `WafRule`                 | `waf_rules.md`                          |                                                  |
+| `WaitingRoom`             | `waiting_room.md`                       | preview                                          |
+| `WorkerRoute`             | `worker_routes.md`                      |                                                  |
+| `WorkerScript`            | `worker_script.md`                      |                                                  |
+| `WorkersAI`               | `workers_ai.md`                         | run, models, model_schema, tasks — no CRUD       |
+| `Zone`                    | `zone.md`                               |                                                  |
+| `ZoneSetting`             | `zone_settings.md`                      |                                                  |
+| `Organization`            | `organizations.md`                      | (legacy)                                         |
+| `SpectrumApplication`     | `spectrum_applications.md`              |                                                  |
+| `DnsFirewall`             | `dns_firewall.md`                       | PATCH update, reverse_dns                        |
+| `DurableObjectsNamespace` | `durable_objects_namespace.md`          | list-only + objects/2                            |
+| `CustomSsl`               | `custom_ssl_for_a_zone.md`              | PATCH update, prioritize/2                       |
+| `OriginCa`                | `origin_ca.md`                          | global endpoint, no account/zone scope           |
+| `MagicGreTunnel`          | `magic_gre_tunnels.md`                  | bulk_update/2                                    |
+| `MagicIpsecTunnel`        | `magic_ipsec_tunnels.md`                | bulk_update/2, generate_psk/2                    |
+| `MagicStaticRoute`        | `magic_static_routes.md`                | bulk_update/2, bulk_delete/2                     |
+| `TunnelVirtualNetwork`    | `tunnel_virtual_network.md`             | PATCH update                                     |
+| `UserAgentBlockingRule`   | `user_agent_blocking_rules.md`          |                                                  |
+| `AccessReusablePolicy`    | `access_reusable_policies.md`           |                                                  |
+| `StreamSigningKey`        | `stream_signing_keys.md`                | create/index/delete only                         |
+| `AccountLogpushJob`       | `logpush_jobs_for_an_account.md`        | ownership_challenge, validate_ownership          |
+| `AIGateway`               | `ai_gateway_gateways.md`                | PUT update                                       |
+| `TunnelRoute`             | `tunnel_routes.md`                      | PATCH update, by_ip/2                            |
+| `DevicePostureRule`       | `device_posture_rules.md`               |                                                  |
+| `DeviceManagedNetwork`    | `device_managed_networks.md`            |                                                  |
+| `GatewayProxyEndpoint`    | `zero_trust_gateway_proxy_endpoints.md` | PATCH update                                     |
+| `ZeroTrustOrganization`   | `zero_trust_organization.md`            | singleton, revoke_user/2                         |
+| `AIGatewayDataset`        | _(no doc)_                              | nested under gateway                             |
+| `AIGatewayDynamicRoute`   | _(no doc)_                              | PATCH update, deployments/versions               |
+| `AIGatewayEvaluation`     | _(no doc)_                              | evaluation_types at account level                |
+| `AIGatewayLog`            | _(no doc)_                              | delete_all, update (PATCH), request/response     |
+| `AIGatewayProviderConfig` | _(no doc)_                              | list/create/update/delete                        |
+| `AISearchInstance`        | _(no doc)_                              | search, chat_completions, stats                  |
+| `AISearchToken`           | _(no doc)_                              | standard CRUD                                    |
+| `WorkersAiFinetune`       | _(no doc)_                              | public listing, upload_asset                     |
+| `WorkerAccountSettings`   | _(no doc)_                              | singleton get/update (PUT)                       |
+| `WorkerDeployment`        | _(no doc)_                              | script-scoped list/show/create/delete            |
+| `WorkerEnvironment`       | _(no doc)_                              | put_content, get_content, update_settings        |
+| `WorkerForPlatforms`      | `workers_for_platforms.md`              | dispatch namespaces + scripts CRUD               |
+| `WorkerPipeline`          | _(no doc)_                              | pipelines/v1 list/show/create/delete             |
+| `WorkerPlacement`         | _(no doc)_                              | regions/1 read-only                              |
+| `WorkerSubdomain`         | _(no doc)_                              | singleton get/create/delete                      |
+| `WorkerTailLog`           | _(no doc)_                              | script-scoped tails list/create/delete           |
+| `WorkerVersion`           | _(no doc)_                              | script-scoped versions list/show/create          |
+| `WorkersKvNamespace`      | _(no doc)_                              | CRUD + keys, values, bulk ops                    |
 
 ---
 
@@ -68,38 +105,19 @@ Each resource has:
 
 These are commonly used Cloudflare features worth implementing next:
 
-| Doc file                                | Suggested module          | Notes                                      |
-| --------------------------------------- | ------------------------- | ------------------------------------------ |
-| `filters.md`                            | `Filter`                  | zone-scoped, used alongside firewall rules |
-| `zone_rulesets.md`                      | `ZoneRuleset`             | analogous to AccountRuleset                |
-| `zero_trust_gateway_rules.md`           | `GatewayRule`             | important for Zero Trust                   |
-| `zero_trust_gateway_locations.md`       | `GatewayLocation`         |                                            |
-| `zero_trust_gateway_proxy_endpoints.md` | `GatewayProxyEndpoint`    |                                            |
-| `zero_trust_lists.md`                   | `ZeroTrustList`           | similar to `lists.md`                      |
-| `zero_trust_organization.md`            | `ZeroTrustOrg`            |                                            |
-| `devices.md`                            | `Device`                  | WARP device management                     |
-| `device_posture_rules.md`               | `DevicePostureRule`       |                                            |
-| `device_managed_networks.md`            | `DeviceManagedNetwork`    |                                            |
-| `spectrum_applications.md`              | `SpectrumApplication`     |                                            |
-| `dns_firewall.md`                       | `DnsFirewall`             |                                            |
-| `durable_objects_namespace.md`          | `DurableObjectsNamespace` |                                            |
-| `registrar_domains.md`                  | `RegistrarDomain`         |                                            |
-| `worker_cron_trigger.md`                | `WorkerCronTrigger`       |                                            |
-| `worker_domain.md`                      | `WorkerDomain`            |                                            |
-| `workers_for_platforms.md`              | `WorkersForPlatforms`     |                                            |
-| `stream_live_inputs.md`                 | `StreamLiveInput`         |                                            |
-| `stream_signing_keys.md`                | `StreamSigningKey`        |                                            |
-| `logpush_jobs_for_an_account.md`        | `AccountLogpushJob`       | account-scoped sibling of LogpushJob       |
-| `ai_gateway_gateways.md`                | `AIGateway`               | AI Gateway model                           |
-| `custom_ssl_for_a_zone.md`              | `CustomSsl`               |                                            |
-| `origin_ca.md`                          | `OriginCa`                |                                            |
-| `magic_gre_tunnels.md`                  | `MagicGreTunnel`          | Magic WAN                                  |
-| `magic_ipsec_tunnels.md`                | `MagicIpsecTunnel`        | Magic WAN                                  |
-| `magic_static_routes.md`                | `MagicStaticRoute`        | Magic WAN                                  |
-| `tunnel_virtual_network.md`             | `TunnelVirtualNetwork`    |                                            |
-| `zone_lockdown.md`                      | `ZoneLockdown`            |                                            |
-| `user_agent_blocking_rules.md`          | `UserAgentBlockingRule`   |                                            |
-| `access_reusable_policies.md`           | `AccessReusablePolicy`    |                                            |
+| Doc file                          | Suggested module    | Notes                                      |
+| --------------------------------- | ------------------- | ------------------------------------------ |
+| `filters.md`                      | `Filter`            | zone-scoped, used alongside firewall rules |
+| `zone_rulesets.md`                | `ZoneRuleset`       | analogous to AccountRuleset                |
+| `zero_trust_gateway_rules.md`     | `GatewayRule`       | important for Zero Trust                   |
+| `zero_trust_gateway_locations.md` | `GatewayLocation`   |                                            |
+| `zero_trust_lists.md`             | `ZeroTrustList`     | similar to `lists.md`                      |
+| `devices.md`                      | `Device`            | WARP device management                     |
+| `registrar_domains.md`            | `RegistrarDomain`   |                                            |
+| `worker_cron_trigger.md`          | `WorkerCronTrigger` |                                            |
+| `worker_domain.md`                | `WorkerDomain`      |                                            |
+| `stream_live_inputs.md`           | `StreamLiveInput`   |                                            |
+| `zone_lockdown.md`                | `ZoneLockdown`      |                                            |
 
 ---
 
