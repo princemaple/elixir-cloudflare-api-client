@@ -20,14 +20,24 @@ defmodule Cloudflare.Client do
         value -> value
       end
 
+    request =
+      if opts[:base_url] do
+        Req.Request.merge_options(request, base_url: opts[:base_url])
+      else
+        request
+      end
+
     Enum.reduce(opts[:headers], request, fn {key, value}, req ->
       Req.Request.put_header(req, key, value)
     end)
   end
 
   defp client_opts(opts) do
+    base_url =
+      Keyword.get(opts, :base_url) || Application.get_env(:cloudflare, :base_url) || @base_url
+
     [
-      base_url: Keyword.get(opts, :base_url, @base_url),
+      base_url: base_url,
       headers: auth_headers(opts)
     ]
   end
