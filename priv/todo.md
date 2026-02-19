@@ -80,24 +80,24 @@ Each resource has:
 | `DeviceManagedNetwork`            | `device_managed_networks.md`              |                                                  |
 | `GatewayProxyEndpoint`            | `zero_trust_gateway_proxy_endpoints.md`   | PATCH update                                     |
 | `ZeroTrustOrganization`           | `zero_trust_organization.md`              | singleton, revoke_user/2                         |
-| `AIGatewayDataset`                | _(no doc)_                                | nested under gateway                             |
-| `AIGatewayDynamicRoute`           | _(no doc)_                                | PATCH update, deployments/versions               |
-| `AIGatewayEvaluation`             | _(no doc)_                                | evaluation_types at account level                |
-| `AIGatewayLog`                    | _(no doc)_                                | delete_all, update (PATCH), request/response     |
-| `AIGatewayProviderConfig`         | _(no doc)_                                | list/create/update/delete                        |
-| `AISearchInstance`                | _(no doc)_                                | search, chat_completions, stats                  |
-| `AISearchToken`                   | _(no doc)_                                | standard CRUD                                    |
-| `WorkersAiFinetune`               | _(no doc)_                                | public listing, upload_asset                     |
-| `WorkerAccountSettings`           | _(no doc)_                                | singleton get/update (PUT)                       |
-| `WorkerDeployment`                | _(no doc)_                                | script-scoped list/show/create/delete            |
-| `WorkerEnvironment`               | _(no doc)_                                | put_content, get_content, update_settings        |
+| `AIGatewayDataset`                | `ai_gateway_datasets.md`                  | nested under gateway                             |
+| `AIGatewayDynamicRoute`           | `ai_gateway_dynamic_routes.md`            | PATCH update, deployments/versions               |
+| `AIGatewayEvaluation`             | `ai_gateway_evaluations.md`               | evaluation_types at account level                |
+| `AIGatewayLog`                    | `ai_gateway_logs.md`                      | delete_all, update (PATCH), request/response     |
+| `AIGatewayProviderConfig`         | `ai_gateway_provider_configs.md`          | list/create/update/delete                        |
+| `AISearchInstance`                | `ai_search_instances.md`                  | search, chat_completions, stats                  |
+| `AISearchToken`                   | `ai_search_tokens.md`                     | standard CRUD                                    |
+| `WorkersAiFinetune`               | `workers_ai_finetune.md`                  | public listing, upload_asset                     |
+| `WorkerAccountSettings`           | `worker_account_settings.md`              | singleton get/update (PUT)                       |
+| `WorkerDeployment`                | `worker_deployments.md`                   | script-scoped list/show/create/delete            |
+| `WorkerEnvironment`               | `worker_environment.md`                   | put_content, get_content, update_settings        |
 | `WorkerForPlatforms`              | `workers_for_platforms.md`                | dispatch namespaces + scripts CRUD               |
-| `WorkerPipeline`                  | _(no doc)_                                | pipelines/v1 list/show/create/delete             |
-| `WorkerPlacement`                 | _(no doc)_                                | regions/1 read-only                              |
-| `WorkerSubdomain`                 | _(no doc)_                                | singleton get/create/delete                      |
-| `WorkerTailLog`                   | _(no doc)_                                | script-scoped tails list/create/delete           |
-| `WorkerVersion`                   | _(no doc)_                                | script-scoped versions list/show/create          |
-| `WorkersKvNamespace`              | _(no doc)_                                | CRUD + keys, values, bulk ops                    |
+| `WorkerPipeline`                  | `workers_pipelines_other.md`              | pipelines/v1 list/show/create/delete             |
+| `WorkerPlacement`                 | `worker_placement.md`                     | regions/1 read-only                              |
+| `WorkerSubdomain`                 | `worker_subdomain.md`                     | singleton get/create/delete                      |
+| `WorkerTailLog`                   | `worker_tail_logs.md`                     | script-scoped tails list/create/delete           |
+| `WorkerVersion`                   | `worker_versions.md`                      | script-scoped versions list/show/create          |
+| `WorkersKvNamespace`              | `workers_kv_namespace.md`                 | CRUD + keys, values, bulk ops                    |
 | `ZeroTrustGatewayRule`            | `zero_trust_gateway_rules.md`             | PUT update, `tenant_rules`, `reset_expiration`   |
 | `ZeroTrustGatewayLocation`        | `zero_trust_gateway_locations.md`         | standard CRUD (PUT update)                       |
 | `ZeroTrustList`                   | `zero_trust_lists.md`                     | PUT update, `patch`, `items`                     |
