@@ -5,7 +5,8 @@ defmodule Cloudflare.GeneratedResourcesTest do
     for resource_module <- [Cloudflare.WaitingRoom, Cloudflare.R2Bucket, Cloudflare.Webhooks] do
       assert Code.ensure_loaded?(resource_module)
       assert function_exported?(resource_module, :index, 1)
-      assert {:docs_v1, _, _, _, _, _, _} = Code.fetch_docs(resource_module)
+      assert {:docs_v1, _, _, _, %{"en" => docs}, _, _} = Code.fetch_docs(resource_module)
+      assert is_binary(docs)
     end
   end
 end

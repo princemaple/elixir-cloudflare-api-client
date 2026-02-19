@@ -1,5 +1,6 @@
 defmodule Cloudflare.GeneratedResources do
   @moduledoc false
+  @endpoint_line_regex ~r/\*\*[A-Z]+\*\s+`([^`]+)`/
 
   existing_modules =
     __DIR__
@@ -13,14 +14,16 @@ defmodule Cloudflare.GeneratedResources do
     doc_path
     |> File.read!()
     |> then(fn body ->
-      case Regex.run(~r/\*\*[A-Z]+\*\s+`([^`]+)`/, body, capture: :all_but_first) do
+      case Regex.run(@endpoint_line_regex, body, capture: :all_but_first) do
         [endpoint] ->
           endpoint
           |> String.trim_leading("/")
           |> String.replace(~r/\{([^}]+)\}/, ":\\1")
 
         _ ->
-          doc_path |> Path.basename(".md")
+          doc_path
+          |> Path.basename(".md")
+          |> String.replace("_", "/")
       end
     end)
   end
