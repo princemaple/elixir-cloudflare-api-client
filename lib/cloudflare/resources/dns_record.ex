@@ -4,10 +4,17 @@ defmodule Cloudflare.DnsRecord do
   use Restlax.Resource, endpoint: "zones/:zone_id/dns_records"
 
   def import(data, opts \\ []) do
-    client(opts).post(path_for(nil, opts), data, opts)
+    client(opts).post(
+      path_for(nil, action: "import"),
+      data,
+      Restlax.Resource.handle_options(opts)
+    )
   end
 
   def export(opts \\ []) do
-    client(opts).post(path_for(nil, opts), opts)
+    client(opts).get(
+      path_for(nil, action: "export"),
+      Restlax.Resource.handle_options(opts)
+    )
   end
 end
