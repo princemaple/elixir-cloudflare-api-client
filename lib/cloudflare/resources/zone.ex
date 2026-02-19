@@ -6,7 +6,11 @@ defmodule Cloudflare.Zone do
   @spec activation_check(id :: term(), opts :: Restlax.Resource.action_options()) ::
           {:ok, map()} | {:error, term()}
   def activation_check(id, opts \\ []) do
-    client(opts).put(path_for(id, action: "activation_check"), %{}, opts)
+    client(opts).put(
+      path_for(id, action: "activation_check"),
+      %{},
+      Restlax.Resource.handle_options(opts)
+    )
   end
 
   @doc """
@@ -43,6 +47,10 @@ defmodule Cloudflare.Zone do
           opts :: Restlax.Resource.action_options()
         ) :: {:ok, map()} | {:error, term()}
   def purge_cache(id, matcher \\ %{}, opts \\ []) do
-    client(opts).post(path_for(id, action: "purge_cache"), matcher, opts)
+    client(opts).post(
+      path_for(id, action: "purge_cache"),
+      matcher,
+      Restlax.Resource.handle_options(opts)
+    )
   end
 end

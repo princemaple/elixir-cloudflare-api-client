@@ -61,7 +61,10 @@ defmodule Cloudflare.ZoneSetting do
           {:ok, map()} | {:error, term()}
   for setting <- @settings do
     def show(unquote(setting), opts) do
-      client(opts).get(path_for(nil, action: unquote(to_string(setting))), opts)
+      client(opts).get(
+        path_for(nil, action: unquote(to_string(setting))),
+        Restlax.Resource.handle_options(opts)
+      )
     end
   end
 
@@ -72,7 +75,11 @@ defmodule Cloudflare.ZoneSetting do
         ) :: {:ok, map()} | {:error, term()}
   for setting <- @settings do
     def update(unquote(setting), body, opts) do
-      client(opts).patch(path_for(nil, action: unquote(to_string(setting))), body, opts)
+      client(opts).patch(
+        path_for(nil, action: unquote(to_string(setting))),
+        body,
+        Restlax.Resource.handle_options(opts)
+      )
     end
   end
 end
