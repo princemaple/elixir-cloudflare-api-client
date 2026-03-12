@@ -21,7 +21,8 @@ defmodule Cloudflare.R2CatalogManagementTest do
 
     client = Cloudflare.Client.new(auth_token: "dummy")
 
-    assert {:ok, %{status: 200, body: %{"result" => %{"warehouses" => [%{"bucket" => "my-bucket"}]}}}} =
+    assert {:ok,
+            %{status: 200, body: %{"result" => %{"warehouses" => [%{"bucket" => "my-bucket"}]}}}} =
              Cloudflare.R2CatalogManagement.index(
                client: client,
                params: [account_id: account_id]
