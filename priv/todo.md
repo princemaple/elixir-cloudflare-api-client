@@ -13,7 +13,7 @@ Each resource has:
 
 ---
 
-## Implemented Resources (72 total)
+## Implemented Resources (75 total)
 
 | Module                            | Doc file                                  | Notes                                            |
 | --------------------------------- | ----------------------------------------- | ------------------------------------------------ |
@@ -46,6 +46,9 @@ Each resource has:
 | `PagesProject`                    | `pages_project.md`                        | PATCH update                                     |
 | `Queue`                           | `queue.md`                                | consumers, push_message                          |
 | `R2Bucket`                        | `r2_bucket.md`                            | PATCH update, cors_policy                        |
+| `R2Account`                       | `r2_account.md`                           | metrics singleton                                |
+| `R2CatalogManagement`             | `r2_catalog_management.md`                | index/show + enable/disable custom               |
+| `R2SuperSlurper`                  | `r2_super_slurper.md`                     | index/show/create + 8 custom actions            |
 | `RateLimit`                       | `rate_limits_for_a_zone.md`               |                                                  |
 | `StreamVideo`                     | `stream_videos.md`                        | POST update, copy, create_token, storage_usage   |
 | `Turnstile`                       | `turnstile.md`                            | rotate_secret                                    |
